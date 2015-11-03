@@ -13,13 +13,94 @@ We are to scrape the website and clean the gathered data primarily using the R-p
 
 The website is constructed in a way such that for each page of recorded bribes contains 10 posts per page. It did not prove useful to use selector-gadget for identifying the underlying html-table. However, any page of 10 posts only has unique URL-element; http://www.ipaidabribe.com/reports/paid?page={**any integar**}. Thus, we took the following approach: create vector of integers from 0:1000 in intervals of 10. Insert 0, 10, 20 etc. into the element in URL that determines page number via loop - here looping with plyr was deemed useful as it is simple to coerce into dataframe and is rather fast. 
 
-We have now obtained 100 pages each consisting of 10 posts. It proved easier to request on each particular post - so we scraped each of the 100 sites for post-url's using appropriate css-selector and html-attribute 'href'. Looping through the 100 pages and requesting 10 post-urls for each, we obtained a vector of 1000 URL-adresses. 
+```{r, echo=FALSE, warning = FALSE}
+library("plyr")
+library("rvest")
+library("stringr") 
 
-When the 1000 URLs have been obtained, a function to request from the website on relevant fields using css-selectors and appropriate use of html_text() & html_attr can be put through a loop and coerced from list into a dataframe using *ldply(data, data.frame)*. From here we need to do basic data-cleaning primarily utilizing functions contained in *stringr* in order to have a tidy, interpretable dataframe. 
+# 1.1) 
+#Need to create values of 0:1000 by 10 in order construct list of viable URLS to scrape for the appropriate css.selector for each post.
+x1000 <- c(0:1000)
+n1000 <- length(x1000)
+var1000 = x1000[seq(1, n1000, 10)]
 
-We end up with a dataframe like this:
+#Looking at the structure of the URL's we see that /reports/paid?page= defines the span for subsets of 10 posts
+# Thus, if we can insert 0:1000 by intervals of 10 into "LANK", we actually have all 100 pages, each consisting of 10 posts 
+linksub.li = "http://www.ipaidabribe.com/reports/paid?page=LANK"
+
+
+# 1.2) FUNCTION : 
+#Create function that runs through all numbers in var1000 and replaces LANK with the 0:1000 by 10s
+
+link_str_replace = function(var1000){
+  link.sub = gsub("\\LANK", var1000, linksub.li)
+}
+
+# 1.3) LOOP : 
+# Using plyr (ld) for simple, efficient looping - list-to-list, llply works, but not optimally as transformations has to be made afterwards
+num.link.li = ldply(var1000, link_str_replace)
+num.link.li2 = num.link.li$V1
+
+```
+```{r, echo = TRUE}
+head(num.link.li2, 5)
+
+```
+
+We have now obtained 100 pages each containing 10 posts. It proved easier to request on each particular post - so we scraped each of the 100 sites for post-url's using appropriate css-selector and html-attribute 'href'. Looping through the 100 pages and requesting 10 post-urls for each, we obtained a vector of 1.000 URL-adresses. 
+
+```{r, echo = FALSE, warning = FALSE}
+# 1.4) FUNCTION : 
+#Now, create function that fetches post links from each website, which only has 10 posts pr. page and coerce these links into list
+
+#Link-fetching function based on list of 101 links in num.link.li - should create 1010 new links
+#Scrape www.ipaidabribe.com - articles; n = 1000
+#Define css-selector that is unique to the title href pointing at each specific post
+
+as2.css.selector_1 = ".heading-3 a"   #URL and/or TITLE depends on 'html_attr(name = href/title)'
+
+scrape_links_ipaidabribe = function(num.link.li2){
+  link.url = read_html(num.link.li2, encoding = "UTF-8") %>%
+    html_nodes(css = as2.css.selector_1) %>%
+    html_attr(name = 'href')
+  return(cbind(link.url))
+}
+
+# 1.5) LOOP : 
+#Next, we utilize the function defined above for looping through URLs for 10 links out per ingoing URL
+
+bribe.data = list()
+for(i in num.link.li2){
+  print(paste("processing", i, sep = " "))
+  bribe.data[[i]] = scrape_links_ipaidabribe(i)
+  Sys.sleep(0.05)
+  cat("loop", i, "done!\n")
+}
+
+# 1.6) DATA MANIPULATION : 
+## The frame of links now have to be coerced into a single vector in order to request from each link
+
+bribe.data.li = ldply(bribe.data)
+link.z = bribe.data.li$link.url
+#link.z is a vector containing 1000 links for us to scrape for the information we need
+
+```
+```{r, echo = TRUE}
+head(link.z, 5)
+
+```
+
+When the 1.000 URLs have been obtained, a function to request from the website on relevant fields using css-selectors and appropriate use of html_text() & html_attr can be put through a loop and coerced from list into a dataframe using *ldply(data, data.frame)*. From here we need to do basic data-cleaning primarily utilizing functions contained in *stringr* in order to have a tidy, interpretable dataframe. 
+
+```{r, echo = FALSE}
+
+```
+
+
+We end up with a dataframe with this composition:
 
 ```{r}
+
 
 ```
 
