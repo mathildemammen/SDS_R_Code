@@ -47,6 +47,8 @@ scrape_links_ipaidabribe = function(num.link.li2){
   return(cbind(link.url))
 }
 
+bribe.data = ldply(num.link.li2, scrape_links_ipaidabribe, .inform = TRUE)
+
 # 1.5) LOOP : 
 #Next, we utilize the function defined above for looping through URLs for 10 links out per ingoing URL
 
@@ -55,8 +57,12 @@ for(i in num.link.li2){
   print(paste("processing", i, sep = " "))
   bribe.data[[i]] = scrape_links_ipaidabribe(i)
   Sys.sleep(1)
-  cat("done!\n")
+  cat("loop", i, "done!\n")
 }
+
+  # The plyr-package can also be used for looping through requests - this however may get you blocked for a while as there is no "sleep"
+
+bribe.data = ldply(num.link.li2, scrape_links_ipaidabribe, .inform = TRUE)
 
 # 1.6) DATA MANIPULATION : 
 ## The frame of links now have to be coerced into a single vector in order to request from each link
@@ -127,7 +133,7 @@ post.bribe.df = list()
 for(i in link.z){
   print(paste("processing", i, sep = " "))
   post.bribe.df[[i]] = scrape_post_bribe(i)
-  Sys.sleep(1)
+  Sys.sleep(0.01)
   cat("done!\n")
 }
 
@@ -160,7 +166,6 @@ IN.Bribe.df$post.url = NULL
 IN.Bribe.df$post.location = NULL
 
 IN.Bribe2.df = subset(IN.Bribe.df, , -c(.id, post.title))
-head(IN.Bribe2.df, 5)
 IN.Bribe3.df = data.frame(lapply(IN.Bribe2.df, as.character), stringsAsFactors=FALSE)
 IN.Bribe3.df$post.date = gsub("\\,", "", IN.Bribe3.df$post.date)
 
