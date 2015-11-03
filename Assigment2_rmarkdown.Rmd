@@ -13,10 +13,16 @@ We are to scrape the website and clean the gathered data primarily using the R-p
 
 The website is constructed in a way such that for each page of recorded bribes contains 10 posts per page. It did not prove useful to use selector-gadget for identifying the underlying html-table. However, any page of 10 posts only has unique URL-element; http://www.ipaidabribe.com/reports/paid?page={**any integar**}. Thus, we took the following approach: create vector of integers from 0:1000 in intervals of 10. Insert 0, 10, 20 etc. into the element in URL that determines page number via loop - here looping with plyr was deemed useful as it is simple to coerce into dataframe and is rather fast. 
 
-```{r, echo=FALSE, warning = FALSE}
+```{r create initial links, echo=FALSE, warning = FALSE, include = FALSE}
+
+library("knitr")
+
+knitr::opts_chunk$set(cache=TRUE)
+
 library("plyr")
 library("rvest")
 library("stringr") 
+
 
 # 1.1) 
 #Need to create values of 0:1000 by 10 in order construct list of viable URLS to scrape for the appropriate css.selector for each post.
@@ -49,7 +55,8 @@ head(num.link.li2, 5)
 
 We have now obtained 100 pages each containing 10 posts. It proved easier to request on each particular post - so we scraped each of the 100 sites for post-url's using appropriate css-selector and html-attribute 'href'. Looping through the 100 pages and requesting 10 post-urls for each, we obtained a vector of 1.000 URL-adresses. 
 
-```{r, echo = FALSE, warning = FALSE}
+```{r scrape links to create more links, echo = FALSE, warning = FALSE, include = FALSE}
+knitr::opts_chunk$set(cache=TRUE)
 # 1.4) FUNCTION : 
 #Now, create function that fetches post links from each website, which only has 10 posts pr. page and coerce these links into list
 
@@ -76,7 +83,6 @@ for(i in num.link.li2){
   Sys.sleep(0.05)
   cat("loop", i, "done!\n")
 }
-
 # 1.6) DATA MANIPULATION : 
 ## The frame of links now have to be coerced into a single vector in order to request from each link
 

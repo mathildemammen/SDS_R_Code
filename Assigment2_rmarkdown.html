@@ -75,9 +75,21 @@ img {
 <div id="scraping-the-website-steps-1-2" class="section level2">
 <h2><strong>Scraping the <a href="http://ipaidabribe.com/reports">website</a> : Steps 1-2</strong></h2>
 <p>The website is constructed in a way such that for each page of recorded bribes contains 10 posts per page. It did not prove useful to use selector-gadget for identifying the underlying html-table. However, any page of 10 posts only has unique URL-element; <a href="http://www.ipaidabribe.com/reports/paid?page" class="uri">http://www.ipaidabribe.com/reports/paid?page</a>={<strong>any integar</strong>}. Thus, we took the following approach: create vector of integers from 0:1000 in intervals of 10. Insert 0, 10, 20 etc. into the element in URL that determines page number via loop - here looping with plyr was deemed useful as it is simple to coerce into dataframe and is rather fast.</p>
-<pre><code>## Loading required package: xml2</code></pre>
-<p>We have now obtained 100 pages each consisting of 10 posts. It proved easier to request on each particular post - so we scraped each of the 100 sites for post-url’s using appropriate css-selector and html-attribute ‘href’. Looping through the 100 pages and requesting 10 post-urls for each, we obtained a vector of 1000 URL-adresses.</p>
-<p>When the 1000 URLs have been obtained, a function to request from the website on relevant fields using css-selectors and appropriate use of html_text() &amp; html_attr can be put through a loop and coerced from list into a dataframe using <em>ldply(data, data.frame)</em>. From here we need to do basic data-cleaning primarily utilizing functions contained in <em>stringr</em> in order to have a tidy, interpretable dataframe.</p>
+<pre class="r"><code>head(num.link.li2, 5)</code></pre>
+<pre><code>## [1] &quot;http://www.ipaidabribe.com/reports/paid?page=0&quot; 
+## [2] &quot;http://www.ipaidabribe.com/reports/paid?page=10&quot;
+## [3] &quot;http://www.ipaidabribe.com/reports/paid?page=20&quot;
+## [4] &quot;http://www.ipaidabribe.com/reports/paid?page=30&quot;
+## [5] &quot;http://www.ipaidabribe.com/reports/paid?page=40&quot;</code></pre>
+<p>We have now obtained 100 pages each containing 10 posts. It proved easier to request on each particular post - so we scraped each of the 100 sites for post-url’s using appropriate css-selector and html-attribute ‘href’. Looping through the 100 pages and requesting 10 post-urls for each, we obtained a vector of 1.000 URL-adresses.</p>
+<pre class="r"><code>head(link.z, 5)</code></pre>
+<pre><code>## [1] http://www.ipaidabribe.com/reports/paid/i-paid-rs-10000-to-municipal-services-in-pune     
+## [2] http://www.ipaidabribe.com/reports/paid/i-paid-rs-6000-to-municipal-services-in-dharmapuri
+## [3] http://www.ipaidabribe.com/reports/paid/i-paid-rs-100-to-others-in-jhunjhunun             
+## [4] http://www.ipaidabribe.com/reports/paid/i-paid-rs-10-to-others-in-achhnera                
+## [5] http://www.ipaidabribe.com/reports/paid/i-paid-rs-1358-to-in                              
+## 999 Levels: http://www.ipaidabribe.com/ ...</code></pre>
+<p>When the 1.000 URLs have been obtained, a function to request from the website on relevant fields using css-selectors and appropriate use of html_text() &amp; html_attr can be put through a loop and coerced from list into a dataframe using <em>ldply(data, data.frame)</em>. From here we need to do basic data-cleaning primarily utilizing functions contained in <em>stringr</em> in order to have a tidy, interpretable dataframe.</p>
 <p>We end up with a dataframe with this composition:</p>
 </div>
 </div>
