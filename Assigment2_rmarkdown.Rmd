@@ -1,0 +1,32 @@
+---
+title: "Assignment 2 - Social Data Science"
+author: "Adam Ingwersen"
+date: "3. nov. 2015"
+output: html_document
+---
+
+# **Scrape & Analysis of www.ipaidabribe.com**
+
+We are to scrape the website and clean the gathered data primarily using the R-packages: *stringr*, *plyr*, *dplyr* & *rvest*. Then, we will delve into an econometric analysis paired with geo-spatial data-analysis using *ggplot*, *countrycode* etc.
+
+## **Scraping the [website](http://ipaidabribe.com/reports) : Steps 1-2**
+
+The website is constructed in a way such that for each page of recorded bribes contains 10 posts per page. It did not prove useful to use selector-gadget for identifying the underlying html-table. However, any page of 10 posts only has unique URL-element; http://www.ipaidabribe.com/reports/paid?page={**any integar**}. Thus, we took the following approach: create vector of integers from 0:1000 in intervals of 10. Insert 0, 10, 20 etc. into the element in URL that determines page number via loop - here looping with plyr was deemed useful as it is simple to coerce into dataframe and is rather fast. 
+
+We have now obtained 100 pages each consisting of 10 posts. It proved easier to request on each particular post - so we scraped each of the 100 sites for post-url's using appropriate css-selector and html-attribute 'href'. Looping through the 100 pages and requesting 10 post-urls for each, we obtained a vector of 1000 URL-adresses. 
+
+When the 1000 URLs have been obtained, a function to request from the website on relevant fields using css-selectors and appropriate use of html_text() & html_attr can be put through a loop and coerced from list into a dataframe using *ldply(data, data.frame)*. From here we need to do basic data-cleaning primarily utilizing functions contained in *stringr* in order to have a tidy, interpretable dataframe. 
+
+We end up with a dataframe like this:
+
+```{r}
+
+```
+
+
+
+```{r, echo=FALSE}
+
+```
+
+
