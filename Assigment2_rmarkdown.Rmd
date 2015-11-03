@@ -102,13 +102,15 @@ When the 1.000 URLs have been obtained, a function to request from the website o
 
 ```
 
-
 We end up with a dataframe with this composition:
 
-```{r}
-
-
+```{r import large dataframe, echo = FALSE}
+bribe.csv = read.csv("https://raw.githubusercontent.com/adamingwersen/Data.for.ass2_SDS/master/bribe.csv", sep = "\t")
 ```
+```{r look}
+head(bribe.csv, 5)
+```
+
 
 
 

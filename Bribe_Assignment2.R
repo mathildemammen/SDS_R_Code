@@ -162,20 +162,31 @@ IN.Bribe.df$region = word(IN.Bribe.df$post.location, -1)                        
 IN.Bribe.df$bribe.paid = as.numeric(gsub("[^\\d]+", "", IN.Bribe.df$post.title, perl=TRUE)) # Extracting numeric value of bribe from title using PERL-type regular expression
 
 # 3.2) Deleting obsolete variables/columns
-IN.Bribe.df$post.url = NULL
-IN.Bribe.df$post.location = NULL
-
 IN.Bribe2.df = subset(IN.Bribe.df, , -c(.id, post.title))
 IN.Bribe3.df = data.frame(lapply(IN.Bribe2.df, as.character), stringsAsFactors=FALSE)
 IN.Bribe3.df$post.date = gsub("\\,", "", IN.Bribe3.df$post.date)
+IN.Bribe3.df$month = word(IN.Bribe3.df$post.date)
+IN.Bribe3.df$day = word(IN.Bribe3.df$post.date, -2)
+IN.Bribe3.df$year = word(IN.Bribe3.df$post.date, -1)
+
+IN.Bribe3.df$post.url = NULL
+IN.Bribe3.df$post.location = NULL
+IN.Bribe3.df$post.date = NULL
+
+library("lubridate")
+
+?lubridate
+
 
 head(IN.Bribe3.df, 5)
 
-write.csv(IN.Bribe3.df, "C:/Users/Adam/Desktop/Bribe.csv")
+write.table(IN.Bribe3.df, "C:/Users/Adam/Desktop/Bribe.csv", sep = "\t")
+
+?write.csv
 
 library("readr")
-read.csv("https://raw.githubusercontent.com/adamingwersen/Data.for.ass2_SDS/master/bribe.csv")
-
+bribe.csv = read.csv("https://raw.githubusercontent.com/adamingwersen/Data.for.ass2_SDS/master/bribe.csv", sep = "\t")
+?read.table
 
 
 

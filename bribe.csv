@@ -1,0 +1,1000 @@
+post.date	post.location	post.dept	post.trans	post.views	post.url	city	region	bribe.paid
+1	November 03 2015	Dharmapuri, Tamil Nadu	Municipal Services	Birth Certificate	10 	<pointer: 0x0000000005969720>	Dharmapuri	Nadu	6000
+2	November 03 2015	Jhunjhunun, Rajasthan	Others	Others	29 	<pointer: 0x0000000017cd8360>	Jhunjhunun	Rajasthan	100
+3	November 03 2015	Achhnera, Uttar Pradesh	Others	Others	30 	<pointer: 0x0000000014e2c170>	Achhnera	Pradesh	10
+4	November 03 2015	, 			39 	<pointer: 0x00000000163e6060>			1358
+5	November 03 2015	Nellore, Andhra Pradesh	Municipal Services	Birth Certificate	42 	<pointer: 0x00000000166422e0>	Nellore	Pradesh	500
+6	November 03 2015	Abohar, Punjab	Municipal Services	Birth Certificate	43 	<pointer: 0x0000000005e6acf0>	Abohar	Punjab	788
+7	November 03 2015	Bangalore, Karnataka	Others	Others	51 	<pointer: 0x0000000014ec2800>	Bangalore	Karnataka	NA
+8	November 03 2015	New Delhi, Delhi	Education	School or College Related Activities	57 	<pointer: 0x000000001762cbe0>	New	Delhi	NA
+9	November 03 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	47 	<pointer: 0x0000000017c4be70>	Abhayapuri	Assam	20
+10	November 03 2015	Nagpur, Maharashtra	Stamps and Registration	Marriage Certificate	61 	<pointer: 0x0000000017269b80>	Nagpur	Maharashtra	15000
+11	November 03 2015	Solapur, Maharashtra	Municipal Services	Birth Certificate	50 	<pointer: 0x0000000015c1d170>	Solapur	Maharashtra	111
+12	November 03 2015	Almora, Uttarakhand	Municipal Services	Birth Certificate	38 	<pointer: 0x0000000017841060>	Almora	Uttarakhand	344
+13	November 03 2015	Bangalore, Karnataka	Water and Sewage	Water Connection under Sajala	36 	<pointer: 0x000000001654e460>	Bangalore	Karnataka	NA
+14	November 03 2015	Abohar, Punjab	Municipal Services	Birth Certificate	34 	<pointer: 0x0000000016eb3570>	Abohar	Punjab	111
+15	November 03 2015	Mumbai, Maharashtra	Municipal Services	Birth Certificate	34 	<pointer: 0x00000000151cf4e0>	Mumbai	Maharashtra	1
+16	November 03 2015	Thane, Maharashtra	Police	Filing FIR	45 	<pointer: 0x00000000161e1e70>	Thane	Maharashtra	5000
+17	November 03 2015	Lucknow, Uttar Pradesh	Municipal Services	Birth Certificate	35 	<pointer: 0x00000000155118e0>	Lucknow	Pradesh	500
+18	November 03 2015	Mumbai, Maharashtra	Municipal Services	Birth Certificate	40 	<pointer: 0x00000000168a90f0>	Mumbai	Maharashtra	100
+19	November 03 2015	Hazaribagh, Jharkhand	Police	Traffic Violations	55 	<pointer: 0x00000000171950e0>	Hazaribagh	Jharkhand	1000
+20	November 03 2015	Abohar, Punjab	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	65 	<pointer: 0x0000000016a1d4e0>	Abohar	Punjab	50000
+21	November 03 2015	Kolkata, West Bengal	Commercial Tax, Sales Tax, VAT	C Form	103 	<pointer: 0x000000001529fee0>	Kolkata	Bengal	5e+05
+22	November 02 2015	Bangalore, Karnataka	Police	Police Verification for Passport	132 	<pointer: 0x0000000016cc3960>	Bangalore	Karnataka	NA
+23	November 02 2015	Adari, Uttar Pradesh	Police	Filing FIR	142 	<pointer: 0x0000000016ba2d60>	Adari	Pradesh	2
+24	November 02 2015	Chandigarh, Chandigarh	Railways	Transport of Goods	163 	<pointer: 0x0000000016937660>	Chandigarh	Chandigarh	10000
+25	November 02 2015	New Delhi, Delhi	Police	Traffic Violations	170 	<pointer: 0x0000000015a254f0>	New	Delhi	NA
+26	November 02 2015	Durgapur, West Bengal	Commercial Tax, Sales Tax, VAT	C Form	151 	<pointer: 0x00000000161414f0>	Durgapur	Bengal	100
+27	November 02 2015	Pune, Maharashtra	Others	Others	148 	<pointer: 0x0000000017730ce0>	Pune	Maharashtra	20
+28	November 02 2015	Mumbai, Maharashtra	Others	Others	145 	<pointer: 0x0000000014cd8150>	Mumbai	Maharashtra	1200
+29	November 02 2015	Itanagar, Arunachal Pradesh	Municipal Services	Birth Certificate	131 	<pointer: 0x0000000015113170>	Itanagar	Pradesh	100
+30	November 02 2015	Vidisha, Madhya Pradesh	Municipal Services	Birth Certificate	133 	<pointer: 0x0000000017ba3d60>	Vidisha	Pradesh	464001
+31	November 02 2015	Alipurduar, West Bengal	Transport	Registration of Vehicle	175 	<pointer: 0x00000000163015f0>	Alipurduar	Bengal	120200
+32	November 02 2015	Kochi, Kerala	Municipal Services	Birth Certificate	185 	<pointer: 0x000000001753cb60>	Kochi	Kerala	1200
+33	November 02 2015	Mahesana, Gujarat	Police	Traffic Violations	180 	<pointer: 0x0000000017070760>	Mahesana	Gujarat	10000
+34	November 02 2015	Pune, Maharashtra	Income Tax	New PAN Card	183 	<pointer: 0x0000000005d6c5f0>	Pune	Maharashtra	200
+35	November 02 2015	Hyderabad, Telangana	Others	Others	205 	<pointer: 0x0000000014f49ce0>	Hyderabad	Telangana	20000
+36	November 02 2015	Kolkata, West Bengal	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	233 	<pointer: 0x0000000015b0a760>	Kolkata	Bengal	500
+37	November 01 2015	Chennai, Tamil Nadu	Municipal Services	Birth Certificate	222 	<pointer: 0x00000000173d6160>	Chennai	Nadu	111
+38	November 01 2015	Adilabad, Telangana	Municipal Services	Birth Certificate	188 	<pointer: 0x000000001535d670>	Adilabad	Telangana	200
+39	November 01 2015	Abohar, Punjab	Income Tax	New PAN Card	195 	<pointer: 0x0000000015806b60>	Abohar	Punjab	2000
+40	November 01 2015	Abohar, Punjab	Customs, Excise and Service Tax	Customs Check and Clearance	171 	<pointer: 0x000000001592b070>	Abohar	Punjab	100
+41	November 01 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	158 	<pointer: 0x0000000017e97160>	Abhayapuri	Assam	345
+42	November 01 2015	Achhnera, Uttar Pradesh	Municipal Services	Birth Certificate	148 	<pointer: 0x000000001bf82b60>	Achhnera	Pradesh	33
+43	November 01 2015	Abohar, Punjab	Commercial Tax, Sales Tax, VAT	C Form	175 	<pointer: 0x000000001c08f1e0>	Abohar	Punjab	524001
+44	November 01 2015	New Delhi, Delhi	Police	Traffic Violations	179 	<pointer: 0x000000001c236c60>	New	Delhi	200
+45	November 01 2015	Mansa, Punjab	Municipal Services	Birth Certificate	150 	<pointer: 0x000000001c3be3e0>	Mansa	Punjab	1000
+46	November 01 2015	Rae Bareli, Uttar Pradesh	Income Tax	New PAN Card	146 	<pointer: 0x000000001c4f1660>	Rae	Pradesh	108
+47	November 01 2015	Dehradun, Uttarakhand	Municipal Services	Birth Certificate	128 	<pointer: 0x000000001c611f60>	Dehradun	Uttarakhand	100
+48	November 01 2015	Bhopal, Madhya Pradesh	Income Tax	New PAN Card	115 	<pointer: 0x000000001c7bc8e0>	Bhopal	Pradesh	105
+49	November 01 2015	Bahraich, Uttar Pradesh	Others	Others	116 	<pointer: 0x000000001c9070e0>	Bahraich	Pradesh	100
+50	November 01 2015	Kollam, Kerala	Passport	Police Verification for Passport	141 	<pointer: 0x000000001c9e2cf0>	Kollam	Kerala	1000
+51	November 01 2015	Tikamgarh, Madhya Pradesh	Municipal Services	Birth Certificate	114 	<pointer: 0x000000001cb379e0>	Tikamgarh	Pradesh	8120303241
+52	November 01 2015	Abohar, Punjab	Commercial Tax, Sales Tax, VAT	C Form	116 	<pointer: 0x000000001cceba70>	Abohar	Punjab	12345
+53	November 01 2015	Imphal, Manipur	Municipal Services	Birth Certificate	98 	<pointer: 0x000000001cdd1670>	Imphal	Manipur	50
+54	November 01 2015	Adari, Uttar Pradesh	Municipal Services	Birth Certificate	84 	<pointer: 0x000000001db9f650>	Adari	Pradesh	100
+55	November 01 2015	Kolar, Karnataka	Police	Filing FIR	107 	<pointer: 0x000000001dcd6ae0>	Kolar	Karnataka	10000
+56	November 01 2015	Achhnera, Uttar Pradesh	Municipal Services	Birth Certificate	74 	<pointer: 0x000000001de165e0>	Achhnera	Pradesh	4552
+57	November 01 2015	Achhnera, Uttar Pradesh	Customs, Excise and Service Tax	Customs Check and Clearance	84 	<pointer: 0x000000001df6f160>	Achhnera	Pradesh	100
+58	November 01 2015	Tirupati, Andhra Pradesh	Passport	Police Clearance Certificate	104 	<pointer: 0x000000001e0984e0>	Tirupati	Pradesh	300
+59	November 01 2015	Kolkata, West Bengal	Municipal Services	Birth Certificate	79 	<pointer: 0x000000001e1bdfe0>	Kolkata	Bengal	100
+60	October 31 2015	Bangalore, Karnataka	Police	Filing FIR	131 	<pointer: 0x000000001e350770>	Bangalore	Karnataka	1000
+61	October 31 2015	Jhalawar, Rajasthan	Municipal Services	Birth Certificate	103 	<pointer: 0x000000001e4ad3f0>	Jhalawar	Rajasthan	1122
+62	October 31 2015	Goalpara, Assam	Municipal Services	Birth Certificate	122 	<pointer: 0x000000001e5d8bf0>	Goalpara	Assam	600
+63	October 31 2015	Chittoor, Andhra Pradesh	Others	Others	137 	<pointer: 0x000000001e72a8e0>	Chittoor	Pradesh	400
+64	October 31 2015	Mumbai, Maharashtra	Police	Police Clearance Certificate	132 	<pointer: 0x000000001e8a0260>	Mumbai	Maharashtra	NA
+65	October 31 2015	Gurgaon, Haryana	Commercial Tax, Sales Tax, VAT	C Form	117 	<pointer: 0x000000001e9c8ee0>	Gurgaon	Haryana	1000
+66	October 31 2015	Abohar, Punjab	Commercial Tax, Sales Tax, VAT	C Form	103 	<pointer: 0x000000001ebbc5e0>	Abohar	Punjab	100
+67	October 31 2015	Abhayapuri, Assam	Customs, Excise and Service Tax	Customs Check and Clearance	107 	<pointer: 0x000000001ecd6460>	Abhayapuri	Assam	500
+68	October 31 2015	Bangalore, Karnataka	Income Tax	New PAN Card	98 	<pointer: 0x000000001ee34570>	Bangalore	Karnataka	200
+69	October 31 2015	Lucknow, Uttar Pradesh	Municipal Services	Birth Certificate	79 	<pointer: 0x000000001ef9d1e0>	Lucknow	Pradesh	1e+05
+70	October 31 2015	Anantapur, Andhra Pradesh	Passport	Police Verification for Passport	103 	<pointer: 0x000000001f063860>	Anantapur	Pradesh	500
+71	October 31 2015	Mumbai, Maharashtra	Municipal Services	Birth Certificate	103 	<pointer: 0x000000001f1faef0>	Mumbai	Maharashtra	50000
+72	October 31 2015	Ahmedabad, Gujarat	Municipal Services	Birth Certificate	90 	<pointer: 0x000000001f324f60>	Ahmedabad	Gujarat	13
+73	October 31 2015	Gorakhpur, Uttar Pradesh	Customs, Excise and Service Tax	Customs Check and Clearance	103 	<pointer: 0x000000001f46f0f0>	Gorakhpur	Pradesh	100
+74	October 31 2015	Bareilly, Uttar Pradesh	Municipal Services	Birth Certificate	95 	<pointer: 0x000000001f5f3170>	Bareilly	Pradesh	10000
+75	October 31 2015	Abohar, Punjab	Transport	Duplicate Registration Certificate	105 	<pointer: 0x000000001f7252f0>	Abohar	Punjab	100
+76	October 31 2015	New Delhi, Delhi	Police	Traffic Violations	87 	<pointer: 0x000000001f85e260>	New	Delhi	100
+77	October 31 2015	Adari, Uttar Pradesh	Municipal Services	Birth Certificate	77 	<pointer: 0x000000001f9d6df0>	Adari	Pradesh	210
+78	October 31 2015	Chennai, Tamil Nadu	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	82 	<pointer: 0x000000001fb34f50>	Chennai	Nadu	100
+79	October 31 2015	Nagpur, Maharashtra	Municipal Services	Birth Certificate	75 	<pointer: 0x000000001fccce60>	Nagpur	Maharashtra	40
+80	October 31 2015	Hyderabad, Telangana	Others	Others	75 	<pointer: 0x000000001fdc5b70>	Hyderabad	Telangana	10000
+81	October 31 2015	Akola, Madhya Pradesh	Police	Traffic Violations	72 	<pointer: 0x000000001fef7470>	Akola	Pradesh	100
+82	October 31 2015	Barabanki, Uttar Pradesh	Income Tax	New PAN Card	71 	<pointer: 0x0000000020049260>	Barabanki	Pradesh	1
+83	October 31 2015	Abhayapuri, Assam	Commercial Tax, Sales Tax, VAT	C Form	69 	<pointer: 0x0000000020162af0>	Abhayapuri	Assam	10
+84	October 31 2015	Akola, Madhya Pradesh	Municipal Services	Birth Certificate	61 	<pointer: 0x000000002029ef60>	Akola	Pradesh	25
+85	October 31 2015	Pune, Maharashtra	Stamps and Registration	Registration of Flat or Apartment	108 	<pointer: 0x0000000020445970>	Pune	Maharashtra	5000
+86	October 31 2015	Bhubaneswar, Orissa	Municipal Services	Birth Certificate	64 	<pointer: 0x00000000205a86e0>	Bhubaneswar	Orissa	1
+87	October 31 2015	New Delhi, Delhi	Commercial Tax, Sales Tax, VAT	VAT Registration	109 	<pointer: 0x000000002070fd70>	New	Delhi	NA
+88	October 31 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	97 	<pointer: 0x0000000020845860>	Abhayapuri	Assam	100
+89	October 31 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	87 	<pointer: 0x00000000209629f0>	Abhayapuri	Assam	450
+90	October 31 2015	Madurai, Tamil Nadu	Income Tax	New PAN Card	94 	<pointer: 0x0000000020af7a50>	Madurai	Nadu	10
+91	October 30 2015	Kozhikode, Kerala	Others	Others	124 	<pointer: 0x0000000020c2ed60>	Kozhikode	Kerala	15
+92	October 30 2015	Gorakhpur, Uttar Pradesh	Municipal Services	Birth Certificate	120 	<pointer: 0x0000000020d3df70>	Gorakhpur	Pradesh	200
+93	October 30 2015	Achhnera, Uttar Pradesh	Municipal Services	Birth Certificate	129 	<pointer: 0x0000000020ef88e0>	Achhnera	Pradesh	300
+94	October 30 2015	Thane, Maharashtra	Municipal Services	Birth Certificate	117 	<pointer: 0x0000000020ff62f0>	Thane	Maharashtra	777
+95	October 30 2015	Pune, Maharashtra	Passport	Passport Delivery	141 	<pointer: 0x000000002113a260>	Pune	Maharashtra	100
+96	October 30 2015	Amritsar, Punjab	Others	Others	113 	<pointer: 0x00000000212c1370>	Amritsar	Punjab	65
+97	October 30 2015	Nashik, Maharashtra	Municipal Services	Birth Certificate	99 	<pointer: 0x00000000213bb060>	Nashik	Maharashtra	5000
+98	October 30 2015	Mangalore, Karnataka	Municipal Services	Birth Certificate	101 	<pointer: 0x0000000021536de0>	Mangalore	Karnataka	1995
+99	October 30 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	86 	<pointer: 0x000000002167eaf0>	Abhayapuri	Assam	200
+100	October 30 2015	Gonda, Uttar Pradesh	Others	Others	97 	<pointer: 0x00000000217e8970>	Gonda	Pradesh	272165
+101	October 30 2015	Abohar, Punjab	Commercial Tax, Sales Tax, VAT	C Form	85 	<pointer: 0x00000000219248f0>	Abohar	Punjab	33
+102	October 30 2015	Jabalpur, Madhya Pradesh	Municipal Services	Birth Certificate	97 	<pointer: 0x0000000021a821f0>	Jabalpur	Pradesh	10
+103	October 30 2015	Hingoli, Maharashtra	Income Tax	New PAN Card	94 	<pointer: 0x0000000021bb8460>	Hingoli	Maharashtra	500
+104	October 30 2015	Achhnera, Uttar Pradesh	Municipal Services	Birth Certificate	118 	<pointer: 0x0000000021d588e0>	Achhnera	Pradesh	800
+105	October 29 2015	Mumbai, Maharashtra	Municipal Services	Birth Certificate	141 	<pointer: 0x0000000021e8bf70>	Mumbai	Maharashtra	16000
+106	October 29 2015	New Delhi, Delhi	Transport	New Domestic Driving License	154 	<pointer: 0x0000000021f86c60>	New	Delhi	123
+107	October 29 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	124 	<pointer: 0x00000000221737f0>	Abhayapuri	Assam	5000
+108	October 29 2015	Pimpri-Chinchwad, Maharashtra	Municipal Services	Birth Certificate	107 	<pointer: 0x00000000222b5470>	Pimpri-Chinchwad	Maharashtra	1000
+109	October 29 2015	Ambattur, Tamil Nadu	Others	Others	126 	<pointer: 0x0000000022404460>	Ambattur	Nadu	500
+110	October 29 2015	Cooch Behar, West Bengal	Others	Others	119 	<pointer: 0x000000002251a0f0>	Cooch	Bengal	2000
+111	October 29 2015	Surat, Gujarat	Police	Traffic Violations	129 	<pointer: 0x00000000226974f0>	Surat	Gujarat	50
+112	October 29 2015	Chennai, Tamil Nadu	Stamps and Registration	Marriage Registration	222 	<pointer: 0x000000002280cb60>	Chennai	Nadu	5000
+113	October 29 2015	Katihar, Bihar	Others	Others	121 	<pointer: 0x000000002291c3f0>	Katihar	Bihar	123456
+114	October 29 2015	Adilabad, Telangana	Income Tax	New PAN Card	153 	<pointer: 0x0000000022a92f50>	Adilabad	Telangana	8
+115	October 28 2015	Gwalior, Madhya Pradesh	Labour	Inspection of Office or Factories	158 	<pointer: 0x0000000022be5c60>	Gwalior	Pradesh	1948
+116	October 28 2015	Thiruvananthapuram, Kerala	Municipal Services	Birth Certificate	173 	<pointer: 0x0000000022d018f0>	Thiruvananthapuram	Kerala	1000
+117	October 28 2015	Visakhapatnam, Andhra Pradesh	Municipal Services	Non Availability Certificate	176 	<pointer: 0x0000000022e2d460>	Visakhapatnam	Pradesh	3000
+118	October 28 2015	Cuddapah, Andhra Pradesh	Commercial Tax, Sales Tax, VAT	C Form	177 	<pointer: 0x0000000022f548f0>	Cuddapah	Pradesh	10
+119	October 28 2015	Guwahati, Assam	Others	Others	163 	<pointer: 0x00000000230f5370>	Guwahati	Assam	10000
+120	October 28 2015	Sambalpur, Orissa	Others	Others	159 	<pointer: 0x000000002321d360>	Sambalpur	Orissa	1200
+121	October 28 2015	Kochi, Kerala	Customs, Excise and Service Tax	Customs Check and Clearance	184 	<pointer: 0x000000002333dee0>	Kochi	Kerala	1000
+122	October 28 2015	Amarpur, Bihar	Municipal Services	Birth Certificate	173 	<pointer: 0x000000002344e7f0>	Amarpur	Bihar	5000
+123	October 27 2015	Achhnera, Uttar Pradesh	Commercial Tax, Sales Tax, VAT	C Form	196 	<pointer: 0x000000002361e5f0>	Achhnera	Pradesh	34
+124	October 27 2015	Pune, Maharashtra	Police	Police Harassment	203 	<pointer: 0x0000000023765f60>	Pune	Maharashtra	1000
+125	October 27 2015	Achhnera, Uttar Pradesh	Municipal Services	Birth Certificate	185 	<pointer: 0x00000000238affe0>	Achhnera	Pradesh	5000
+126	October 27 2015	Goalpara, Assam	Others	Others	167 	<pointer: 0x0000000023a6ead0>	Goalpara	Assam	1111
+127	October 27 2015	Siliguri, West Bengal	Municipal Services	Birth Certificate	155 	<pointer: 0x0000000023b61960>	Siliguri	Bengal	23
+128	October 27 2015	Mumbai, Maharashtra	Customs, Excise and Service Tax	Customs Check and Clearance	172 	<pointer: 0x0000000023cd50f0>	Mumbai	Maharashtra	50
+129	October 27 2015	Shahabad, Hardoi, Uttar Pradesh	Commercial Tax, Sales Tax, VAT	C Form	171 	<pointer: 0x0000000023e662e0>	Shahabad	Pradesh	200
+130	October 27 2015	Abohar, Punjab	Municipal Services	Birth Certificate	174 	<pointer: 0x0000000023f670f0>	Abohar	Punjab	100
+131	October 27 2015	Jaipur, Rajasthan	Commercial Tax, Sales Tax, VAT	C Form	160 	<pointer: 0x00000000240b8f70>	Jaipur	Rajasthan	10
+132	October 27 2015	Haveri, Karnataka	Municipal Services	Registration of Land	236 	<pointer: 0x000000002422e770>	Haveri	Karnataka	NA
+133	October 27 2015	Gwalior, Madhya Pradesh	Passport	Passport Delivery	166 	<pointer: 0x000000002434c2e0>	Gwalior	Pradesh	100
+134	October 27 2015	Achhnera, Uttar Pradesh	Municipal Services	Birth Certificate	177 	<pointer: 0x00000000244d44f0>	Achhnera	Pradesh	5000
+135	October 26 2015	Mumbai, Maharashtra	Municipal Services	Birth Certificate	171 	<pointer: 0x00000000245abc60>	Mumbai	Maharashtra	10000
+136	October 26 2015	Madurai, Tamil Nadu	Education	School or College Related Activities	184 	<pointer: 0x00000000247439f0>	Madurai	Nadu	NA
+137	October 26 2015	Mumbai, Maharashtra	Municipal Services	Birth Certificate	178 	<pointer: 0x000000002487b5e0>	Mumbai	Maharashtra	400054
+138	October 26 2015	New Delhi, Delhi	Stamps and Registration	Marriage Certificate	207 	<pointer: 0x0000000024a074e0>	New	Delhi	46
+139	October 26 2015	Tezpur, Assam	Others	Others	163 	<pointer: 0x0000000024b03260>	Tezpur	Assam	18
+140	October 26 2015	Mumbai, Maharashtra	Municipal Services	Birth Certificate	154 	<pointer: 0x0000000024c64870>	Mumbai	Maharashtra	10
+141	October 26 2015	Bhubaneswar, Orissa	Transport	Registration of Vehicle	189 	<pointer: 0x0000000024db06e0>	Bhubaneswar	Orissa	3500
+142	October 26 2015	Etawah, Uttar Pradesh	Police	Police Harassment	166 	<pointer: 0x0000000024f240f0>	Etawah	Pradesh	123
+143	October 26 2015	New Delhi, Delhi	Municipal Services	Birth Certificate	140 	<pointer: 0x0000000024fc5670>	New	Delhi	2e+05
+144	October 26 2015	Bangalore, Karnataka	Police	Police Harassment	157 	<pointer: 0x00000000251b2e60>	Bangalore	Karnataka	100
+145	October 26 2015	Madurai, Tamil Nadu	Police	Traffic Violations	181 	<pointer: 0x00000000252b9f60>	Madurai	Nadu	625000
+146	October 26 2015	Indore, Madhya Pradesh	Others	Others	141 	<pointer: 0x000000002544e0e0>	Indore	Pradesh	1
+147	October 26 2015	Anandnagaar, Assam	Municipal Services	Birth Certificate	134 	<pointer: 0x0000000025599760>	Anandnagaar	Assam	15000
+148	October 26 2015	Kolkata, West Bengal	Municipal Services	Birth Certificate	124 	<pointer: 0x0000000025696f60>	Kolkata	Bengal	10
+149	October 26 2015	Gulbarga, Karnataka	Municipal Services	Birth Certificate	128 	<pointer: 0x0000000025834d60>	Gulbarga	Karnataka	23
+150	October 26 2015	Abhayapuri, Assam	Railways	Transport of Goods	153 	<pointer: 0x0000000025974ff0>	Abhayapuri	Assam	20
+151	October 26 2015	Abhayapuri, Assam	Customs, Excise and Service Tax	Customs Check and Clearance	149 	<pointer: 0x0000000025c12370>	Abhayapuri	Assam	13
+152	October 26 2015	Gurgaon, Haryana	Municipal Services	Birth Certificate	118 	<pointer: 0x0000000025db32f0>	Gurgaon	Haryana	10
+153	October 26 2015	Bangalore, Karnataka	Police	Traffic Violations	172 	<pointer: 0x0000000025eeea60>	Bangalore	Karnataka	300
+154	October 25 2015	Abhayapuri, Assam	Commercial Tax, Sales Tax, VAT	C Form	170 	<pointer: 0x0000000025ff27e0>	Abhayapuri	Assam	7000
+155	October 25 2015	Chikmagalur, Karnataka	Revenue	Urban Land Ceiling Clearance Certificate	172 	<pointer: 0x00000000261db2f0>	Chikmagalur	Karnataka	NA
+156	October 25 2015	Chikmagalur, Karnataka	Stamps and Registration	Land Registration	454 	<pointer: 0x00000000262b89e0>	Chikmagalur	Karnataka	35000
+157	October 25 2015	New Delhi, Delhi	Passport	Police Verification for Passport	275 	<pointer: 0x0000000026466670>	New	Delhi	NA
+158	October 25 2015	Pune, Maharashtra	Municipal Services	Birth Certificate	186 	<pointer: 0x000000002659ee60>	Pune	Maharashtra	120
+159	October 25 2015	Hyderabad, Telangana	Airports	Immigration Check	214 	<pointer: 0x0000000026685c70>	Hyderabad	Telangana	NA
+160	October 25 2015	Hyderabad, Telangana	Municipal Services	Birth Certificate	206 	<pointer: 0x000000002680eae0>	Hyderabad	Telangana	100
+161	October 25 2015	Chennai, Tamil Nadu	Municipal Services	Birth Certificate	216 	<pointer: 0x00000000269a20e0>	Chennai	Nadu	25
+162	October 25 2015	Aurangabad, Maharashtra	Municipal Services	Birth Certificate	195 	<pointer: 0x0000000026a86c60>	Aurangabad	Maharashtra	5e+05
+163	October 24 2015	Ulhasnagar, Maharashtra	Municipal Services	Birth Certificate	181 	<pointer: 0x0000000026c787f0>	Ulhasnagar	Maharashtra	100
+164	October 24 2015	Chennai, Tamil Nadu	Income Tax	New PAN Card	217 	<pointer: 0x0000000026d72a70>	Chennai	Nadu	2000
+165	October 24 2015	New Delhi, Delhi	Police	Traffic Violations	230 	<pointer: 0x0000000026e93a60>	New	Delhi	100
+166	October 24 2015	Thiruvananthapuram, Kerala	Municipal Services	Birth Certificate	179 	<pointer: 0x0000000026ff8670>	Thiruvananthapuram	Kerala	1999
+167	October 24 2015	Kolkata, West Bengal	Municipal Services	Birth Certificate	171 	<pointer: 0x00000000271351e0>	Kolkata	Bengal	3e+05
+168	October 24 2015	Chennai, Tamil Nadu	Municipal Services	Birth Certificate	175 	<pointer: 0x00000000272e31e0>	Chennai	Nadu	100
+169	October 24 2015	Mumbai, Maharashtra	Stamps and Registration	Registration of Property	230 	<pointer: 0x00000000273b7770>	Mumbai	Maharashtra	8e+05
+170	October 24 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	182 	<pointer: 0x0000000027505f70>	Abhayapuri	Assam	100
+171	October 24 2015	New Delhi, Delhi	Transport	Duplicate Registration Certificate	240 	<pointer: 0x00000000276adaf0>	New	Delhi	248
+172	October 24 2015	Dadri, Uttar Pradesh	Others	Others	184 	<pointer: 0x00000000277f47f0>	Dadri	Pradesh	123456
+173	October 24 2015	Bhopal, Madhya Pradesh	Municipal Services	Birth Certificate	157 	<pointer: 0x0000000027949c70>	Bhopal	Pradesh	10
+174	October 24 2015	Lucknow, Uttar Pradesh	Police	Filing FIR	174 	<pointer: 0x0000000027b1f250>	Lucknow	Pradesh	500
+175	October 24 2015	Mumbai, Maharashtra	Municipal Services	Birth Certificate	152 	<pointer: 0x0000000027bbace0>	Mumbai	Maharashtra	12000
+176	October 24 2015	Ghaziabad, Uttar Pradesh	Police	Lodging Police Complaint	178 	<pointer: 0x0000000027d51be0>	Ghaziabad	Pradesh	NA
+177	October 24 2015	Adilabad, Telangana	Municipal Services	Birth Certificate	132 	<pointer: 0x0000000027e596f0>	Adilabad	Telangana	100
+178	October 24 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	143 	<pointer: 0x0000000027f963e0>	Abhayapuri	Assam	150
+179	October 24 2015	Gwalior, Madhya Pradesh	Customs, Excise and Service Tax	Customs Check and Clearance	127 	<pointer: 0x00000000281299e0>	Gwalior	Pradesh	100
+180	October 24 2015	Mumbai, Maharashtra	Income Tax	New PAN Card	177 	<pointer: 0x0000000028228270>	Mumbai	Maharashtra	100
+181	October 23 2015	Indore, Madhya Pradesh	Municipal Services	Birth Certificate	164 	<pointer: 0x00000000283bbef0>	Indore	Pradesh	1
+182	October 23 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	154 	<pointer: 0x00000000284e92f0>	Abhayapuri	Assam	1200
+183	October 23 2015	Abhayapuri, Assam	Others	Others	175 	<pointer: 0x00000000286790e0>	Abhayapuri	Assam	6000
+184	October 23 2015	Abohar, Punjab	Stamps and Registration	Marriage Certificate	222 	<pointer: 0x00000000287d1460>	Abohar	Punjab	50000
+185	October 23 2015	Surat, Gujarat	Municipal Services	Birth Certificate	159 	<pointer: 0x00000000289129f0>	Surat	Gujarat	15111
+186	October 23 2015	Shivpuri, Madhya Pradesh	Municipal Services	Birth Certificate	138 	<pointer: 0x0000000028a3c7e0>	Shivpuri	Pradesh	100
+187	October 23 2015	Pune, Maharashtra	Municipal Services	Birth Certificate	139 	<pointer: 0x0000000028b78be0>	Pune	Maharashtra	50
+188	October 23 2015	New Delhi, Delhi	Commercial Tax, Sales Tax, VAT	C Form	179 	<pointer: 0x0000000028cb19e0>	New	Delhi	120
+189	October 23 2015	Belgaum, Karnataka	Others	Others	154 	<pointer: 0x0000000028e792e0>	Belgaum	Karnataka	300
+190	October 23 2015	Palasa Kasibugga, Andhra Pradesh	Customs, Excise and Service Tax	Customs Check and Clearance	152 	<pointer: 0x0000000028f52e60>	Palasa	Pradesh	10
+191	October 23 2015	Agartala, Tripura	Municipal Services	Birth Certificate	116 	<pointer: 0x0000000029158ff0>	Agartala	Tripura	1000
+192	October 23 2015	Uttara Kannada, Karnataka	Municipal Services	Birth Certificate	127 	<pointer: 0x00000000292684e0>	Uttara	Karnataka	15000
+193	October 23 2015	Maldah, West Bengal	Others	Others	145 	<pointer: 0x00000000293a77f0>	Maldah	Bengal	10
+194	October 23 2015	Madurai, Tamil Nadu	Income Tax	New PAN Card	150 	<pointer: 0x0000000029538d70>	Madurai	Nadu	250000
+195	October 23 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	132 	<pointer: 0x000000002961dae0>	Abhayapuri	Assam	2500
+196	October 23 2015	Vadakara, Kerala	Municipal Services	Birth Certificate	131 	<pointer: 0x000000002979a470>	Vadakara	Kerala	1400
+197	October 23 2015	Mumbai, Maharashtra	Airports	Customs	205 	<pointer: 0x00000000298cd3f0>	Mumbai	Maharashtra	NA
+198	October 22 2015	Chennai, Tamil Nadu	Railways	Transport of Goods	234 	<pointer: 0x0000000029a3fef0>	Chennai	Nadu	1000
+199	October 22 2015	Gurgaon, Haryana	Police	Filing FIR	188 	<pointer: 0x0000000029b84de0>	Gurgaon	Haryana	200
+200	October 22 2015	Kota, Rajasthan	Others	Others	180 	<pointer: 0x0000000029cdbfe0>	Kota	Rajasthan	100
+201	October 22 2015	Kolkata, West Bengal	Police	Filing FIR	210 	<pointer: 0x0000000029e16a70>	Kolkata	Bengal	500
+202	October 22 2015	New Delhi, Delhi	Others	Others	254 	<pointer: 0x0000000029f5e1f0>	New	Delhi	76
+203	October 22 2015	Ponnur, Andhra Pradesh	Others	Others	217 	<pointer: 0x000000002a0919e0>	Ponnur	Pradesh	42
+204	October 22 2015	Jaunpur, Uttar Pradesh	Municipal Services	Birth Certificate	170 	<pointer: 0x000000002a20b170>	Jaunpur	Pradesh	10
+205	October 22 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	175 	<pointer: 0x000000002a36bd70>	Abhayapuri	Assam	21
+206	October 22 2015	Bhagalpur, Bihar	Municipal Services	Birth Certificate	163 	<pointer: 0x000000002a503470>	Bhagalpur	Bihar	122
+207	October 22 2015	Abohar, Punjab	Transport	Duplicate Registration Certificate	224 	<pointer: 0x000000002a5e93f0>	Abohar	Punjab	500
+208	October 22 2015	Narasaraopet, Andhra Pradesh	Municipal Services	Birth Certificate	151 	<pointer: 0x000000002a714270>	Narasaraopet	Pradesh	3000
+209	October 22 2015	Chennai, Tamil Nadu	Municipal Services	Birth Certificate	177 	<pointer: 0x000000002a8a3df0>	Chennai	Nadu	1000
+210	October 22 2015	Adari, Uttar Pradesh	Income Tax	New PAN Card	193 	<pointer: 0x000000002a9abee0>	Adari	Pradesh	99
+211	October 21 2015	Abhayapuri, Assam	Commercial Tax, Sales Tax, VAT	C Form	209 	<pointer: 0x000000002aae77f0>	Abhayapuri	Assam	22
+212	October 21 2015	Bidar, Karnataka	Transport	New Domestic Driving License	227 	<pointer: 0x000000002ad31ae0>	Bidar	Karnataka	3000
+213	October 21 2015	Amarpur, Bihar	Income Tax	New PAN Card	172 	<pointer: 0x000000002ae251e0>	Amarpur	Bihar	22
+214	October 21 2015	Chandigarh, Chandigarh	Municipal Services	Birth Certificate	167 	<pointer: 0x000000002af574e0>	Chandigarh	Chandigarh	300
+215	October 21 2015	Abhayapuri, Assam	Stamps and Registration	Registration of Flat or Apartment	233 	<pointer: 0x000000002b0b46e0>	Abhayapuri	Assam	8
+216	October 21 2015	Kurnool, Andhra Pradesh	Others	Others	190 	<pointer: 0x000000002b1d1bf0>	Kurnool	Pradesh	5
+217	October 21 2015	Jaipur, Rajasthan	Others	Others	170 	<pointer: 0x000000002b37b9e0>	Jaipur	Rajasthan	100
+218	October 21 2015	Agra, Uttar Pradesh	Police	Police Harassment	210 	<pointer: 0x000000002b466df0>	Agra	Pradesh	876776
+219	October 21 2015	Aligarh, Uttar Pradesh	Others	Others	148 	<pointer: 0x000000002b5cede0>	Aligarh	Pradesh	5000
+220	October 21 2015	Adityapur, Jharkhand	Transport	New Domestic Driving License	172 	<pointer: 0x000000002b71d5f0>	Adityapur	Jharkhand	123
+221	October 21 2015	Abohar, Punjab	Commercial Tax, Sales Tax, VAT	C Form	195 	<pointer: 0x000000002b868ae0>	Abohar	Punjab	100
+222	October 21 2015	Imphal, Manipur	Police	Filing FIR	199 	<pointer: 0x000000002b9aa1e0>	Imphal	Manipur	100
+223	October 21 2015	Achhnera, Uttar Pradesh	Commercial Tax, Sales Tax, VAT	C Form	169 	<pointer: 0x000000002bb708e0>	Achhnera	Pradesh	1000
+224	October 21 2015	Pratapgarh, Tripura	Municipal Services	Birth Certificate	132 	<pointer: 0x000000002bc80660>	Pratapgarh	Tripura	200
+225	October 21 2015	Ahmedabad, Gujarat	Police	Traffic Violations	150 	<pointer: 0x000000002bde01f0>	Ahmedabad	Gujarat	1000
+226	October 21 2015	Chennai, Tamil Nadu	Municipal Services	Birth Certificate	127 	<pointer: 0x000000002beac760>	Chennai	Nadu	700
+227	October 21 2015	Dhanbad, Jharkhand	Municipal Services	Birth Certificate	160 	<pointer: 0x000000002c074fe0>	Dhanbad	Jharkhand	30000
+228	October 21 2015	Durgapur, West Bengal	Municipal Services	Birth Certificate	142 	<pointer: 0x000000002c17de60>	Durgapur	Bengal	100
+229	October 21 2015	Basti, Uttar Pradesh	Customs, Excise and Service Tax	Customs Check and Clearance	162 	<pointer: 0x000000002c2b3b70>	Basti	Pradesh	100
+230	October 20 2015	Hyderabad, Telangana	Others	Others	158 	<pointer: 0x000000002c416370>	Hyderabad	Telangana	9000
+231	October 20 2015	Mumbai, Maharashtra	Municipal Services	Birth Certificate	148 	<pointer: 0x000000002c59a070>	Mumbai	Maharashtra	5000
+232	October 20 2015	, 			194 	<pointer: 0x000000002c6d50e0>			44
+233	October 20 2015	Bina, Madhya Pradesh	Railways	Transport of Goods	183 	<pointer: 0x000000002c823260>	Bina	Pradesh	100
+234	October 20 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	215 	<pointer: 0x000000002c956670>	Bangalore	Karnataka	NA
+235	October 20 2015	Bangalore, Karnataka	Police	Traffic Violations	225 	<pointer: 0x000000002cae2df0>	Bangalore	Karnataka	NA
+236	October 20 2015	Jaipur, Rajasthan	Transport	Duplicate Driving License	202 	<pointer: 0x000000002cc9ccf0>	Jaipur	Rajasthan	NA
+237	October 20 2015	Udaipur, Tripura	Municipal Services	Birth Certificate	159 	<pointer: 0x000000002cda6df0>	Udaipur	Tripura	200
+238	October 20 2015	Mumbai, Maharashtra	Municipal Services	Birth Certificate	173 	<pointer: 0x000000002cef3970>	Mumbai	Maharashtra	200
+239	October 20 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Excise Return	259 	<pointer: 0x000000002d063cf0>	Bangalore	Karnataka	1
+240	October 20 2015	Abohar, Punjab	Transport	New Domestic Driving License	216 	<pointer: 0x000000002d1492f0>	Abohar	Punjab	500
+241	October 20 2015	Bharatpur, Rajasthan	Municipal Services	Birth Certificate	156 	<pointer: 0x000000002d299df0>	Bharatpur	Rajasthan	500
+242	October 19 2015	Bangalore, Karnataka	Passport	Police Verification for Passport	366 	<pointer: 0x000000002d4314e0>	Bangalore	Karnataka	3500
+243	October 19 2015	Ludhiana, Punjab	Municipal Services	Birth Certificate	225 	<pointer: 0x000000002d5677f0>	Ludhiana	Punjab	12000
+244	October 19 2015	Adari, Uttar Pradesh	Transport	Registration of Vehicle	213 	<pointer: 0x000000002d6a7b70>	Adari	Pradesh	4000
+245	October 19 2015	New Delhi, Delhi	Others	Others	248 	<pointer: 0x000000002d7feff0>	New	Delhi	15000
+246	October 19 2015	New Delhi, Delhi	Municipal Services	Birth Certificate	228 	<pointer: 0x000000002d93f960>	New	Delhi	100
+247	October 19 2015	Faizabad, Uttar Pradesh	Income Tax	New PAN Card	213 	<pointer: 0x000000002da921e0>	Faizabad	Pradesh	54
+248	October 19 2015	Lucknow, Uttar Pradesh	Municipal Services	Birth Certificate	204 	<pointer: 0x000000002dbe3960>	Lucknow	Pradesh	3500
+249	October 19 2015	Dharmapuri, Tamil Nadu	Municipal Services	Birth Certificate	193 	<pointer: 0x000000002dd60760>	Dharmapuri	Nadu	100
+250	October 19 2015	Abhayapuri, Assam	Commercial Tax, Sales Tax, VAT	C Form	204 	<pointer: 0x000000002de99060>	Abhayapuri	Assam	2525
+251	October 19 2015	Abohar, Punjab	Municipal Services	Birth Certificate	182 	<pointer: 0x000000002dff6370>	Abohar	Punjab	200
+252	October 18 2015	Pune, Maharashtra	Municipal Services	Birth Certificate	239 	<pointer: 0x000000002e1479e0>	Pune	Maharashtra	2500
+253	October 18 2015	Chennai, Tamil Nadu	Others	Others	244 	<pointer: 0x000000002e21eff0>	Chennai	Nadu	10
+254	October 18 2015	Abhayapuri, Assam	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	261 	<pointer: 0x000000002e3f4460>	Abhayapuri	Assam	100
+255	October 18 2015	Chennai, Tamil Nadu	Others	Others	229 	<pointer: 0x000000002e516660>	Chennai	Nadu	100
+256	October 18 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	264 	<pointer: 0x000000002e67e3e0>	Abhayapuri	Assam	700
+257	October 18 2015	Bangalore, Karnataka	Others	Others	286 	<pointer: 0x000000002e7d1ff0>	Bangalore	Karnataka	1000
+258	October 18 2015	Pune, Maharashtra	Municipal Services	Birth Certificate	238 	<pointer: 0x000000002e905e60>	Pune	Maharashtra	6000
+259	October 18 2015	Ludhiana, Punjab	Municipal Services	Birth Certificate	210 	<pointer: 0x000000002ea8c670>	Ludhiana	Punjab	19
+260	October 18 2015	Bangalore, Karnataka	Revenue	Residence Certificate	282 	<pointer: 0x000000002ec01d70>	Bangalore	Karnataka	NA
+261	October 17 2015	Barrackpur, West Bengal	Police	Filing FIR	466 	<pointer: 0x000000002ecf74e0>	Barrackpur	Bengal	72015
+262	October 17 2015	Adari, Uttar Pradesh	Municipal Services	Birth Certificate	208 	<pointer: 0x000000002ee919e0>	Adari	Pradesh	100
+263	October 17 2015	Visakhapatnam, Andhra Pradesh	Education	Obtaining Scholarship	250 	<pointer: 0x000000002ef7b7e0>	Visakhapatnam	Pradesh	NA
+264	October 17 2015	Adari, Uttar Pradesh	Commercial Tax, Sales Tax, VAT	C Form	251 	<pointer: 0x000000002f0dc8e0>	Adari	Pradesh	441
+265	October 17 2015	Mumbai, Maharashtra	Others	Others	246 	<pointer: 0x000000002f250bf0>	Mumbai	Maharashtra	10000
+266	October 17 2015	Adari, Uttar Pradesh	Police	Filing FIR	297 	<pointer: 0x000000002f3716e0>	Adari	Pradesh	25000
+267	October 17 2015	Bhuj, Gujarat	Municipal Services	Birth Certificate	233 	<pointer: 0x000000002f4b9170>	Bhuj	Gujarat	4300
+268	October 17 2015	New Delhi, Delhi	Income Tax	New PAN Card	244 	<pointer: 0x000000002f63c260>	New	Delhi	15
+269	October 17 2015	Mumbai, Maharashtra	Income Tax	New PAN Card	211 	<pointer: 0x000000002f7af870>	Mumbai	Maharashtra	200
+270	October 17 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	198 	<pointer: 0x000000002f8ce0f0>	Abhayapuri	Assam	1000
+271	October 16 2015	Chennai, Tamil Nadu	Municipal Services	Property Tax	196 	<pointer: 0x000000002f9d4af0>	Chennai	Nadu	NA
+272	October 16 2015	Mumbai, Maharashtra	Income Tax	New PAN Card	197 	<pointer: 0x000000002fb913f0>	Mumbai	Maharashtra	2e+06
+273	October 16 2015	Kakinada, Andhra Pradesh	Police	Police Clearance Certificate	238 	<pointer: 0x000000002fc86b70>	Kakinada	Pradesh	200
+274	October 16 2015	Madurai, Tamil Nadu	Education	School or College Related Activities	216 	<pointer: 0x000000002fe08660>	Madurai	Nadu	NA
+275	October 16 2015	Adilabad, Telangana	Municipal Services	Birth Certificate	217 	<pointer: 0x000000002ff6dc60>	Adilabad	Telangana	1000
+276	October 16 2015	Kolkata, West Bengal	Municipal Services	Birth Certificate	179 	<pointer: 0x00000000300d14f0>	Kolkata	Bengal	5
+277	October 15 2015	Howrah, West Bengal	Police	Police Verification for Passport	274 	<pointer: 0x00000000301d6070>	Howrah	Bengal	500
+278	October 15 2015	Kolkata, West Bengal	Municipal Services	Registration of Land	249 	<pointer: 0x0000000030349e70>	Kolkata	Bengal	NA
+279	October 15 2015	Kota, Rajasthan	Municipal Services	Birth Certificate	238 	<pointer: 0x0000000030485470>	Kota	Rajasthan	100
+280	October 15 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	New Gas Connection	304 	<pointer: 0x000000003060f9f0>	Bangalore	Karnataka	53004800
+281	October 15 2015	Mumbai, Maharashtra	Commercial Tax, Sales Tax, VAT	C Form	237 	<pointer: 0x000000003076da70>	Mumbai	Maharashtra	5
+282	October 15 2015	Bangalore, Karnataka	Transport	General RTO related	384 	<pointer: 0x00000000308a5c60>	Bangalore	Karnataka	NA
+283	October 14 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	234 	<pointer: 0x00000000309a5070>	Abhayapuri	Assam	300
+284	October 14 2015	Pune, Maharashtra	Passport	Police Verification for Passport	434 	<pointer: 0x0000000030b46270>	Pune	Maharashtra	NA
+285	October 14 2015	Kurnool, Andhra Pradesh	Police	Traffic Violations	274 	<pointer: 0x0000000030cce0e0>	Kurnool	Pradesh	20
+286	October 14 2015	Siliguri, West Bengal	Municipal Services	Birth Certificate	241 	<pointer: 0x0000000030ddf4e0>	Siliguri	Bengal	20
+287	October 14 2015	Pithoragarh, Uttarakhand	Customs, Excise and Service Tax	Customs Check and Clearance	260 	<pointer: 0x0000000030fbcbe0>	Pithoragarh	Uttarakhand	10
+288	October 14 2015	Tumkur, Karnataka	Stamps and Registration	Marriage Certificate	348 	<pointer: 0x00000000310b2370>	Tumkur	Karnataka	20000
+289	October 14 2015	Hubli, Karnataka	Municipal Services	Birth Certificate	203 	<pointer: 0x0000000031209060>	Hubli	Karnataka	10
+290	October 14 2015	Jalandhar, Punjab	Transport	New Domestic Driving License	286 	<pointer: 0x000000003135ed60>	Jalandhar	Punjab	2000
+291	October 14 2015	Abohar, Punjab	Municipal Services	Birth Certificate	222 	<pointer: 0x000000003146e860>	Abohar	Punjab	6000
+292	October 14 2015	Kota, Rajasthan	Municipal Services	Birth Certificate	190 	<pointer: 0x00000000315faef0>	Kota	Rajasthan	11
+293	October 14 2015	Banda, Uttar Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	221 	<pointer: 0x0000000031747df0>	Banda	Pradesh	200
+294	October 14 2015	Bharatpur, Rajasthan	Others	Others	182 	<pointer: 0x0000000031872f70>	Bharatpur	Rajasthan	123
+295	October 14 2015	Salem, Tamil Nadu	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	163 	<pointer: 0x00000000319efce0>	Salem	Nadu	10
+296	October 14 2015	Nagaon, Assam	Municipal Services	Birth Certificate	138 	<pointer: 0x0000000031b5b460>	Nagaon	Assam	500
+297	October 14 2015	Nainital, Uttarakhand	Police	Traffic Violations	166 	<pointer: 0x0000000031cc40f0>	Nainital	Uttarakhand	200
+298	October 14 2015	Adilabad, Telangana	Transport	Duplicate Registration Certificate	174 	<pointer: 0x0000000031d892e0>	Adilabad	Telangana	5000
+299	October 14 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	121 	<pointer: 0x0000000031f54270>	Abhayapuri	Assam	10
+300	October 14 2015	Baran, Rajasthan	Municipal Services	Birth Certificate	68 	<pointer: 0x000000003207f360>	Baran	Rajasthan	250000
+301	October 14 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	149 	<pointer: 0x00000000321b9870>	Bangalore	Karnataka	30000
+302	October 14 2015	Bijnaur, Uttar Pradesh	Others	Others	126 	<pointer: 0x0000000032310ee0>	Bijnaur	Pradesh	3000
+303	October 14 2015	Bilaspur, Chhattisgarh	Others	Others	131 	<pointer: 0x0000000032461770>	Bilaspur	Chhattisgarh	100
+304	October 14 2015	Ghaziabad, Uttar Pradesh	Commercial Tax, Sales Tax, VAT	C Form	134 	<pointer: 0x000000003257ffe0>	Ghaziabad	Pradesh	10
+305	October 14 2015	Bagaha, Bihar	Municipal Services	Birth Certificate	87 	<pointer: 0x00000000326dfa60>	Bagaha	Bihar	70000
+306	October 14 2015	Abohar, Punjab	Municipal Services	Birth Certificate	136 	<pointer: 0x000000003284fc60>	Abohar	Punjab	500
+307	October 14 2015	Varanasi, Uttar Pradesh	Municipal Services	Birth Certificate	117 	<pointer: 0x00000000329f7f60>	Varanasi	Pradesh	10
+308	October 13 2015	Bangalore, Karnataka	Public Works Department	Public Works	214 	<pointer: 0x0000000032af5af0>	Bangalore	Karnataka	NA
+309	October 13 2015	Bangalore, Karnataka	Police	Traffic Violations	241 	<pointer: 0x0000000032c6bdf0>	Bangalore	Karnataka	5000
+310	October 13 2015	Chennai, Tamil Nadu	Municipal Services	Birth Certificate	215 	<pointer: 0x0000000032df51e0>	Chennai	Nadu	20
+311	October 13 2015	Abhayapuri, Assam	Customs, Excise and Service Tax	Customs Check and Clearance	228 	<pointer: 0x0000000032efc1e0>	Abhayapuri	Assam	9999
+312	October 13 2015	Hyderabad, Telangana	Municipal Services	Birth Certificate	205 	<pointer: 0x000000003304d5f0>	Hyderabad	Telangana	10
+313	October 13 2015	Achhnera, Uttar Pradesh	Municipal Services	Birth Certificate	225 	<pointer: 0x00000000331aecf0>	Achhnera	Pradesh	555
+314	October 13 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	188 	<pointer: 0x00000000332e02e0>	Abhayapuri	Assam	20000
+315	October 13 2015	Adilabad, Telangana	Municipal Services	Birth Certificate	190 	<pointer: 0x0000000033466060>	Adilabad	Telangana	12
+316	October 13 2015	New Delhi, Delhi	Commercial Tax, Sales Tax, VAT	C Form	219 	<pointer: 0x00000000335a7260>	New	Delhi	10
+317	October 13 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	284 	<pointer: 0x00000000336f6870>	Bangalore	Karnataka	22222
+318	October 13 2015	Chandigarh, Chandigarh	Income Tax	New PAN Card	187 	<pointer: 0x00000000338b9750>	Chandigarh	Chandigarh	10
+319	October 13 2015	Alipurduar, West Bengal	Stamps and Registration	Registration of Property	218 	<pointer: 0x00000000339aab60>	Alipurduar	Bengal	565
+320	October 13 2015	Abohar, Punjab	Municipal Services	Birth Certificate	146 	<pointer: 0x0000000033abfbe0>	Abohar	Punjab	30
+321	October 13 2015	Guntur, Andhra Pradesh	Others	Others	166 	<pointer: 0x0000000033c7a3e0>	Guntur	Pradesh	10000
+322	October 13 2015	Srivilliputhur, Tamil Nadu	Municipal Services	Birth Certificate	142 	<pointer: 0x0000000033d86570>	Srivilliputhur	Nadu	10000
+323	October 13 2015	Chennai, Tamil Nadu	Municipal Services	Birth Certificate	117 	<pointer: 0x0000000033ea3be0>	Chennai	Nadu	100
+324	October 13 2015	New Delhi, Delhi	Others	Others	185 	<pointer: 0x000000003401b7e0>	New	Delhi	1000
+325	October 13 2015	Lucknow, Uttar Pradesh	Others	Others	166 	<pointer: 0x0000000034154660>	Lucknow	Pradesh	1000
+326	October 13 2015	Abhayapuri, Assam	Police	Traffic Violations	159 	<pointer: 0x00000000342e7870>	Abhayapuri	Assam	20
+327	October 13 2015	Bangalore, Karnataka	Police	Filing FIR	223 	<pointer: 0x0000000034461be0>	Bangalore	Karnataka	3000
+328	October 13 2015	Raipur, Chhattisgarh	Others	Others	171 	<pointer: 0x000000003454e570>	Raipur	Chhattisgarh	50
+329	October 13 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	166 	<pointer: 0x00000000346e1fe0>	Abhayapuri	Assam	100
+330	October 13 2015	New Delhi, Delhi	Municipal Services	Birth Certificate	79 	<pointer: 0x0000000034826f60>	New	Delhi	100
+331	October 13 2015	Coimbatore, Tamil Nadu	Others	Others	108 	<pointer: 0x000000003496dc60>	Coimbatore	Nadu	1000
+332	October 13 2015	Hathras, Uttar Pradesh	Commercial Tax, Sales Tax, VAT	C Form	118 	<pointer: 0x0000000034a997e0>	Hathras	Pradesh	12
+333	October 13 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	205 	<pointer: 0x0000000034c2d1f0>	Bangalore	Karnataka	800
+334	October 13 2015	Calicut, Kerala	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	131 	<pointer: 0x0000000034db5be0>	Calicut	Kerala	500
+335	October 13 2015	Banka, Bihar	Income Tax	New PAN Card	138 	<pointer: 0x0000000034ea9e70>	Banka	Bihar	210
+336	October 13 2015	New Delhi, Delhi	Police	Police Verification for Passport	137 	<pointer: 0x000000003505fc60>	New	Delhi	400
+337	October 13 2015	Kolhapur, Maharashtra	Others	Others	93 	<pointer: 0x00000000351543e0>	Kolhapur	Maharashtra	100
+338	October 13 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	139 	<pointer: 0x00000000352c5d60>	Bangalore	Karnataka	1000
+339	October 13 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	153 	<pointer: 0x000000003542cd70>	Bangalore	Karnataka	500
+340	October 13 2015	New Delhi, Delhi	Stamps and Registration	Marriage Certificate	158 	<pointer: 0x0000000035550ae0>	New	Delhi	400
+341	October 13 2015	Hyderabad, Telangana	Municipal Services	Birth Certificate	98 	<pointer: 0x00000000356c8b60>	Hyderabad	Telangana	2000
+342	October 13 2015	New Delhi, Delhi	Police	Traffic Violations	142 	<pointer: 0x0000000035825760>	New	Delhi	200
+343	October 13 2015	New Delhi, Delhi	Police	Police Verification for Passport	130 	<pointer: 0x00000000359804f0>	New	Delhi	500
+344	October 13 2015	New Delhi, Delhi	Police	Police Verification for Passport	87 	<pointer: 0x0000000035b109f0>	New	Delhi	500
+345	October 13 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	180 	<pointer: 0x0000000035bfbdf0>	Bangalore	Karnataka	500
+346	October 13 2015	New Delhi, Delhi	Customs, Excise and Service Tax	Customs Check and Clearance	146 	<pointer: 0x0000000035d8fc60>	New	Delhi	1500
+347	October 13 2015	Bangalore, Karnataka	Police	Filing FIR	105 	<pointer: 0x0000000035eff6f0>	Bangalore	Karnataka	500
+348	October 13 2015	Aizawl, Mizoram	Commercial Tax, Sales Tax, VAT	C Form	122 	<pointer: 0x0000000036083ae0>	Aizawl	Mizoram	1000
+349	October 13 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	149 	<pointer: 0x0000000036178760>	Bangalore	Karnataka	15000
+350	October 13 2015	Adoni, Andhra Pradesh	Police	Traffic Violations	88 	<pointer: 0x000000003630ff60>	Adoni	Pradesh	77
+351	October 13 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	174 	<pointer: 0x000000003640c1f0>	Bangalore	Karnataka	1e+05
+352	October 13 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	74 	<pointer: 0x00000000365e3860>	Bangalore	Karnataka	500
+353	October 13 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	161 	<pointer: 0x00000000366f8570>	Bangalore	Karnataka	600
+354	October 13 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	150 	<pointer: 0x0000000036824ed0>	Bangalore	Karnataka	800
+355	October 13 2015	Jaipur, Rajasthan	Municipal Services	Birth Certificate	155 	<pointer: 0x0000000036997f70>	Jaipur	Rajasthan	500
+356	October 12 2015	Pune, Maharashtra	Police	Traffic Violations	163 	<pointer: 0x0000000036ada670>	Pune	Maharashtra	700
+357	October 12 2015	Guwahati, Assam	Stamps and Registration	Marriage Certificate	190 	<pointer: 0x0000000036bda8f0>	Guwahati	Assam	500
+358	October 12 2015	New Delhi, Delhi	Police	Police Verification for Passport	148 	<pointer: 0x0000000036d2f560>	New	Delhi	500
+359	October 12 2015	New Delhi, Delhi	Transport	New Domestic Driving License	175 	<pointer: 0x0000000036eab170>	New	Delhi	600
+360	October 12 2015	New Delhi, Delhi	Customs, Excise and Service Tax	Customs Check and Clearance	164 	<pointer: 0x0000000036fad060>	New	Delhi	1500
+361	October 12 2015	New Delhi, Delhi	Transport	New Domestic Driving License	194 	<pointer: 0x0000000037150f60>	New	Delhi	500
+362	October 12 2015	New Delhi, Delhi	Customs, Excise and Service Tax	Customs Check and Clearance	145 	<pointer: 0x000000003729ade0>	New	Delhi	1000
+363	October 12 2015	New Delhi, Delhi	Police	Police Verification for Passport	174 	<pointer: 0x00000000374194e0>	New	Delhi	500
+364	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	161 	<pointer: 0x0000000037520270>	Indore	Pradesh	2400
+365	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	159 	<pointer: 0x0000000037654ce0>	Indore	Pradesh	2610
+366	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	143 	<pointer: 0x00000000378216d0>	Indore	Pradesh	3610
+367	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	119 	<pointer: 0x000000003792e570>	Indore	Pradesh	800
+368	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	134 	<pointer: 0x0000000037a02d70>	Indore	Pradesh	1200
+369	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	114 	<pointer: 0x0000000037bef1f0>	Indore	Pradesh	3200
+370	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	119 	<pointer: 0x0000000037d197e0>	Indore	Pradesh	4000
+371	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	134 	<pointer: 0x0000000037ea7470>	Indore	Pradesh	15000
+372	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	128 	<pointer: 0x0000000037ffcaf0>	Indore	Pradesh	3000
+373	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	114 	<pointer: 0x0000000038129b60>	Indore	Pradesh	2500
+374	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	96 	<pointer: 0x0000000038261fe0>	Indore	Pradesh	2000
+375	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	71 	<pointer: 0x00000000383fe5e0>	Indore	Pradesh	2500
+376	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	69 	<pointer: 0x00000000384e4e70>	Indore	Pradesh	1400
+377	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	63 	<pointer: 0x0000000038686e70>	Indore	Pradesh	800
+378	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	106 	<pointer: 0x00000000387a6e70>	Agra	Pradesh	2000
+379	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	68 	<pointer: 0x00000000388efcf0>	Indore	Pradesh	900
+380	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	112 	<pointer: 0x0000000038a0e570>	Agra	Pradesh	1000
+381	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	55 	<pointer: 0x0000000038b9bee0>	Indore	Pradesh	500
+382	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	91 	<pointer: 0x0000000038cb0b60>	Agra	Pradesh	1800
+383	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	47 	<pointer: 0x0000000038e6d2f0>	Indore	Pradesh	610
+384	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	72 	<pointer: 0x0000000038f644f0>	Agra	Pradesh	2400
+385	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	45 	<pointer: 0x00000000390bee70>	Indore	Pradesh	1500
+386	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	68 	<pointer: 0x0000000039213660>	Agra	Pradesh	2610
+387	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	40 	<pointer: 0x0000000039348df0>	Indore	Pradesh	1200
+388	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	55 	<pointer: 0x00000000394a47e0>	Agra	Pradesh	3610
+389	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	37 	<pointer: 0x000000003964ce70>	Indore	Pradesh	4000
+390	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	55 	<pointer: 0x00000000397b1350>	Agra	Pradesh	800
+391	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	41 	<pointer: 0x00000000398fb070>	Indore	Pradesh	3000
+392	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	40 	<pointer: 0x0000000039a7bd60>	Indore	Pradesh	2000
+393	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	51 	<pointer: 0x0000000039b69960>	Agra	Pradesh	1200
+394	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	34 	<pointer: 0x0000000039d242e0>	Indore	Pradesh	1000
+395	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	52 	<pointer: 0x0000000039e230f0>	Agra	Pradesh	3200
+396	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	37 	<pointer: 0x0000000039f907f0>	Indore	Pradesh	1800
+397	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	41 	<pointer: 0x000000003a0a94e0>	Agra	Pradesh	4000
+398	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	35 	<pointer: 0x000000003a1e85f0>	Indore	Pradesh	2400
+399	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	33 	<pointer: 0x000000003a37df70>	Agra	Pradesh	15000
+400	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	33 	<pointer: 0x000000003a4da1e0>	Indore	Pradesh	2610
+401	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	35 	<pointer: 0x000000003a6315e0>	Agra	Pradesh	3000
+402	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	33 	<pointer: 0x000000003a79ce50>	Indore	Pradesh	3610
+403	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	33 	<pointer: 0x000000003a8ba460>	Agra	Pradesh	2500
+404	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	32 	<pointer: 0x000000003a9ffc70>	Indore	Pradesh	800
+405	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	34 	<pointer: 0x000000003ab6f870>	Indore	Pradesh	1200
+406	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	38 	<pointer: 0x000000003acad2e0>	Agra	Pradesh	2500
+407	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	35 	<pointer: 0x000000003ae4bee0>	Indore	Pradesh	3200
+408	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	38 	<pointer: 0x000000003af6aae0>	Agra	Pradesh	1400
+409	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	35 	<pointer: 0x000000003b0e0cf0>	Indore	Pradesh	4000
+410	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	34 	<pointer: 0x000000003b1db0f0>	Indore	Pradesh	1500
+411	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	37 	<pointer: 0x000000003b352170>	Agra	Pradesh	800
+412	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	37 	<pointer: 0x000000003b485070>	Indore	Pradesh	3000
+413	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	35 	<pointer: 0x000000003b5cdf60>	Agra	Pradesh	900
+414	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	36 	<pointer: 0x000000001ab8f560>	Indore	Pradesh	2500
+415	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	37 	<pointer: 0x000000001acba7f0>	Indore	Pradesh	2000
+416	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	39 	<pointer: 0x000000001adfd570>	Agra	Pradesh	610
+417	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	36 	<pointer: 0x000000001afa33f0>	Indore	Pradesh	3200
+418	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	36 	<pointer: 0x000000001b0cc7e0>	Indore	Pradesh	2500
+419	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	37 	<pointer: 0x000000001b2783f0>	Agra	Pradesh	1200
+420	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	39 	<pointer: 0x000000001b3d3460>	Indore	Pradesh	1400
+421	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	41 	<pointer: 0x000000001b4fc460>	Agra	Pradesh	4000
+422	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	34 	<pointer: 0x000000001b63f060>	Indore	Pradesh	2400
+423	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	38 	<pointer: 0x000000001b7bb760>	Agra	Pradesh	3000
+424	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	32 	<pointer: 0x000000001b8ce5f0>	Indore	Pradesh	1100
+425	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	43 	<pointer: 0x000000001ba4c6f0>	Agra	Pradesh	2000
+426	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	28 	<pointer: 0x000000003cb7f060>	Indore	Pradesh	1000
+427	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	31 	<pointer: 0x000000003cccbe60>	Indore	Pradesh	4200
+428	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	41 	<pointer: 0x000000003cdb7f60>	Agra	Pradesh	1000
+429	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	25 	<pointer: 0x000000003cf46ff0>	Indore	Pradesh	5000
+430	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	35 	<pointer: 0x000000003d0732e0>	Agra	Pradesh	1800
+431	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	26 	<pointer: 0x000000003d1f27e0>	Indore	Pradesh	610
+432	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	39 	<pointer: 0x000000003d36dee0>	Agra	Pradesh	2400
+433	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	25 	<pointer: 0x000000003d50f270>	Indore	Pradesh	1610
+434	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	26 	<pointer: 0x000000003d6517f0>	Indore	Pradesh	3200
+435	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	38 	<pointer: 0x000000003d7b5970>	Agra	Pradesh	3610
+436	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	38 	<pointer: 0x000000003d8a1670>	Agra	Pradesh	800
+437	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	30 	<pointer: 0x000000003da23c60>	Agra	Pradesh	1200
+438	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	28 	<pointer: 0x000000003db8f670>	Indore	Pradesh	800
+439	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	34 	<pointer: 0x000000003dcd53e0>	Agra	Pradesh	3200
+440	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	27 	<pointer: 0x000000003ddbbdf0>	Indore	Pradesh	900
+441	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	100 	<pointer: 0x000000003df5d3f0>	Bangalore	Karnataka	6500
+442	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	27 	<pointer: 0x000000003e0ab5f0>	Indore	Pradesh	500
+443	October 12 2015	Aligarh, Uttar Pradesh	Municipal Services	Birth Certificate	63 	<pointer: 0x000000003e2327e0>	Aligarh	Pradesh	4000
+444	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	110 	<pointer: 0x000000003e34f060>	Bangalore	Karnataka	6500
+445	October 12 2015	Bangalore, Karnataka	Income Tax	New PAN Card	119 	<pointer: 0x000000003e48e160>	Bangalore	Karnataka	600
+446	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	102 	<pointer: 0x000000003e6035f0>	Bangalore	Karnataka	6500
+447	October 12 2015	Bangalore, Karnataka	Income Tax	New PAN Card	105 	<pointer: 0x000000003e76ce60>	Bangalore	Karnataka	500
+448	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	97 	<pointer: 0x000000003e885d70>	Bangalore	Karnataka	6500
+449	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	26 	<pointer: 0x000000003ea2c360>	Indore	Pradesh	1200
+450	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	137 	<pointer: 0x000000003eb461f0>	Bangalore	Karnataka	5000
+451	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	63 	<pointer: 0x000000003ec9fe60>	Bangalore	Karnataka	2500
+452	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	27 	<pointer: 0x000000003ede85e0>	Indore	Pradesh	4000
+453	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	31 	<pointer: 0x000000003ef2b270>	Agra	Pradesh	1500
+454	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	56 	<pointer: 0x000000003f096460>	Bangalore	Karnataka	1500
+455	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	76 	<pointer: 0x000000003f211460>	Bangalore	Karnataka	6500
+456	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	29 	<pointer: 0x000000003f33b2e0>	Agra	Pradesh	2500
+457	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	23 	<pointer: 0x000000003f4f5ef0>	Indore	Pradesh	3000
+458	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	85 	<pointer: 0x000000003f5cb4f0>	Bangalore	Karnataka	6500
+459	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	47 	<pointer: 0x000000003f748b70>	Bangalore	Karnataka	6500
+460	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	23 	<pointer: 0x000000003f8c3360>	Indore	Pradesh	2000
+461	October 12 2015	Bangalore, Karnataka	Income Tax	New PAN Card	81 	<pointer: 0x000000003f9d8060>	Bangalore	Karnataka	1000
+462	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	30 	<pointer: 0x000000003fb56ff0>	Indore	Pradesh	1000
+463	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	56 	<pointer: 0x000000003fcb22f0>	Bangalore	Karnataka	8500
+464	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	26 	<pointer: 0x000000003fdc1570>	Indore	Pradesh	1800
+465	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	28 	<pointer: 0x000000003ff30270>	Indore	Pradesh	2400
+466	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	30 	<pointer: 0x0000000040065670>	Indore	Pradesh	2610
+467	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	51 	<pointer: 0x00000000401e5e60>	Bangalore	Karnataka	6500
+468	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	32 	<pointer: 0x000000004031c160>	Indore	Pradesh	3610
+469	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	45 	<pointer: 0x000000004041aa60>	Bangalore	Karnataka	1000
+470	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	44 	<pointer: 0x00000000405c0760>	Bangalore	Karnataka	5000
+471	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	27 	<pointer: 0x00000000407123f0>	Indore	Pradesh	800
+472	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	36 	<pointer: 0x0000000040848b70>	Bangalore	Karnataka	2500
+473	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	48 	<pointer: 0x000000004097b4e0>	Bangalore	Karnataka	6500
+474	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	26 	<pointer: 0x0000000040b3e960>	Indore	Pradesh	1200
+475	October 12 2015	Bangalore, Karnataka	Income Tax	New PAN Card	69 	<pointer: 0x0000000040c93c70>	Bangalore	Karnataka	250
+476	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	43 	<pointer: 0x0000000040dd7970>	Bangalore	Karnataka	2000
+477	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	27 	<pointer: 0x0000000040f347e0>	Indore	Pradesh	3200
+478	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	28 	<pointer: 0x0000000041079170>	Indore	Pradesh	4000
+479	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	35 	<pointer: 0x00000000411b9ce0>	Bangalore	Karnataka	6500
+480	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	79 	<pointer: 0x00000000412c7560>	Bangalore	Karnataka	6500
+481	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	32 	<pointer: 0x000000004146f760>	Bangalore	Karnataka	5600
+482	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	25 	<pointer: 0x000000004158ba70>	Indore	Pradesh	15000
+483	October 12 2015	Pune, Maharashtra	Police	Police Verification for Passport	90 	<pointer: 0x000000004169b760>	Pune	Maharashtra	60000
+484	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	28 	<pointer: 0x0000000041837670>	Bangalore	Karnataka	6500
+485	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	24 	<pointer: 0x0000000041981860>	Bangalore	Karnataka	2500
+486	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	22 	<pointer: 0x0000000041b3c060>	Indore	Pradesh	3000
+487	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	25 	<pointer: 0x0000000041c26070>	Indore	Pradesh	2500
+488	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	33 	<pointer: 0x0000000041d5e060>	Agra	Pradesh	500
+489	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	26 	<pointer: 0x0000000041ee5ff0>	Indore	Pradesh	2000
+490	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	33 	<pointer: 0x0000000041ff0060>	Agra	Pradesh	610
+491	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	27 	<pointer: 0x0000000042148e60>	Indore	Pradesh	2500
+492	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	56 	<pointer: 0x0000000042281e70>	Bangalore	Karnataka	65000
+493	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	33 	<pointer: 0x0000000042438160>	Agra	Pradesh	1500
+494	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	24 	<pointer: 0x0000000042564c70>	Indore	Pradesh	1400
+495	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	35 	<pointer: 0x00000000426de9e0>	Agra	Pradesh	1200
+496	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	39 	<pointer: 0x000000004287ab60>	Bangalore	Karnataka	5000
+497	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	22 	<pointer: 0x0000000042978960>	Indore	Pradesh	800
+498	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	36 	<pointer: 0x0000000042ab88e0>	Bangalore	Karnataka	6500
+499	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	30 	<pointer: 0x0000000042c392f0>	Agra	Pradesh	4000
+500	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	109 	<pointer: 0x0000000042d458f0>	Bangalore	Karnataka	5600
+501	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	25 	<pointer: 0x0000000042ec6670>	Indore	Pradesh	900
+502	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	62 	<pointer: 0x0000000043011b60>	Bangalore	Karnataka	6500
+503	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	32 	<pointer: 0x00000000431287e0>	Agra	Pradesh	3000
+504	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	76 	<pointer: 0x00000000432da2f0>	Bangalore	Karnataka	50000
+505	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	25 	<pointer: 0x00000000433edef0>	Indore	Pradesh	500
+506	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	30 	<pointer: 0x0000000043551ff0>	Bangalore	Karnataka	5800
+507	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	45 	<pointer: 0x0000000043676f60>	Agra	Pradesh	2000
+508	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	23 	<pointer: 0x00000000437ce8e0>	Indore	Pradesh	610
+509	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	34 	<pointer: 0x00000000439498e0>	Bangalore	Karnataka	5500
+510	October 12 2015	Mumbai, Maharashtra	Commercial Tax, Sales Tax, VAT	C Form	98 	<pointer: 0x0000000043a8acf0>	Mumbai	Maharashtra	6000
+511	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	57 	<pointer: 0x0000000043bb3270>	Bangalore	Karnataka	5000
+512	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	38 	<pointer: 0x0000000043d52660>	Agra	Pradesh	1000
+513	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	24 	<pointer: 0x0000000043e51070>	Indore	Pradesh	1500
+514	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	23 	<pointer: 0x0000000043fde770>	Bangalore	Karnataka	500
+515	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	31 	<pointer: 0x0000000044159ce0>	Bangalore	Karnataka	5000
+516	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	25 	<pointer: 0x000000004428d6f0>	Indore	Pradesh	1200
+517	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	26 	<pointer: 0x00000000444396f0>	Bangalore	Karnataka	5200
+518	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	53 	<pointer: 0x000000004455aae0>	Bangalore	Karnataka	25000
+519	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	42 	<pointer: 0x000000004468f7f0>	Agra	Pradesh	1800
+520	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	27 	<pointer: 0x0000000044808870>	Indore	Pradesh	4000
+521	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	28 	<pointer: 0x000000004493bc70>	Bangalore	Karnataka	2500
+522	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	65 	<pointer: 0x0000000044a89170>	Bangalore	Karnataka	2500
+523	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	36 	<pointer: 0x0000000044bf4460>	Agra	Pradesh	2400
+524	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	30 	<pointer: 0x0000000044d23ae0>	Indore	Pradesh	3000
+525	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	32 	<pointer: 0x0000000044eae860>	Bangalore	Karnataka	3500
+526	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	115 	<pointer: 0x0000000045025760>	Bangalore	Karnataka	5800
+527	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	28 	<pointer: 0x00000000450fd770>	Agra	Pradesh	2610
+528	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	27 	<pointer: 0x00000000452bbc60>	Indore	Pradesh	2000
+529	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	64 	<pointer: 0x00000000453c77f0>	Bangalore	Karnataka	4500
+530	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	82 	<pointer: 0x0000000045509360>	Bangalore	Karnataka	5000
+531	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	34 	<pointer: 0x00000000456aabe0>	Agra	Pradesh	3610
+532	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	25 	<pointer: 0x00000000457bf6f0>	Indore	Pradesh	1000
+533	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	38 	<pointer: 0x0000000045909de0>	Bangalore	Karnataka	2500
+534	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	38 	<pointer: 0x0000000045a788e0>	Bangalore	Karnataka	45000
+535	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	27 	<pointer: 0x0000000045bc1ff0>	Indore	Pradesh	1800
+536	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	33 	<pointer: 0x0000000045d122e0>	Bangalore	Karnataka	5600
+537	October 12 2015	Bangalore, Karnataka	Police	Traffic Violations	47 	<pointer: 0x0000000045e57d60>	Bangalore	Karnataka	5500
+538	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	29 	<pointer: 0x0000000045fc4470>	Indore	Pradesh	2400
+539	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	43 	<pointer: 0x00000000460efbf0>	Bangalore	Karnataka	3200
+540	October 12 2015	New Delhi, Delhi	Commercial Tax, Sales Tax, VAT	C Form	106 	<pointer: 0x00000000462a1660>	New	Delhi	9000
+541	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	27 	<pointer: 0x000000004639aa70>	Indore	Pradesh	2610
+542	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	25 	<pointer: 0x0000000046529e60>	Indore	Pradesh	3610
+543	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	43 	<pointer: 0x0000000046651860>	Bangalore	Karnataka	2500
+544	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	38 	<pointer: 0x00000000467b5a60>	Bangalore	Karnataka	5200
+545	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	28 	<pointer: 0x00000000469033f0>	Indore	Pradesh	800
+546	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	24 	<pointer: 0x0000000046a231f0>	Bangalore	Karnataka	650
+547	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	25 	<pointer: 0x0000000046ba7160>	Indore	Pradesh	1200
+548	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	26 	<pointer: 0x0000000046ce6770>	Bangalore	Karnataka	3000
+549	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	37 	<pointer: 0x0000000046de63f0>	Bangalore	Karnataka	5600
+550	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	27 	<pointer: 0x0000000046fa92f0>	Indore	Pradesh	3200
+551	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	45 	<pointer: 0x00000000470cad60>	Bangalore	Karnataka	25000
+552	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	35 	<pointer: 0x000000004727b060>	Bangalore	Karnataka	6000
+553	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	24 	<pointer: 0x000000004738a4f0>	Indore	Pradesh	4000
+554	October 12 2015	Agra, Uttar Pradesh	Municipal Services	Birth Certificate	30 	<pointer: 0x00000000474b7260>	Agra	Pradesh	2500
+555	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	36 	<pointer: 0x0000000047616370>	Bangalore	Karnataka	2500
+556	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	105 	<pointer: 0x00000000477a5170>	Bangalore	Karnataka	60000
+557	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	21 	<pointer: 0x00000000478ad170>	Indore	Pradesh	1500
+558	October 12 2015	Aligarh, Uttar Pradesh	Municipal Services	Birth Certificate	66 	<pointer: 0x0000000047a69460>	Aligarh	Pradesh	2000
+559	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	33 	<pointer: 0x0000000047bc5570>	Bangalore	Karnataka	5000
+560	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	76 	<pointer: 0x0000000047cdb760>	Bangalore	Karnataka	15000
+561	October 12 2015	Chennai, Tamil Nadu	Passport	Police Verification for Passport	266 	<pointer: 0x0000000047e77fe0>	Chennai	Nadu	9000
+562	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	19 	<pointer: 0x0000000047f8f370>	Bangalore	Karnataka	520
+563	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	21 	<pointer: 0x00000000480dcb70>	Indore	Pradesh	3000
+564	October 12 2015	Bangalore, Karnataka	Passport	Passport Delivery	177 	<pointer: 0x000000004821fa70>	Bangalore	Karnataka	2000
+565	October 12 2015	Bangalore, Karnataka	Passport	Police Verification for Passport	123 	<pointer: 0x000000004835b4e0>	Bangalore	Karnataka	2500
+566	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	21 	<pointer: 0x00000000484beff0>	Indore	Pradesh	2500
+567	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	32 	<pointer: 0x000000004862c970>	Bangalore	Karnataka	25000
+568	October 12 2015	Bangalore, Karnataka	Transport	Registration of Vehicle	47 	<pointer: 0x00000000487422e0>	Bangalore	Karnataka	2500
+569	October 12 2015	Indore, Madhya Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	21 	<pointer: 0x0000000048925350>	Indore	Pradesh	2000
+570	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	40 	<pointer: 0x00000000489f3770>	Bangalore	Karnataka	15000
+571	October 12 2015	Bangalore, Karnataka	Police	Traffic Violations	37 	<pointer: 0x0000000048b91360>	Bangalore	Karnataka	2500
+572	October 12 2015	Bangalore, Karnataka	Police	Police Harassment	35 	<pointer: 0x0000000048cc0af0>	Bangalore	Karnataka	25000
+573	October 12 2015	Bangalore, Karnataka	Passport	Passport Delivery	79 	<pointer: 0x0000000048e238e0>	Bangalore	Karnataka	1500
+574	October 12 2015	Bangalore, Karnataka	Income Tax	New PAN Card	53 	<pointer: 0x0000000048f8ef70>	Bangalore	Karnataka	500
+575	October 12 2015	Bangalore, Karnataka	Passport	Passport Delivery	67 	<pointer: 0x00000000490aa9f0>	Bangalore	Karnataka	1500
+576	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	41 	<pointer: 0x00000000491eb370>	Bangalore	Karnataka	2500
+577	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	31 	<pointer: 0x0000000049360170>	Bangalore	Karnataka	1000
+578	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	23 	<pointer: 0x00000000494b3d70>	Bangalore	Karnataka	500
+579	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	34 	<pointer: 0x000000004968e070>	Bangalore	Karnataka	15000
+580	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	49 	<pointer: 0x00000000497831e0>	Bangalore	Karnataka	2000
+581	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	50 	<pointer: 0x00000000498f2cd0>	Bangalore	Karnataka	2500
+582	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	55 	<pointer: 0x0000000049a51ee0>	Bangalore	Karnataka	1500
+583	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	55 	<pointer: 0x0000000049bd6d60>	Bangalore	Karnataka	5000
+584	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	27 	<pointer: 0x0000000049cdf370>	Bangalore	Karnataka	2000
+585	October 12 2015	Bangalore, Karnataka	Transport	Registration of Vehicle	51 	<pointer: 0x0000000049e6db70>	Bangalore	Karnataka	2500
+586	October 12 2015	Abhayapuri, Assam	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	81 	<pointer: 0x0000000049fa0370>	Abhayapuri	Assam	600
+587	October 12 2015	Abhayapuri, Assam	Commercial Tax, Sales Tax, VAT	C Form	84 	<pointer: 0x000000004a10b460>	Abhayapuri	Assam	424
+588	October 12 2015	Adityapur, Jharkhand	Passport	Passport Delivery	97 	<pointer: 0x000000004a257ae0>	Adityapur	Jharkhand	15000
+589	October 12 2015	Aligarh, Uttar Pradesh	Police	Police Verification for Passport	67 	<pointer: 0x000000004a3cb1e0>	Aligarh	Pradesh	2500
+590	October 12 2015	Abhayapuri, Assam	Transport	New Domestic Driving License	78 	<pointer: 0x000000004a50bdf0>	Abhayapuri	Assam	1500
+591	October 12 2015	Allahabad, Uttar Pradesh	Stamps and Registration	Registration of Property	60 	<pointer: 0x000000004a6475f0>	Allahabad	Pradesh	10000
+592	October 12 2015	Adari, Uttar Pradesh	Income Tax	New PAN Card	96 	<pointer: 0x000000004a755070>	Adari	Pradesh	550
+593	October 12 2015	Arwal, Bihar	Transport	New Domestic Driving License	45 	<pointer: 0x000000004a90fd70>	Arwal	Bihar	2000
+594	October 12 2015	Alleppey, Kerala	Stamps and Registration	Marriage Certificate	55 	<pointer: 0x000000004aa3b8f0>	Alleppey	Kerala	500
+595	October 12 2015	Ahmadnagar, Maharashtra	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	54 	<pointer: 0x000000004ab922e0>	Ahmadnagar	Maharashtra	500
+596	October 12 2015	Abohar, Punjab	Commercial Tax, Sales Tax, VAT	C Form	98 	<pointer: 0x000000004ad13bf0>	Abohar	Punjab	1500
+597	October 12 2015	Adoni, Andhra Pradesh	Police	Filing FIR	69 	<pointer: 0x000000004ae588f0>	Adoni	Pradesh	15000
+598	October 12 2015	Ahmedabad, Gujarat	Municipal Services	Birth Certificate	76 	<pointer: 0x000000004af7c8e0>	Ahmedabad	Gujarat	2500
+599	October 12 2015	Hyderabad, Telangana	Passport	Passport Delivery	88 	<pointer: 0x000000004b0c6ef0>	Hyderabad	Telangana	2500
+600	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	40 	<pointer: 0x000000004b25f070>	Bangalore	Karnataka	800
+601	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	55 	<pointer: 0x000000004b400970>	Bangalore	Karnataka	500
+602	October 12 2015	Bangalore, Karnataka	Passport	Police Verification for Passport	69 	<pointer: 0x000000004b515de0>	Bangalore	Karnataka	800
+603	October 12 2015	Vadodara, Gujarat	Municipal Services	Birth Certificate	65 	<pointer: 0x000000004b5f5fe0>	Vadodara	Gujarat	10000
+604	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	62 	<pointer: 0x000000004b7afa70>	Bangalore	Karnataka	500
+605	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	60 	<pointer: 0x000000004b91a270>	Bangalore	Karnataka	500
+606	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	64 	<pointer: 0x000000004ba276e0>	Bangalore	Karnataka	1200
+607	October 12 2015	Bangalore, Karnataka	Income Tax	New PAN Card	54 	<pointer: 0x000000004bba79f0>	Bangalore	Karnataka	800
+608	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	67 	<pointer: 0x000000004bd2c160>	Bangalore	Karnataka	500
+609	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	55 	<pointer: 0x000000004beadcf0>	Bangalore	Karnataka	500
+610	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	74 	<pointer: 0x000000004bfa34e0>	Bangalore	Karnataka	800
+611	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	40 	<pointer: 0x000000004c0e0870>	Bangalore	Karnataka	500
+612	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	44 	<pointer: 0x000000004c266870>	Bangalore	Karnataka	500
+613	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	51 	<pointer: 0x000000004c39ac70>	Bangalore	Karnataka	800
+614	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	40 	<pointer: 0x000000004c4bf770>	Bangalore	Karnataka	500
+615	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	44 	<pointer: 0x000000004c646060>	Bangalore	Karnataka	500
+616	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	35 	<pointer: 0x000000004c793f70>	Bangalore	Karnataka	500
+617	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	55 	<pointer: 0x000000004c93d470>	Bangalore	Karnataka	900
+618	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	53 	<pointer: 0x000000004ca38af0>	Bangalore	Karnataka	500
+619	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	37 	<pointer: 0x000000004cb1c170>	Bangalore	Karnataka	500
+620	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	33 	<pointer: 0x000000004ccc5ae0>	Bangalore	Karnataka	800
+621	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	35 	<pointer: 0x000000004ce1f970>	Bangalore	Karnataka	500
+622	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	41 	<pointer: 0x000000004cf33460>	Bangalore	Karnataka	500
+623	October 12 2015	Bangalore, Karnataka	Police	Police Harassment	52 	<pointer: 0x000000004d0d9c60>	Bangalore	Karnataka	800
+624	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	38 	<pointer: 0x000000004d213370>	Bangalore	Karnataka	500
+625	October 12 2015	Bangalore, Karnataka	Police	Police Harassment	35 	<pointer: 0x000000004d36bee0>	Bangalore	Karnataka	800
+626	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	34 	<pointer: 0x000000004d4dafe0>	Bangalore	Karnataka	500
+627	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	45 	<pointer: 0x000000004d611cf0>	Bangalore	Karnataka	500
+628	October 12 2015	Bangalore, Karnataka	Passport	New Passport Application	69 	<pointer: 0x000000004d733760>	Bangalore	Karnataka	800
+629	October 12 2015	Puri, Orissa	Transport	Registration of Vehicle	50 	<pointer: 0x000000004d85ece0>	Puri	Orissa	436
+630	October 12 2015	Pedana, Andhra Pradesh	Police	Traffic Violations	40 	<pointer: 0x000000004d9a5ef0>	Pedana	Pradesh	384
+631	October 12 2015	Murliganj, Bihar	Police	Filing FIR	40 	<pointer: 0x000000004db3f9f0>	Murliganj	Bihar	294
+632	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	36 	<pointer: 0x000000004dc76de0>	Bangalore	Karnataka	500
+633	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	47 	<pointer: 0x000000004ddaa4f0>	Bangalore	Karnataka	500
+634	October 12 2015	Bangalore, Karnataka	Police	Police Harassment	40 	<pointer: 0x000000004df5bdf0>	Bangalore	Karnataka	800
+635	October 12 2015	Madhepura, Bihar	Police	Filing FIR	39 	<pointer: 0x000000004e0545f0>	Madhepura	Bihar	432
+636	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	33 	<pointer: 0x000000004e192960>	Bangalore	Karnataka	500
+637	October 12 2015	Bangalore, Karnataka	Passport	New Passport Application	44 	<pointer: 0x000000004e2d8160>	Bangalore	Karnataka	800
+638	October 12 2015	Bangalore, Karnataka	Police	Police Harassment	36 	<pointer: 0x000000004e3fff70>	Bangalore	Karnataka	800
+639	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	36 	<pointer: 0x000000004e5b8c60>	Bangalore	Karnataka	500
+640	October 12 2015	Bangalore, Karnataka	Police	Traffic Violations	30 	<pointer: 0x000000004e6d1070>	Bangalore	Karnataka	1200
+641	October 12 2015	Raurkela, Orissa	Stamps and Registration	Registration of Property	47 	<pointer: 0x000000004e806ed0>	Raurkela	Orissa	936
+642	October 12 2015	Bangalore, Karnataka	Transport	Registration of Vehicle	37 	<pointer: 0x000000004e9b0d60>	Bangalore	Karnataka	20000
+643	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	38 	<pointer: 0x000000004eafd5e0>	Bangalore	Karnataka	500
+644	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	34 	<pointer: 0x000000004ec4b8e0>	Bangalore	Karnataka	500
+645	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	31 	<pointer: 0x000000004edd6860>	Bangalore	Karnataka	800
+646	October 12 2015	Bangalore, Karnataka	Transport	Registration of Vehicle	36 	<pointer: 0x000000004ef09d60>	Bangalore	Karnataka	1500
+647	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	36 	<pointer: 0x000000004f09cdf0>	Bangalore	Karnataka	1400
+648	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	35 	<pointer: 0x000000004f1e5670>	Bangalore	Karnataka	500
+649	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	30 	<pointer: 0x000000004f30d370>	Bangalore	Karnataka	800
+650	October 12 2015	Pithapuram, Andhra Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	42 	<pointer: 0x000000004f45c5f0>	Pithapuram	Pradesh	219
+651	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	26 	<pointer: 0x000000004f546bf0>	Bangalore	Karnataka	800
+652	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	33 	<pointer: 0x000000004f6b4260>	Bangalore	Karnataka	500
+653	October 12 2015	Muzaffarpur, Bihar	Police	Filing FIR	38 	<pointer: 0x000000004f83e6e0>	Muzaffarpur	Bihar	432
+654	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	33 	<pointer: 0x000000004f95e9f0>	Bangalore	Karnataka	500
+655	October 12 2015	Bangalore, Karnataka	Passport	Passport Delivery	39 	<pointer: 0x000000004fa934f0>	Bangalore	Karnataka	2000
+656	October 12 2015	Bangalore, Karnataka	Police	Police Harassment	31 	<pointer: 0x000000004fc2c3e0>	Bangalore	Karnataka	800
+657	October 12 2015	Bangalore, Karnataka	Police	Police Harassment	30 	<pointer: 0x000000004fd75160>	Bangalore	Karnataka	1500
+658	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	35 	<pointer: 0x000000004fedefe0>	Bangalore	Karnataka	500
+659	October 12 2015	Hyderabad, Telangana	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	67 	<pointer: 0x00000000500139e0>	Hyderabad	Telangana	1500
+660	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	34 	<pointer: 0x00000000501108e0>	Bangalore	Karnataka	800
+661	October 12 2015	Bangalore, Karnataka	Transport	Registration of Vehicle	37 	<pointer: 0x00000000502862e0>	Bangalore	Karnataka	15000
+662	October 12 2015	Bangalore, Karnataka	Passport	Police Verification for Passport	42 	<pointer: 0x00000000503bfff0>	Bangalore	Karnataka	700
+663	October 12 2015	Bangalore, Karnataka	Police	Police Harassment	33 	<pointer: 0x000000005058f760>	Bangalore	Karnataka	2000
+664	October 12 2015	Bangalore, Karnataka	Police	Police Harassment	28 	<pointer: 0x00000000506f5a60>	Bangalore	Karnataka	900
+665	October 12 2015	Bangalore, Karnataka	Passport	Passport Delivery	41 	<pointer: 0x000000005080e6f0>	Bangalore	Karnataka	1000
+666	October 12 2015	Bangalore, Karnataka	Passport	Passport Delivery	34 	<pointer: 0x0000000050995260>	Bangalore	Karnataka	800
+667	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	31 	<pointer: 0x0000000050a861e0>	Bangalore	Karnataka	1600
+668	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	28 	<pointer: 0x0000000050c4b870>	Bangalore	Karnataka	800
+669	October 12 2015	Bangalore, Karnataka	Police	Traffic Violations	27 	<pointer: 0x0000000050d57260>	Bangalore	Karnataka	2000
+670	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	34 	<pointer: 0x0000000050ea5ef0>	Bangalore	Karnataka	700
+671	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	27 	<pointer: 0x0000000051043960>	Bangalore	Karnataka	3500
+672	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	35 	<pointer: 0x000000005115fd60>	Bangalore	Karnataka	600
+673	October 12 2015	Solapur, Maharashtra	Stamps and Registration	Registration of Property	38 	<pointer: 0x00000000512a9170>	Solapur	Maharashtra	692
+674	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	25 	<pointer: 0x00000000513e9860>	Bangalore	Karnataka	800
+675	October 12 2015	Bangalore, Karnataka	Railways	Transport of Goods	205 	<pointer: 0x0000000051543070>	Bangalore	Karnataka	1500
+676	October 12 2015	Monoharpur, West Bengal	Stamps and Registration	Registration of Property	37 	<pointer: 0x00000000516baef0>	Monoharpur	Bengal	862
+677	October 12 2015	Bangalore, Karnataka	Police	Traffic Violations	26 	<pointer: 0x0000000051804760>	Bangalore	Karnataka	1400
+678	October 12 2015	Bangalore, Karnataka	Passport	Police Verification for Passport	31 	<pointer: 0x000000005195b1e0>	Bangalore	Karnataka	800
+679	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	45 	<pointer: 0x0000000051a6db70>	Bangalore	Karnataka	500
+680	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	27 	<pointer: 0x0000000051bfaae0>	Bangalore	Karnataka	800
+681	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	37 	<pointer: 0x0000000051d51670>	Bangalore	Karnataka	10000
+682	October 12 2015	Raghunathpur, West Bengal	Police	Traffic Violations	27 	<pointer: 0x0000000051e90b60>	Raghunathpur	Bengal	963
+683	October 12 2015	Bangalore, Karnataka	Police	Police Harassment	24 	<pointer: 0x0000000051fb0f60>	Bangalore	Karnataka	1200
+684	October 12 2015	Punjaipugalur, Tamil Nadu	Stamps and Registration	Registration of Property	30 	<pointer: 0x0000000052188ee0>	Punjaipugalur	Nadu	345
+685	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	31 	<pointer: 0x00000000522ae870>	Bangalore	Karnataka	15000
+686	October 12 2015	Leh (Ladakh), Jammu and Kashmir	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	25 	<pointer: 0x00000000523fe1f0>	Leh	Kashmir	987
+687	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	34 	<pointer: 0x000000005255de60>	Bangalore	Karnataka	800
+688	October 12 2015	Bangalore, Karnataka	Transport	Registration of Vehicle	38 	<pointer: 0x0000000052712550>	Bangalore	Karnataka	1000
+689	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	32 	<pointer: 0x000000005280d870>	Bangalore	Karnataka	500
+690	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	42 	<pointer: 0x00000000529ba160>	Bangalore	Karnataka	800
+691	October 12 2015	Bangalore, Karnataka	Transport	Registration of Vehicle	36 	<pointer: 0x0000000052ae1270>	Bangalore	Karnataka	1500
+692	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	30 	<pointer: 0x0000000052c38360>	Bangalore	Karnataka	1500
+693	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	28 	<pointer: 0x0000000052d7dbe0>	Bangalore	Karnataka	500
+694	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	29 	<pointer: 0x0000000052ec4d60>	Bangalore	Karnataka	800
+695	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	30 	<pointer: 0x000000005303f370>	Bangalore	Karnataka	1000
+696	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	27 	<pointer: 0x00000000531528f0>	Bangalore	Karnataka	1500
+697	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	29 	<pointer: 0x000000005327d770>	Bangalore	Karnataka	800
+698	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	23 	<pointer: 0x00000000533feff0>	Bangalore	Karnataka	500
+699	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	32 	<pointer: 0x000000005355dfe0>	Bangalore	Karnataka	1500
+700	October 12 2015	Gurgaon, Haryana	Others	Others	89 	<pointer: 0x00000000536a0d70>	Gurgaon	Haryana	100
+701	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	37 	<pointer: 0x0000000053884ee0>	Bangalore	Karnataka	800
+702	October 12 2015	Hyderabad, Telangana	Stamps and Registration	Registration of Flat or Apartment	61 	<pointer: 0x000000005394be70>	Hyderabad	Telangana	2000
+703	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	27 	<pointer: 0x0000000053aa1570>	Bangalore	Karnataka	500
+704	October 12 2015	Nuzvid, Andhra Pradesh	Stamps and Registration	Marriage Certificate	46 	<pointer: 0x0000000053c34170>	Nuzvid	Pradesh	234
+705	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	32 	<pointer: 0x0000000053d7e0e0>	Bangalore	Karnataka	700
+706	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	27 	<pointer: 0x0000000053ed5cf0>	Bangalore	Karnataka	1000
+707	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	27 	<pointer: 0x00000000540283f0>	Bangalore	Karnataka	1300
+708	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	26 	<pointer: 0x00000000541658f0>	Bangalore	Karnataka	5000
+709	October 12 2015	Bangalore, Karnataka	Police	Traffic Violations	29 	<pointer: 0x00000000542ef0f0>	Bangalore	Karnataka	800
+710	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	39 	<pointer: 0x000000005443f1e0>	Bangalore	Karnataka	600
+711	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	29 	<pointer: 0x0000000054551ee0>	Bangalore	Karnataka	500
+712	October 12 2015	Bangalore, Karnataka	Transport	Registration of Vehicle	30 	<pointer: 0x00000000546861e0>	Bangalore	Karnataka	3000
+713	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	33 	<pointer: 0x0000000054805e70>	Bangalore	Karnataka	500
+714	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	28 	<pointer: 0x00000000549380f0>	Bangalore	Karnataka	5000
+715	October 12 2015	Bangalore, Karnataka	Income Tax	New PAN Card	50 	<pointer: 0x0000000054ac2ff0>	Bangalore	Karnataka	500
+716	October 12 2015	Pune, Maharashtra	Commercial Tax, Sales Tax, VAT	C Form	62 	<pointer: 0x0000000054bbf2f0>	Pune	Maharashtra	6000
+717	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	29 	<pointer: 0x0000000054d68cf0>	Bangalore	Karnataka	1200
+718	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	33 	<pointer: 0x0000000054e76360>	Bangalore	Karnataka	500
+719	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	32 	<pointer: 0x0000000054fd41f0>	Bangalore	Karnataka	1000
+720	October 12 2015	Bangalore, Karnataka	Passport	Police Verification for Passport	32 	<pointer: 0x000000005515d0f0>	Bangalore	Karnataka	500
+721	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	37 	<pointer: 0x0000000055273960>	Bangalore	Karnataka	1500
+722	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	26 	<pointer: 0x000000005538dd60>	Bangalore	Karnataka	500
+723	October 12 2015	Bangalore, Karnataka	Railways	Transport of Goods	141 	<pointer: 0x0000000055522c60>	Bangalore	Karnataka	250
+724	October 12 2015	New Delhi, Delhi	Transport	New Domestic Driving License	65 	<pointer: 0x00000000556234f0>	New	Delhi	1000
+725	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	33 	<pointer: 0x00000000557b31f0>	Bangalore	Karnataka	2000
+726	October 12 2015	Bangalore, Karnataka	Police	Traffic Violations	27 	<pointer: 0x00000000559a0af0>	Bangalore	Karnataka	350
+727	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	36 	<pointer: 0x0000000055aa9df0>	Bangalore	Karnataka	500
+728	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	30 	<pointer: 0x0000000055c1fb70>	Bangalore	Karnataka	1700
+729	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	34 	<pointer: 0x0000000055d0dc60>	Bangalore	Karnataka	500
+730	October 12 2015	Bangalore, Karnataka	Transport	Registration of Vehicle	27 	<pointer: 0x0000000055e76260>	Bangalore	Karnataka	2500
+731	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	28 	<pointer: 0x0000000055fe8b70>	Bangalore	Karnataka	1000
+732	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	32 	<pointer: 0x000000005616a7f0>	Bangalore	Karnataka	500
+733	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	27 	<pointer: 0x000000005628a9f0>	Bangalore	Karnataka	500
+734	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	24 	<pointer: 0x00000000563b23f0>	Bangalore	Karnataka	5000
+735	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	34 	<pointer: 0x00000000564fa2e0>	Bangalore	Karnataka	500
+736	October 12 2015	Bangalore, Karnataka	Passport	Police Verification for Passport	32 	<pointer: 0x00000000566573d0>	Bangalore	Karnataka	500
+737	October 12 2015	Bangalore, Karnataka	Passport	Police Verification for Passport	36 	<pointer: 0x00000000567a4bf0>	Bangalore	Karnataka	1500
+738	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	33 	<pointer: 0x00000000568cdaf0>	Bangalore	Karnataka	800
+739	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	32 	<pointer: 0x0000000056a929f0>	Bangalore	Karnataka	600
+740	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	25 	<pointer: 0x0000000056b6c2e0>	Bangalore	Karnataka	10000
+741	October 12 2015	Bangalore, Karnataka	Police	Police Harassment	32 	<pointer: 0x0000000056cab5e0>	Bangalore	Karnataka	200
+742	October 12 2015	Bangalore, Karnataka	Railways	Transport of Goods	140 	<pointer: 0x0000000056e4d570>	Bangalore	Karnataka	500
+743	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	51 	<pointer: 0x00000000570a0260>	Bangalore	Karnataka	400
+744	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	28 	<pointer: 0x000000005721dde0>	Bangalore	Karnataka	500
+745	October 12 2015	Bangalore, Karnataka	Passport	Passport Delivery	28 	<pointer: 0x000000005732dce0>	Bangalore	Karnataka	1400
+746	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	24 	<pointer: 0x00000000574c3a60>	Bangalore	Karnataka	150
+747	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	25 	<pointer: 0x0000000057649de0>	Bangalore	Karnataka	500
+748	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	25 	<pointer: 0x000000005776fdf0>	Bangalore	Karnataka	400
+749	October 12 2015	Bangalore, Karnataka	Passport	New Passport Application	29 	<pointer: 0x000000005793c9f0>	Bangalore	Karnataka	2500
+750	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	23 	<pointer: 0x0000000057a1cbe0>	Bangalore	Karnataka	500
+751	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	24 	<pointer: 0x0000000057b881f0>	Bangalore	Karnataka	1000
+752	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	27 	<pointer: 0x0000000057d1fc70>	Bangalore	Karnataka	200
+753	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	28 	<pointer: 0x0000000057e4e7f0>	Bangalore	Karnataka	500
+754	October 12 2015	Bangalore, Karnataka	Transport	Registration of Vehicle	25 	<pointer: 0x0000000057f8f6e0>	Bangalore	Karnataka	500
+755	October 12 2015	Bangalore, Karnataka	Income Tax	New PAN Card	44 	<pointer: 0x000000005815f870>	Bangalore	Karnataka	1200
+756	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	23 	<pointer: 0x00000000581fc2f0>	Bangalore	Karnataka	400
+757	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	23 	<pointer: 0x00000000583d6760>	Bangalore	Karnataka	6000
+758	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	52 	<pointer: 0x000000005863fb60>	Bangalore	Karnataka	500
+759	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	25 	<pointer: 0x00000000570a02e0>	Bangalore	Karnataka	500
+760	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	23 	<pointer: 0x000000005704fae0>	Bangalore	Karnataka	400
+761	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	44 	<pointer: 0x00000000589d9a60>	Bangalore	Karnataka	1000
+762	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	24 	<pointer: 0x0000000058b97460>	Bangalore	Karnataka	500
+763	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	41 	<pointer: 0x0000000058f48f60>	Bangalore	Karnataka	500
+764	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	20 	<pointer: 0x0000000058d9c4e0>	Bangalore	Karnataka	2000
+765	October 12 2015	Bangalore, Karnataka	Passport	Police Verification for Passport	29 	<pointer: 0x00000000590d60f0>	Bangalore	Karnataka	700
+766	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	22 	<pointer: 0x00000000592238f0>	Bangalore	Karnataka	500
+767	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	30 	<pointer: 0x000000005935c270>	Bangalore	Karnataka	1300
+768	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	25 	<pointer: 0x000000005947dd00>	Bangalore	Karnataka	500
+769	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	20 	<pointer: 0x0000000059609be0>	Bangalore	Karnataka	400
+770	October 12 2015	Bangalore, Karnataka	Income Tax	New PAN Card	42 	<pointer: 0x000000005973fd60>	Bangalore	Karnataka	500
+771	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	26 	<pointer: 0x00000000598385e0>	Bangalore	Karnataka	1500
+772	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	25 	<pointer: 0x00000000599c61e0>	Bangalore	Karnataka	500
+773	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	24 	<pointer: 0x0000000059b217f0>	Bangalore	Karnataka	400
+774	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	39 	<pointer: 0x0000000059d9ef60>	Bangalore	Karnataka	500
+775	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	26 	<pointer: 0x0000000058d9dee0>	Bangalore	Karnataka	400
+776	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	24 	<pointer: 0x0000000058935160>	Bangalore	Karnataka	500
+777	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	26 	<pointer: 0x0000000058d8aee0>	Bangalore	Karnataka	500
+778	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	29 	<pointer: 0x000000005a08aa60>	Bangalore	Karnataka	5000
+779	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	21 	<pointer: 0x000000005a1cf4f0>	Bangalore	Karnataka	400
+780	October 12 2015	Bangalore, Karnataka	Income Tax	New PAN Card	33 	<pointer: 0x000000005a2c35e0>	Bangalore	Karnataka	500
+781	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	21 	<pointer: 0x000000005a4680f0>	Bangalore	Karnataka	1200
+782	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	19 	<pointer: 0x000000005a590fd0>	Bangalore	Karnataka	500
+783	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	25 	<pointer: 0x000000005a6ad6f0>	Bangalore	Karnataka	400
+784	October 12 2015	Bangalore, Karnataka	Passport	Passport Delivery	32 	<pointer: 0x000000005a83a9e0>	Bangalore	Karnataka	1000
+785	October 12 2015	New Delhi, Delhi	Commercial Tax, Sales Tax, VAT	C Form	51 	<pointer: 0x000000005a97c9e0>	New	Delhi	1000
+786	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	28 	<pointer: 0x000000005ab18170>	Bangalore	Karnataka	1000
+787	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	27 	<pointer: 0x000000005ac522f0>	Bangalore	Karnataka	500
+788	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	30 	<pointer: 0x000000005ad81570>	Bangalore	Karnataka	500
+789	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	25 	<pointer: 0x000000005af24d60>	Bangalore	Karnataka	500
+790	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	27 	<pointer: 0x000000005b071ff0>	Bangalore	Karnataka	500
+791	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	23 	<pointer: 0x000000005b19bc70>	Bangalore	Karnataka	500
+792	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	26 	<pointer: 0x000000005b342460>	Bangalore	Karnataka	500
+793	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	29 	<pointer: 0x000000005b46b160>	Bangalore	Karnataka	500
+794	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	24 	<pointer: 0x000000005b61f570>	Bangalore	Karnataka	500
+795	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	26 	<pointer: 0x000000005b71d7e0>	Bangalore	Karnataka	500
+796	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	27 	<pointer: 0x000000005b85db70>	Bangalore	Karnataka	500
+797	October 12 2015	Tirunelveli, Tamil Nadu	Municipal Services	Birth Certificate	33 	<pointer: 0x000000005b9bd660>	Tirunelveli	Nadu	90
+798	October 12 2015	Hyderabad, Telangana	Passport	Police Verification for Passport	63 	<pointer: 0x000000005baaa2f0>	Hyderabad	Telangana	2000
+799	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	25 	<pointer: 0x000000005bbeb5f0>	Bangalore	Karnataka	500
+800	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	29 	<pointer: 0x000000005bdd13f0>	Bangalore	Karnataka	1800
+801	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	25 	<pointer: 0x000000005beec4e0>	Bangalore	Karnataka	500
+802	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	21 	<pointer: 0x000000005bffabf0>	Bangalore	Karnataka	400
+803	October 12 2015	Adari, Uttar Pradesh	Customs, Excise and Service Tax	Customs Check and Clearance	81 	<pointer: 0x000000005c1c3e70>	Adari	Pradesh	30
+804	October 12 2015	Adra, West Bengal	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	54 	<pointer: 0x000000005c3055f0>	Adra	Bengal	30
+805	October 12 2015	Bangalore, Karnataka	Passport	Passport Delivery	29 	<pointer: 0x000000005c46daf0>	Bangalore	Karnataka	4000
+806	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	22 	<pointer: 0x000000005c5913e0>	Bangalore	Karnataka	500
+807	October 12 2015	Dadri, Uttar Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	60 	<pointer: 0x000000005c6d2ee0>	Dadri	Pradesh	50
+808	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	48 	<pointer: 0x000000005c97d7f0>	Bangalore	Karnataka	500
+809	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	29 	<pointer: 0x000000005ca91770>	Bangalore	Karnataka	400
+810	October 12 2015	Achhnera, Uttar Pradesh	Commercial Tax, Sales Tax, VAT	C Form	91 	<pointer: 0x000000005cc30a70>	Achhnera	Pradesh	25
+811	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	25 	<pointer: 0x000000005cd85570>	Bangalore	Karnataka	500
+812	October 12 2015	Bangalore, Karnataka	Passport	Police Verification for Passport	31 	<pointer: 0x000000005ce83f70>	Bangalore	Karnataka	500
+813	October 12 2015	Adilabad, Telangana	Transport	New Domestic Driving License	95 	<pointer: 0x0000000059c96870>	Adilabad	Telangana	30
+814	October 12 2015	New Delhi, Delhi	Transport	New Domestic Driving License	45 	<pointer: 0x00000000584f5060>	New	Delhi	1000
+815	October 12 2015	Anand, Gujarat	Stamps and Registration	Registration of Property	48 	<pointer: 0x00000000585f3f50>	Anand	Gujarat	6321
+816	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	27 	<pointer: 0x000000005c9162f0>	Bangalore	Karnataka	400
+817	October 12 2015	Agra, Uttar Pradesh	Transport	New Domestic Driving License	27 	<pointer: 0x000000005d19b070>	Agra	Pradesh	25
+818	October 12 2015	Bangalore, Karnataka	Police	Police Harassment	23 	<pointer: 0x000000005d2da370>	Bangalore	Karnataka	500
+819	October 12 2015	Adari, Uttar Pradesh	Customs, Excise and Service Tax	Customs Check and Clearance	78 	<pointer: 0x000000005d4631f0>	Adari	Pradesh	30
+820	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	22 	<pointer: 0x000000005d5afe70>	Bangalore	Karnataka	400
+821	October 12 2015	Bagalkot, Karnataka	Transport	Registration of Vehicle	35 	<pointer: 0x000000005d6c3e70>	Bagalkot	Karnataka	6523
+822	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	28 	<pointer: 0x000000005d83f2e0>	Bangalore	Karnataka	500
+823	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	27 	<pointer: 0x000000005d9381e0>	Bangalore	Karnataka	6400
+824	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	34 	<pointer: 0x000000005da93160>	Bangalore	Karnataka	400
+825	October 12 2015	Abohar, Punjab	Transport	Duplicate Registration Certificate	83 	<pointer: 0x000000005dc1dce0>	Abohar	Punjab	25
+826	October 12 2015	Mumbai, Maharashtra	Commercial Tax, Sales Tax, VAT	C Form	74 	<pointer: 0x000000005dcf2ff0>	Mumbai	Maharashtra	60000
+827	October 12 2015	Anugul, Orissa	Stamps and Registration	Registration of Property	39 	<pointer: 0x000000005deca9f0>	Anugul	Orissa	7956
+828	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	24 	<pointer: 0x000000005dfd7570>	Bangalore	Karnataka	500
+829	October 12 2015	Patna, Bihar	Others	Others	83 	<pointer: 0x000000005e171af0>	Patna	Bihar	20
+830	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	22 	<pointer: 0x000000005e2a20e0>	Bangalore	Karnataka	400
+831	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	24 	<pointer: 0x000000005e43f7f0>	Bangalore	Karnataka	500
+832	October 12 2015	Achhnera, Uttar Pradesh	Commercial Tax, Sales Tax, VAT	C Form	88 	<pointer: 0x000000005e58bdf0>	Achhnera	Pradesh	32
+833	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	23 	<pointer: 0x000000005e6c99e0>	Bangalore	Karnataka	2500
+834	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	33 	<pointer: 0x000000005e81da60>	Bangalore	Karnataka	400
+835	October 12 2015	Abohar, Punjab	Commercial Tax, Sales Tax, VAT	C Form	86 	<pointer: 0x000000005e9828e0>	Abohar	Punjab	15
+836	October 12 2015	Amroha, Uttar Pradesh	Police	Police Verification for Passport	39 	<pointer: 0x000000005eab12e0>	Amroha	Pradesh	7410
+837	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	26 	<pointer: 0x000000005ebcbb60>	Bangalore	Karnataka	500
+838	October 12 2015	Bangalore, Karnataka	Passport	Passport Delivery	27 	<pointer: 0x000000005ed31c70>	Bangalore	Karnataka	500
+839	October 12 2015	Almora, Uttarakhand	Customs, Excise and Service Tax	Customs Check and Clearance	35 	<pointer: 0x000000005ee77970>	Almora	Uttarakhand	46301
+840	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	21 	<pointer: 0x000000005efd1bf0>	Bangalore	Karnataka	3400
+841	October 12 2015	Adari, Uttar Pradesh	Customs, Excise and Service Tax	Customs Check and Clearance	80 	<pointer: 0x000000005f154a70>	Adari	Pradesh	25
+842	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	30 	<pointer: 0x000000005f2861e0>	Bangalore	Karnataka	500
+843	October 12 2015	Ariyalur, Tamil Nadu	Commercial Tax, Sales Tax, VAT	C Form	47 	<pointer: 0x000000005f3df170>	Ariyalur	Nadu	42000
+844	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	22 	<pointer: 0x000000005f541b70>	Bangalore	Karnataka	500
+845	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	24 	<pointer: 0x000000005f640270>	Bangalore	Karnataka	400
+846	October 12 2015	Banda, Uttar Pradesh	Police	Traffic Violations	78 	<pointer: 0x000000005f7bc4f0>	Banda	Pradesh	14000
+847	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	22 	<pointer: 0x000000005f8f9570>	Bangalore	Karnataka	500
+848	October 12 2015	Akola, Madhya Pradesh	Police	Traffic Violations	33 	<pointer: 0x000000005fa65460>	Akola	Pradesh	6502
+849	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	27 	<pointer: 0x000000005fb83e60>	Bangalore	Karnataka	500
+850	October 12 2015	New Delhi, Delhi	Commercial Tax, Sales Tax, VAT	C Form	52 	<pointer: 0x000000005fcd7d60>	New	Delhi	1000
+851	October 12 2015	Araria, Bihar	Police	Police Verification for Passport	43 	<pointer: 0x000000005fe483f0>	Araria	Bihar	4632
+852	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	30 	<pointer: 0x000000005ff806f0>	Bangalore	Karnataka	400
+853	October 12 2015	Ambikapur, Chhattisgarh	Stamps and Registration	Registration of Flat or Apartment	29 	<pointer: 0x0000000060131ee0>	Ambikapur	Chhattisgarh	48000
+854	October 12 2015	Bangalore, Karnataka	Passport	Passport Delivery	31 	<pointer: 0x000000006027fff0>	Bangalore	Karnataka	500
+855	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	26 	<pointer: 0x00000000603f24e0>	Bangalore	Karnataka	500
+856	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	29 	<pointer: 0x000000006053d8f0>	Bangalore	Karnataka	400
+857	October 12 2015	Baghpat, Uttar Pradesh	Transport	Registration of Vehicle	28 	<pointer: 0x00000000606c05f0>	Baghpat	Pradesh	45000
+858	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	27 	<pointer: 0x00000000607c4570>	Bangalore	Karnataka	500
+859	October 12 2015	Amarpur, Bihar	Stamps and Registration	Registration of Property	60 	<pointer: 0x000000006095fb70>	Amarpur	Bihar	41000
+860	October 12 2015	Bangalore, Karnataka	Transport	Registration of Vehicle	21 	<pointer: 0x0000000060a8e3f0>	Bangalore	Karnataka	500
+861	October 12 2015	Aurangabad, Maharashtra	Police	Police Harassment	26 	<pointer: 0x0000000060b8eb70>	Aurangabad	Maharashtra	1236
+862	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	23 	<pointer: 0x0000000060d479e0>	Bangalore	Karnataka	500
+863	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	45 	<pointer: 0x0000000060fc71f0>	Bangalore	Karnataka	500
+864	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	24 	<pointer: 0x000000006116bae0>	Bangalore	Karnataka	6500
+865	October 12 2015	Adoni, Andhra Pradesh	Customs, Excise and Service Tax	Customs Check and Clearance	61 	<pointer: 0x00000000612a3160>	Adoni	Pradesh	12347
+866	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	23 	<pointer: 0x0000000061452250>	Bangalore	Karnataka	2000
+867	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	21 	<pointer: 0x0000000061575460>	Bangalore	Karnataka	500
+868	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	25 	<pointer: 0x0000000061697df0>	Bangalore	Karnataka	400
+869	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	23 	<pointer: 0x0000000061835160>	Bangalore	Karnataka	4500
+870	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	22 	<pointer: 0x0000000060fcc0f0>	Bangalore	Karnataka	500
+871	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	22 	<pointer: 0x0000000060f97e60>	Bangalore	Karnataka	400
+872	October 12 2015	Aligarh, Uttar Pradesh	Police	Police Verification for Passport	61 	<pointer: 0x0000000061a533f0>	Aligarh	Pradesh	12365
+873	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	24 	<pointer: 0x0000000061c057e0>	Bangalore	Karnataka	500
+874	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Flat or Apartment	21 	<pointer: 0x0000000061d4c970>	Bangalore	Karnataka	500
+875	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	25 	<pointer: 0x0000000061e58d60>	Bangalore	Karnataka	500
+876	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	26 	<pointer: 0x0000000061ffa060>	Bangalore	Karnataka	400
+877	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	22 	<pointer: 0x0000000062134ef0>	Bangalore	Karnataka	500
+878	October 12 2015	Ambikapur, Chhattisgarh	Transport	Duplicate Registration Certificate	35 	<pointer: 0x000000006224aa70>	Ambikapur	Chhattisgarh	48000
+879	October 12 2015	Hyderabad, Telangana	Passport	Passport Delivery	66 	<pointer: 0x00000000623a26e0>	Hyderabad	Telangana	1200
+880	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	25 	<pointer: 0x0000000062545870>	Bangalore	Karnataka	500
+881	October 12 2015	Adari, Uttar Pradesh	Municipal Services	Birth Certificate	70 	<pointer: 0x00000000626747e0>	Adari	Pradesh	1230
+882	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	22 	<pointer: 0x0000000062791270>	Bangalore	Karnataka	500
+883	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	31 	<pointer: 0x0000000062930af0>	Bangalore	Karnataka	5000
+884	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	26 	<pointer: 0x0000000062a3cd60>	Bangalore	Karnataka	500
+885	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	22 	<pointer: 0x0000000062bf7a60>	Bangalore	Karnataka	500
+886	October 12 2015	Ameenapuram, Telangana	Police	Filing FIR	30 	<pointer: 0x0000000062d12b70>	Ameenapuram	Telangana	21000
+887	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	35 	<pointer: 0x0000000062dfd4e0>	Bangalore	Karnataka	500
+888	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Registration of Property	29 	<pointer: 0x0000000062f9bdf0>	Bangalore	Karnataka	500
+889	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	23 	<pointer: 0x00000000630f1af0>	Bangalore	Karnataka	500
+890	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	22 	<pointer: 0x000000006320ad70>	Bangalore	Karnataka	500
+891	October 12 2015	Aurangabad, Bihar	Stamps and Registration	Registration of Flat or Apartment	67 	<pointer: 0x0000000063365670>	Aurangabad	Bihar	4200
+892	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	60 	<pointer: 0x00000000679c9070>	Bangalore	Karnataka	500
+893	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	42 	<pointer: 0x0000000067dd4cf0>	Bangalore	Karnataka	500
+894	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	29 	<pointer: 0x0000000067c82bf0>	Bangalore	Karnataka	500
+895	October 12 2015	Amguri, Assam	Transport	Duplicate Registration Certificate	44 	<pointer: 0x0000000067eddf60>	Amguri	Assam	17000
+896	October 12 2015	Bangalore, Karnataka	Police	Traffic Violations	21 	<pointer: 0x000000006805bff0>	Bangalore	Karnataka	500
+897	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	22 	<pointer: 0x000000006818f3f0>	Bangalore	Karnataka	200
+898	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	24 	<pointer: 0x00000000682e0ce0>	Bangalore	Karnataka	500
+899	October 12 2015	Bangalore, Karnataka	Transport	Registration of Vehicle	21 	<pointer: 0x0000000068451870>	Bangalore	Karnataka	10000
+900	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	27 	<pointer: 0x000000006858e460>	Bangalore	Karnataka	500
+901	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	24 	<pointer: 0x00000000687535f0>	Bangalore	Karnataka	400
+902	October 12 2015	Abhayapuri, Assam	Municipal Services	Birth Certificate	72 	<pointer: 0x00000000688a1a60>	Abhayapuri	Assam	4100
+903	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	27 	<pointer: 0x000000006896cc70>	Bangalore	Karnataka	400
+904	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	23 	<pointer: 0x0000000068b2f3e0>	Bangalore	Karnataka	1800
+905	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	24 	<pointer: 0x0000000068c85060>	Bangalore	Karnataka	500
+906	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	25 	<pointer: 0x00000000679c8770>	Bangalore	Karnataka	500
+907	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	27 	<pointer: 0x000000006774ddf0>	Bangalore	Karnataka	1500
+908	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	25 	<pointer: 0x0000000067c1ef70>	Bangalore	Karnataka	500
+909	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	26 	<pointer: 0x0000000068ddfcf0>	Bangalore	Karnataka	400
+910	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	23 	<pointer: 0x0000000068f094e0>	Bangalore	Karnataka	400
+911	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	24 	<pointer: 0x00000000690b5af0>	Bangalore	Karnataka	500
+912	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	24 	<pointer: 0x000000006919cef0>	Bangalore	Karnataka	500
+913	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	24 	<pointer: 0x00000000692fc660>	Bangalore	Karnataka	400
+914	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	24 	<pointer: 0x00000000694c3bf0>	Bangalore	Karnataka	200
+915	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	29 	<pointer: 0x000000006d49c4e0>	Bangalore	Karnataka	500
+916	October 12 2015	Hyderabad, Telangana	Police	Police Verification for Passport	60 	<pointer: 0x000000006d5a2c60>	Hyderabad	Telangana	2000
+917	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	26 	<pointer: 0x000000006d7546f0>	Bangalore	Karnataka	500
+918	October 12 2015	Greater Noida, Uttar Pradesh	Municipal Services	Birth Certificate	61 	<pointer: 0x000000006d8a28e0>	Greater	Pradesh	20000
+919	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	20 	<pointer: 0x000000006da2d360>	Bangalore	Karnataka	2300
+920	NULL	NULL	Municipal Services	http://www.ipaidabribe.com/reports/all/pune/all-departments/all-amount	8 	<pointer: 0x000000006dd5f560>	NULL	NULL	NA
+921	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	24 	<pointer: 0x000000006df9c1f0>	Bangalore	Karnataka	2000
+922	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	26 	<pointer: 0x000000006e001660>	Bangalore	Karnataka	700
+923	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	21 	<pointer: 0x000000006e17f2f0>	Bangalore	Karnataka	900
+924	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	22 	<pointer: 0x000000006dd60ce0>	Bangalore	Karnataka	500
+925	October 12 2015	Bangalore, Karnataka	Customs, Excise and Service Tax	Customs Check and Clearance	22 	<pointer: 0x000000006dd24260>	Bangalore	Karnataka	400
+926	October 12 2015	New Delhi, Delhi	Transport	New Domestic Driving License	49 	<pointer: 0x000000006e39e060>	New	Delhi	300
+927	October 12 2015	Bangalore, Karnataka	Police	Traffic Violations	22 	<pointer: 0x000000006e6f51f0>	Bangalore	Karnataka	500
+928	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	18 	<pointer: 0x000000006e83e8e0>	Bangalore	Karnataka	500
+929	October 12 2015	Bangalore, Karnataka	Transport	New Domestic Driving License	20 	<pointer: 0x000000006e955470>	Bangalore	Karnataka	1300
+930	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	20 	<pointer: 0x000000006eb06ce0>	Bangalore	Karnataka	50
+931	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	19 	<pointer: 0x000000006ec17b70>	Bangalore	Karnataka	400
+932	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	20 	<pointer: 0x000000006ed58170>	Bangalore	Karnataka	600
+933	October 12 2015	Bangalore, Karnataka	Municipal Services	Birth Certificate	19 	<pointer: 0x000000006eef9de0>	Bangalore	Karnataka	700
+934	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	22 	<pointer: 0x000000006efcc2f0>	Bangalore	Karnataka	2500
+935	October 12 2015	Udaipur, Rajasthan	Stamps and Registration	Marriage Certificate	65 	<pointer: 0x000000006f166ef0>	Udaipur	Rajasthan	5000
+936	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	27 	<pointer: 0x000000006f2e90f0>	Bangalore	Karnataka	700
+937	October 12 2015	Duliajan Oil Town, Assam	Stamps and Registration	Marriage Certificate	24 	<pointer: 0x000000006f3fc470>	Duliajan	Assam	2000
+938	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	18 	<pointer: 0x000000006f59ddf0>	Bangalore	Karnataka	500
+939	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	26 	<pointer: 0x000000006fec6be0>	Bangalore	Karnataka	1000
+940	October 12 2015	Hyderabad, Telangana	Police	Police Verification for Passport	60 	<pointer: 0x000000006ffb9e70>	Hyderabad	Telangana	2500
+941	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	21 	<pointer: 0x000000007014b770>	Bangalore	Karnataka	900
+942	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	21 	<pointer: 0x000000007029cf60>	Bangalore	Karnataka	250
+943	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	22 	<pointer: 0x0000000070401c60>	Bangalore	Karnataka	600
+944	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	23 	<pointer: 0x0000000070527460>	Bangalore	Karnataka	500
+945	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	25 	<pointer: 0x0000000070673170>	Bangalore	Karnataka	500
+946	October 12 2015	Tirwaganj, Uttar Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	22 	<pointer: 0x000000007079aa60>	Tirwaganj	Pradesh	20000
+947	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	23 	<pointer: 0x00000000708ef9e0>	Bangalore	Karnataka	800
+948	October 12 2015	Hyderabad, Telangana	Passport	Police Verification for Passport	62 	<pointer: 0x0000000070a14af0>	Hyderabad	Telangana	2000
+949	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	23 	<pointer: 0x0000000070b84f70>	Bangalore	Karnataka	900
+950	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	24 	<pointer: 0x0000000070cb7c70>	Bangalore	Karnataka	2500
+951	October 12 2015	Abohar, Punjab	Transport	Duplicate Registration Certificate	80 	<pointer: 0x000000007127b160>	Abohar	Punjab	500
+952	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	16 	<pointer: 0x00000000713f1960>	Bangalore	Karnataka	600
+953	October 12 2015	Tirupati, Andhra Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	36 	<pointer: 0x00000000715516f0>	Tirupati	Pradesh	2000
+954	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	22 	<pointer: 0x00000000716a4660>	Bangalore	Karnataka	500
+955	October 12 2015	Adari, Uttar Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	54 	<pointer: 0x00000000717e1af0>	Adari	Pradesh	600
+956	October 12 2015	Abohar, Punjab	Police	Filing FIR	80 	<pointer: 0x00000000718f84f0>	Abohar	Punjab	467
+957	October 12 2015	Amreli, Gujarat	Stamps and Registration	Registration of Property	25 	<pointer: 0x0000000071aca060>	Amreli	Gujarat	8500
+958	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	18 	<pointer: 0x0000000071c06670>	Bangalore	Karnataka	500
+959	October 12 2015	Bangalore, Karnataka	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	17 	<pointer: 0x0000000071cf39f0>	Bangalore	Karnataka	700
+960	October 12 2015	Anugul, Orissa	Police	Filing FIR	34 	<pointer: 0x0000000071ebb460>	Anugul	Orissa	400
+961	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	17 	<pointer: 0x0000000071ff1670>	Bangalore	Karnataka	800
+962	October 12 2015	Abohar, Punjab	Commercial Tax, Sales Tax, VAT	C Form	81 	<pointer: 0x000000007212a660>	Abohar	Punjab	546
+963	October 12 2015	Adari, Uttar Pradesh	Transport	Duplicate Registration Certificate	52 	<pointer: 0x00000000722956f0>	Adari	Pradesh	30
+964	October 12 2015	Tiruppur, Tamil Nadu	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	44 	<pointer: 0x00000000723d7970>	Tiruppur	Nadu	12000
+965	October 12 2015	Bangalore, Karnataka	Railways	Transport of Goods	76 	<pointer: 0x0000000072570af0>	Bangalore	Karnataka	800
+966	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	14 	<pointer: 0x0000000072697d60>	Bangalore	Karnataka	2500
+967	October 12 2015	Adari, Uttar Pradesh	Transport	Duplicate Registration Certificate	43 	<pointer: 0x00000000727c38e0>	Adari	Pradesh	354
+968	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	15 	<pointer: 0x0000000072913be0>	Bangalore	Karnataka	900
+969	October 12 2015	Tirupati, Andhra Pradesh	Stamps and Registration	Marriage Certificate	39 	<pointer: 0x0000000072ab72f0>	Tirupati	Pradesh	20000
+970	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	20 	<pointer: 0x0000000072bd85e0>	Bangalore	Karnataka	600
+971	October 12 2015	Adoni, Andhra Pradesh	Customs, Excise and Service Tax	Customs Check and Clearance	59 	<pointer: 0x0000000072cffd70>	Adoni	Pradesh	800
+972	October 12 2015	Adityapur, Jharkhand	Passport	Police Verification for Passport	79 	<pointer: 0x0000000072e23fe0>	Adityapur	Jharkhand	650
+973	October 12 2015	Adari, Uttar Pradesh	Police	Filing FIR	44 	<pointer: 0x0000000072fec7f0>	Adari	Pradesh	3546
+974	October 12 2015	Adityapur, Jharkhand	Customs, Excise and Service Tax	Customs Check and Clearance	67 	<pointer: 0x00000000731286f0>	Adityapur	Jharkhand	50
+975	October 12 2015	Adityapur, Jharkhand	Police	Filing FIR	69 	<pointer: 0x00000000732333e0>	Adityapur	Jharkhand	500
+976	October 12 2015	Adityapur, Jharkhand	Commercial Tax, Sales Tax, VAT	C Form	79 	<pointer: 0x00000000733a8e70>	Adityapur	Jharkhand	434
+977	October 12 2015	Adari, Uttar Pradesh	Police	Filing FIR	40 	<pointer: 0x000000007352b170>	Adari	Pradesh	350
+978	October 12 2015	Arakkonam, Tamil Nadu	Commercial Tax, Sales Tax, VAT	C Form	28 	<pointer: 0x000000007367da70>	Arakkonam	Nadu	700
+979	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	17 	<pointer: 0x00000000738176e0>	Bangalore	Karnataka	2500
+980	October 12 2015	Tirupathur, Tamil Nadu	Stamps and Registration	Marriage Certificate	21 	<pointer: 0x0000000073941170>	Tirupathur	Nadu	3000
+981	October 12 2015	Adari, Uttar Pradesh	Stamps and Registration	Marriage Certificate	26 	<pointer: 0x0000000073ad6670>	Adari	Pradesh	75
+982	October 12 2015	Barpeta, Assam	Transport	Duplicate Registration Certificate	16 	<pointer: 0x0000000073c04870>	Barpeta	Assam	500
+983	October 12 2015	Adari, Uttar Pradesh	Transport	Duplicate Registration Certificate	34 	<pointer: 0x0000000073d373f0>	Adari	Pradesh	4545
+984	October 12 2015	Bangalore, Karnataka	Transport	Duplicate Registration Certificate	19 	<pointer: 0x0000000073e8f4f0>	Bangalore	Karnataka	900
+985	October 12 2015	Adari, Uttar Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	33 	<pointer: 0x0000000073fb86f0>	Adari	Pradesh	30
+986	October 12 2015	Tirunelveli, Tamil Nadu	Transport	New Domestic Driving License	29 	<pointer: 0x00000000740cfa60>	Tirunelveli	Nadu	20000
+987	October 12 2015	Amethi, Uttar Pradesh	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	28 	<pointer: 0x00000000742980e0>	Amethi	Pradesh	400
+988	October 12 2015	Bangalore, Karnataka	Commercial Tax, Sales Tax, VAT	C Form	20 	<pointer: 0x00000000743fdce0>	Bangalore	Karnataka	500
+989	October 12 2015	Adilabad, Telangana	Transport	Duplicate Registration Certificate	96 	<pointer: 0x00000000744e69e0>	Adilabad	Telangana	200
+990	October 12 2015	New Delhi, Delhi	Municipal Services	Birth Certificate	42 	<pointer: 0x0000000074666f70>	New	Delhi	1000
+991	October 12 2015	Tirukkoyilur, Tamil Nadu	Income Tax	New PAN Card	25 	<pointer: 0x00000000747e5f70>	Tirukkoyilur	Nadu	2000
+992	October 12 2015	Adityapur, Jharkhand	Stamps and Registration	Marriage Certificate	62 	<pointer: 0x0000000074914460>	Adityapur	Jharkhand	200
+993	October 12 2015	Bangalore, Karnataka	Police	Filing FIR	14 	<pointer: 0x0000000074a9de60>	Bangalore	Karnataka	800
+994	October 12 2015	Amreli, Gujarat	Food, Civil Supplies and Consumer Affairs	Issue of Ration Card	26 	<pointer: 0x0000000074b8fd60>	Amreli	Gujarat	350
+995	October 12 2015	Ambedkar Nagar, Uttar Pradesh	Commercial Tax, Sales Tax, VAT	C Form	19 	<pointer: 0x0000000074d46870>	Ambedkar	Pradesh	300
+996	October 12 2015	Bangalore, Karnataka	Police	Police Verification for Passport	13 	<pointer: 0x0000000074e5b760>	Bangalore	Karnataka	500
+997	October 12 2015	Bangalore, Karnataka	Railways	Transport of Goods	59 	<pointer: 0x0000000074f6a8e0>	Bangalore	Karnataka	900
+998	October 12 2015	Bangalore, Karnataka	Stamps and Registration	Marriage Certificate	16 	<pointer: 0x000000007513ee60>	Bangalore	Karnataka	500
+999	October 12 2015	Abohar, Punjab	Customs, Excise and Service Tax	Customs Check and Clearance	74 	<pointer: 0x00000000752898f0>	Abohar	Punjab	500
