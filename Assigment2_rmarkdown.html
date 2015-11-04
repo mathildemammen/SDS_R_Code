@@ -91,6 +91,7 @@ img {
 ## 999 Levels: http://www.ipaidabribe.com/ ...</code></pre>
 <p>When the 1.000 URLs have been obtained, a function to request from the website on relevant fields using css-selectors and appropriate use of html_text() &amp; html_attr can be put through a loop and coerced from list into a dataframe using <em>ldply(data, data.frame)</em>. From here we need to do basic data-cleaning primarily utilizing functions contained in <em>stringr</em> in order to have a tidy, interpretable dataframe.</p>
 <p>We end up with a dataframe with this composition:</p>
+<pre class="r"><code>bribe.csv = read.csv(&quot;https://raw.githubusercontent.com/adamingwersen/Data.for.ass2_SDS/master/bribe.csv&quot;, sep = &quot;\t&quot;)</code></pre>
 <pre class="r"><code>head(bribe.csv, 5)</code></pre>
 <pre><code>##            post.dept        post.trans post.views       city    region
 ## 1 Municipal Services Birth Certificate         10 Dharmapuri      Nadu
