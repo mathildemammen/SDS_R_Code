@@ -164,8 +164,6 @@ head(IN.Bribe2.df, 5)
 IN.Bribe3.df = data.frame(lapply(IN.Bribe2.df, as.character), stringsAsFactors=FALSE)
 IN.Bribe3.df$post.date = gsub("\\,", "", IN.Bribe3.df$post.date)
 
-head(IN.Bribe3.df, 5)
-
 write.csv(IN.Bribe3.df, "C:/Users/Adam/Desktop/Bribe.csv")
 
 library("readr")
