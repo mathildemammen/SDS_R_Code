@@ -40,36 +40,6 @@ num.link.li2 = num.link.li$V1
 
 as2.css.selector_1 = ".heading-3 a"   #URL and/or TITLE depends on 'html_attr(name = href/title)'
 
-scrape_links_ipaidabribe = function(num.link.li2){
-  link.url = read_html(num.link.li2, encoding = "UTF-8") %>%
-    html_nodes(css = as2.css.selector_1) %>%
-    html_attr(name = 'href')
-  return(cbind(link.url))
-}
-
-bribe.data = ldply(num.link.li2, scrape_links_ipaidabribe, .inform = TRUE)
-
-# 1.5) LOOP : 
-#Next, we utilize the function defined above for looping through URLs for 10 links out per ingoing URL
-
-bribe.data = list()
-for(i in num.link.li2){
-  print(paste("processing", i, sep = " "))
-  bribe.data[[i]] = scrape_links_ipaidabribe(i)
-  Sys.sleep(1)
-  cat("loop", i, "done!\n")
-}
-
-  # The plyr-package can also be used for looping through requests - this however may get you blocked for a while as there is no "sleep"
-
-bribe.data = ldply(num.link.li2, scrape_links_ipaidabribe, .inform = TRUE)
-
-# 1.6) DATA MANIPULATION : 
-## The frame of links now have to be coerced into a single vector in order to request from each link
-
-bribe.data.li = ldply(bribe.data)
-link.z = bribe.data.li$link.url
-#link.z is a vector containing 1000 links for us to scrape for the information we need
 
 ################################################################# [2] #############################################################
 
@@ -86,6 +56,7 @@ link.z = bribe.data.li$link.url
 
 ## Let's identify the relevant css-selectors
 
+as2.css.selector_1 = ".heading-3 a"       #URL and/or TITLE depends on 'html_attr(name = href/title)'
 as2.css.selector_2 = "span.date"          #date
 as2.css.selector_3 = "li.paid-amount"     #amount paid
 as2.css.selector_4 = "div.key > a"        #location
@@ -98,8 +69,8 @@ as2.css.selector_7 = "li.views"           #number of views
 ## html_attr or html_text : if we want a reference, use html_attr and corresponding reference otherwise, for a string og text; html_text()
 ## Then return as dataframe bound by columns for each link fed into the function
 
-scrape_post_bribe = function(link.z){
-  post.url = read_html(link.z, encoding = "UTF-8")
+scrape_post_bribe = function(num.link.li2){
+  post.url = read_html(num.link.li2, encoding = "UTF-8")
   post.title = post.url %>%
     html_nodes(css = as2.css.selector_1) %>%
     html_attr(name = 'title')
@@ -130,7 +101,7 @@ scrape_post_bribe = function(link.z){
 ### This should not cause the servers of www.ipaidabribe.com to overload - I hope...
 
 post.bribe.df = list()
-for(i in link.z){
+for(i in num.link.li2){
   print(paste("processing", i, sep = " "))
   post.bribe.df[[i]] = scrape_post_bribe(i)
   Sys.sleep(0.01)
