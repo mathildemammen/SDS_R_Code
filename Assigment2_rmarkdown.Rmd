@@ -13,10 +13,8 @@ We are to scrape the website and clean the gathered data primarily using the R-p
 
 The website is constructed in a way such that for each page of recorded bribes contains 10 posts per page. It did not prove useful to use selector-gadget for identifying the underlying html-table. However, any page of 10 posts only has unique URL-element; http://www.ipaidabribe.com/reports/paid?page={**any integer**}. Thus, we took the following approach: create vector of integers from 0:1000 in intervals of 10. Insert 0, 10, 20 etc. into the element in URL that determines page number via loop - here looping with plyr was deemed useful as it is simple to coerce into dataframe and is rather fast. 
 
-```{r create initial links, echo=TRUE, warning = FALSE, include = FALSE}
-
+```{r create initial links, echo=FALSE, warning = FALSE, include = FALSE}
 library("knitr")
-
 knitr::opts_chunk$set(cache=TRUE)
 
 library("plyr")
@@ -53,52 +51,74 @@ head(num.link.li2, 5)
 
 ```
 
-We have now obtained 100 pages each containing 10 posts. It proved easier to request on each particular post - so we scraped each of the 100 sites for post-url's using appropriate css-selector and html-attribute 'href'. Looping through the 100 pages and requesting 10 post-urls for each, we obtained a vector of 1.000 URL-adresses. 
+We have now obtained 100 pages each containing 10 posts. Directly from these pages, the post-information we are interested in is accessible, given the appropriate CSS-selectors:
 
-```{r scrape links to create more links, echo = TRUE, warning = FALSE, include = FALSE}
-knitr::opts_chunk$set(cache=TRUE)
-# 1.4) FUNCTION : 
-#Now, create function that fetches post links from each website, which only has 10 posts pr. page and coerce these links into list
+```{r css-selectors, echo = TRUE}
+## Let's identify the relevant css-selectors
 
-#Link-fetching function based on list of 101 links in num.link.li - should create 1010 new links
-#Scrape www.ipaidabribe.com - articles; n = 1000
-#Define css-selector that is unique to the title href pointing at each specific post
+as2.css.selector_1 = ".heading-3 a"       #URL and/or TITLE depends on 'html_attr(name = href/title)'
+as2.css.selector_2 = "span.date"          #date
+as2.css.selector_3 = "li.paid-amount"     #amount paid
+as2.css.selector_4 = "div.key > a"        #location
+as2.css.selector_5 = "li.name > a"        #department
+as2.css.selector_6 = "li.transaction > a" #transaction details
+as2.css.selector_7 = "li.views"           #number of views
 
-as2.css.selector_1 = ".heading-3 a"   #URL and/or TITLE depends on 'html_attr(name = href/title)'
+```
 
-scrape_links_ipaidabribe = function(num.link.li2){
-  link.url = read_html(num.link.li2, encoding = "UTF-8") %>%
+Defining function and creating loop for iterating trhough all observations in **num.link.li2**. We make use of **rvest** in order to fetch data. 
+
+```{r, function and loop for scrape, echo = FALSE, warning = FALSE, include = FALSE}
+# Function requesting on CSS-selectors for each webpage
+
+scrape_post_bribe = function(num.link.li2){
+  post.url = read_html(num.link.li2, encoding = "UTF-8")
+  post.title = post.url %>%
     html_nodes(css = as2.css.selector_1) %>%
-    html_attr(name = 'href')
-  return(cbind(link.url))
+    html_attr(name = 'title')
+  post.date = post.url %>%
+    html_nodes(css = as2.css.selector_2) %>%
+    html_text()
+  post.paid = post.url %>%
+    html_nodes(css = as2.css.selector_3) %>%
+    html_text()
+  post.location = post.url %>%
+    html_nodes(css = as2.css.selector_4) %>%
+    html_attr(name = 'title')
+  post.dept = post.url %>%
+    html_nodes(css = as2.css.selector_5) %>%
+    html_attr(name = 'title')
+  post.trans = post.url %>%
+    html_nodes(css = as2.css.selector_6) %>%
+    html_attr(name = 'title')
+  post.views = post.url %>%
+    html_nodes(css = as2.css.selector_7) %>%
+    html_text()
+  return(cbind(post.title, post.date, post.location, post.dept, post.trans, post.views, post.url))
 }
 
-# 1.5) LOOP : 
-#Next, we utilize the function defined above for looping through URLs for 10 links out per ingoing URL
+# Loop - sleep-timer set to 0.01 
 
-bribe.data = list()
+post.bribe.df = list()
 for(i in num.link.li2){
   print(paste("processing", i, sep = " "))
-  bribe.data[[i]] = scrape_links_ipaidabribe(i)
-  Sys.sleep(0.05)
-  cat("loop", i, "done!\n")
+  post.bribe.df[[i]] = scrape_post_bribe(i)
+  Sys.sleep(0.01)
+  cat("done!\n")
 }
-# 1.6) DATA MANIPULATION : 
-## The frame of links now have to be coerced into a single vector in order to request from each link
-
-bribe.data.li = ldply(bribe.data)
-link.z = bribe.data.li$link.url
-#link.z is a vector containing 1000 links for us to scrape for the information we need
-
-```
-```{r, echo = TRUE}
-head(link.z, 5)
 
 ```
 
-When the 1.000 URLs have been obtained, a function to request from the website on relevant fields using css-selectors and appropriate use of html_text() & html_attr can be put through a loop and coerced from list into a dataframe using *ldply(data, data.frame)*. From here we need to do basic data-cleaning primarily utilizing functions contained in *stringr* in order to have a tidy, interpretable dataframe. 
+When the 1.000 posts have been obtained, we coerce from list into a dataframe using *ldply([data], data.frame)*. From here we need to do basic data-cleaning primarily utilizing functions contained in *stringr* in order to have a tidy, interpretable dataframe. 
 
 ```{r, echo = FALSE}
+#DATA :
+# Now that the data has been gathered, we need to do a little cleaning - first step is to set up a dataframe and remove duplicate observations
+# ldply(data, data.frame) fixes this for us
+IN.Bribe.df = ldply(post.bribe.df, data.frame)
+# We now have a dataframe of 4012 observations - this is due to the URL-structure, some are bound to duplicate(as they don't include unique codes)
+# Removing duplicates can be done by sorting variable = '.id'
+IN.Bribe.df = IN.Bribe.df[!duplicated(IN.Bribe.df$.id), ]
 
 ```
 
@@ -106,13 +126,32 @@ We end up with a dataframe with this composition:
 
 ```{r import large dataframe, echo = TRUE}
 
+
 ```
 
-
-
+It's however obvious that this dataframe need further manipulation/cleaning:
 
 ```{r, echo=FALSE}
+IN.Bribe.df$post.views = gsub("\\views.*$", "", IN.Bribe.df$post.views)                     # Seperating numeric from views
+IN.Bribe.df$city = word(IN.Bribe.df$post.location, +1)                                      # Seperating region and city into two distinct variables
+IN.Bribe.df$city = gsub("\\,", "", IN.Bribe.df$city)                                        # ...
+IN.Bribe.df$region = word(IN.Bribe.df$post.location, -1)                                    # ...
+IN.Bribe.df$bribe.paid = as.numeric(gsub("[^\\d]+", "", IN.Bribe.df$post.title, perl=TRUE)) # Extracting numeric value of bribe from title using PERL-type regular expression
+
+# 3.2) Deleting obsolete variables/columns
+IN.Bribe2.df = subset(IN.Bribe.df, , -c(.id, post.title))
+IN.Bribe3.df = data.frame(lapply(IN.Bribe2.df, as.character), stringsAsFactors=FALSE)
+IN.Bribe3.df$post.date = gsub("\\,", "", IN.Bribe3.df$post.date)
+IN.Bribe3.df$month = word(IN.Bribe3.df$post.date)
+IN.Bribe3.df$day = word(IN.Bribe3.df$post.date, -2)
+IN.Bribe3.df$year = word(IN.Bribe3.df$post.date, -1)
+
+IN.Bribe3.df$post.url = NULL
+IN.Bribe3.df$post.location = NULL
+IN.Bribe3.df$post.date = NULL
 
 ```
-
+```{r, echo=TRUE}
+head(IN.Bribe3.df, 5)
+```
 

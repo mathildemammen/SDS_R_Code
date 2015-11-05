@@ -74,37 +74,40 @@ img {
 <p>We are to scrape the website and clean the gathered data primarily using the R-packages: <em>stringr</em>, <em>plyr</em>, <em>dplyr</em> &amp; <em>rvest</em>. Then, we will delve into an econometric analysis paired with geo-spatial data-analysis using <em>ggplot</em>, <em>countrycode</em> etc.</p>
 <div id="scraping-the-website-steps-1-2" class="section level2">
 <h2><strong>Scraping the <a href="http://ipaidabribe.com/reports">website</a> : Steps 1-2</strong></h2>
-<p>The website is constructed in a way such that for each page of recorded bribes contains 10 posts per page. It did not prove useful to use selector-gadget for identifying the underlying html-table. However, any page of 10 posts only has unique URL-element; <a href="http://www.ipaidabribe.com/reports/paid?page" class="uri">http://www.ipaidabribe.com/reports/paid?page</a>={<strong>any integar</strong>}. Thus, we took the following approach: create vector of integers from 0:1000 in intervals of 10. Insert 0, 10, 20 etc. into the element in URL that determines page number via loop - here looping with plyr was deemed useful as it is simple to coerce into dataframe and is rather fast.</p>
+<p>The website is constructed in a way such that for each page of recorded bribes contains 10 posts per page. It did not prove useful to use selector-gadget for identifying the underlying html-table. However, any page of 10 posts only has unique URL-element; <a href="http://www.ipaidabribe.com/reports/paid?page" class="uri">http://www.ipaidabribe.com/reports/paid?page</a>={<strong>any integer</strong>}. Thus, we took the following approach: create vector of integers from 0:1000 in intervals of 10. Insert 0, 10, 20 etc. into the element in URL that determines page number via loop - here looping with plyr was deemed useful as it is simple to coerce into dataframe and is rather fast.</p>
 <pre class="r"><code>head(num.link.li2, 5)</code></pre>
 <pre><code>## [1] &quot;http://www.ipaidabribe.com/reports/paid?page=0&quot; 
 ## [2] &quot;http://www.ipaidabribe.com/reports/paid?page=10&quot;
 ## [3] &quot;http://www.ipaidabribe.com/reports/paid?page=20&quot;
 ## [4] &quot;http://www.ipaidabribe.com/reports/paid?page=30&quot;
 ## [5] &quot;http://www.ipaidabribe.com/reports/paid?page=40&quot;</code></pre>
-<p>We have now obtained 100 pages each containing 10 posts. It proved easier to request on each particular post - so we scraped each of the 100 sites for post-url’s using appropriate css-selector and html-attribute ‘href’. Looping through the 100 pages and requesting 10 post-urls for each, we obtained a vector of 1.000 URL-adresses.</p>
-<pre class="r"><code>head(link.z, 5)</code></pre>
-<pre><code>## [1] http://www.ipaidabribe.com/reports/paid/i-paid-rs-10000-to-municipal-services-in-pune     
-## [2] http://www.ipaidabribe.com/reports/paid/i-paid-rs-6000-to-municipal-services-in-dharmapuri
-## [3] http://www.ipaidabribe.com/reports/paid/i-paid-rs-100-to-others-in-jhunjhunun             
-## [4] http://www.ipaidabribe.com/reports/paid/i-paid-rs-10-to-others-in-achhnera                
-## [5] http://www.ipaidabribe.com/reports/paid/i-paid-rs-1358-to-in                              
-## 999 Levels: http://www.ipaidabribe.com/ ...</code></pre>
-<p>When the 1.000 URLs have been obtained, a function to request from the website on relevant fields using css-selectors and appropriate use of html_text() &amp; html_attr can be put through a loop and coerced from list into a dataframe using <em>ldply(data, data.frame)</em>. From here we need to do basic data-cleaning primarily utilizing functions contained in <em>stringr</em> in order to have a tidy, interpretable dataframe.</p>
+<p>We have now obtained 100 pages each containing 10 posts. Directly from these pages, the post-information we are interested in is accessible, given the appropriate CSS-selectors:</p>
+<pre class="r"><code>## Let's identify the relevant css-selectors
+
+as2.css.selector_1 = &quot;.heading-3 a&quot;       #URL and/or TITLE depends on 'html_attr(name = href/title)'
+as2.css.selector_2 = &quot;span.date&quot;          #date
+as2.css.selector_3 = &quot;li.paid-amount&quot;     #amount paid
+as2.css.selector_4 = &quot;div.key &gt; a&quot;        #location
+as2.css.selector_5 = &quot;li.name &gt; a&quot;        #department
+as2.css.selector_6 = &quot;li.transaction &gt; a&quot; #transaction details
+as2.css.selector_7 = &quot;li.views&quot;           #number of views</code></pre>
+<p>Defining function and creating loop for iterating trhough all observations in <strong>num.link.li2</strong>. We make use of <strong>rvest</strong> in order to fetch data.</p>
+<p>When the 1.000 posts have been obtained, we coerce from list into a dataframe using <em>ldply([data], data.frame)</em>. From here we need to do basic data-cleaning primarily utilizing functions contained in <em>stringr</em> in order to have a tidy, interpretable dataframe.</p>
 <p>We end up with a dataframe with this composition:</p>
-<pre class="r"><code>bribe.csv = read.csv(&quot;https://raw.githubusercontent.com/adamingwersen/Data.for.ass2_SDS/master/bribe.csv&quot;, sep = &quot;\t&quot;)</code></pre>
-<pre class="r"><code>head(bribe.csv, 5)</code></pre>
-<pre><code>##            post.dept        post.trans post.views       city    region
-## 1 Municipal Services Birth Certificate         10 Dharmapuri      Nadu
-## 2             Others            Others         29 Jhunjhunun Rajasthan
-## 3             Others            Others         30   Achhnera   Pradesh
-## 4                                              39                     
-## 5 Municipal Services Birth Certificate         42    Nellore   Pradesh
+<p>It’s however obvious that this dataframe need further manipulation/cleaning:</p>
+<pre class="r"><code>head(IN.Bribe3.df, 5)</code></pre>
+<pre><code>##            post.dept        post.trans post.views       city  region
+## 1 Municipal Services Birth Certificate         3  Viluppuram    Nadu
+## 2 Municipal Services Birth Certificate        48   Thanjavur    Nadu
+## 3         Income Tax      New PAN Card        52   Nagercoil    Nadu
+## 4             Others            Others        84    Achhnera Pradesh
+## 5 Municipal Services Birth Certificate        65      Abohar  Punjab
 ##   bribe.paid    month day year
-## 1       6000 November   3 2015
-## 2        100 November   3 2015
-## 3         10 November   3 2015
-## 4       1358 November   3 2015
-## 5        500 November   3 2015</code></pre>
+## 1       1973 November  05 2015
+## 2         20 November  04 2015
+## 3      1e+05 November  04 2015
+## 4         10 November  03 2015
+## 5        111 November  03 2015</code></pre>
 </div>
 </div>
 
