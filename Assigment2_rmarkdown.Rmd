@@ -106,7 +106,6 @@ for(i in num.link.li2){
   Sys.sleep(0.01)
   cat("done!\n")
 }
-
 ```
 
 When the 1.000 posts have been obtained, we coerce from list into a dataframe using *ldply([data], data.frame)*. From here we need to do basic data-cleaning primarily utilizing functions contained in *stringr* in order to have a tidy, interpretable dataframe. 
@@ -116,10 +115,6 @@ When the 1.000 posts have been obtained, we coerce from list into a dataframe us
 # Now that the data has been gathered, we need to do a little cleaning - first step is to set up a dataframe and remove duplicate observations
 # ldply(data, data.frame) fixes this for us
 IN.Bribe.df = ldply(post.bribe.df, data.frame)
-# We now have a dataframe of 4012 observations - this is due to the URL-structure, some are bound to duplicate(as they don't include unique codes)
-# Removing duplicates can be done by sorting variable = '.id'
-IN.Bribe.df = IN.Bribe.df[!duplicated(IN.Bribe.df$.id), ]
-
 ```
 
 We end up with a dataframe with this composition:

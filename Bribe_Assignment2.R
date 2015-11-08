@@ -116,9 +116,7 @@ for(i in num.link.li2){
 # Now that the data has been gathered, we need to do a little cleaning - first step is to set up a dataframe and remove duplicate observations
 # ldply(data, data.frame) fixes this for us
 IN.Bribe.df = ldply(post.bribe.df, data.frame)
-# We now have a dataframe of 4012 observations - this is due to the URL-structure, some are bound to duplicate(as they don't include unique codes)
-# Removing duplicates can be done by sorting variable = '.id'
-IN.Bribe.df = IN.Bribe.df[!duplicated(IN.Bribe.df$.id), ]
+
 
 # I realize by now, that variable post.paid is not included in this data.frame - no worries; a simple gsub(... IN.Bribe.df$post.title)
 # -> can extract the amount paid.  
@@ -126,32 +124,56 @@ IN.Bribe.df = IN.Bribe.df[!duplicated(IN.Bribe.df$.id), ]
 ################################################################# [3] #############################################################
 
 # 3.1) Manupulation of IN.Bribe.df - preparation for analysis
-IN.Bribe.df$post.views = gsub("\\views.*$", "", IN.Bribe.df$post.views)                     # Seperating numeric from views
-IN.Bribe.df$city = word(IN.Bribe.df$post.location, +1)                                      # Seperating region and city into two distinct variables
-IN.Bribe.df$city = gsub("\\,", "", IN.Bribe.df$city)                                        # ...
-IN.Bribe.df$region = word(IN.Bribe.df$post.location, -1)                                    # ...
-IN.Bribe.df$bribe.paid = as.numeric(gsub("[^\\d]+", "", IN.Bribe.df$post.title, perl=TRUE)) # Extracting numeric value of bribe from title using PERL-type regular expression
+IN.Bribe.df$post.views = gsub("\\views.*$", "", IN.Bribe.df$post.views)                           # Seperating numeric from views
+IN.Bribe.df$region = gsub(".*,", "", IN.Bribe.df$post.location)                              # Using regex with gsub to seperate words by comma
+IN.Bribe.df$post.city = gsub("\\,.*", "", IN.Bribe.df$post.location)                              # ...
+IN.Bribe.df$bribe.paid.INR = as.numeric(gsub("[^\\d]+", "", IN.Bribe.df$post.title, perl=TRUE))   # Extracting numeric value of bribe from title using PERL-type regular expression
+
+# Dates, using simple as.Date function
+
+IN.Bribe.df$post.date = gsub("\\,", "", IN.Bribe.df$post.date)
+IN.Bribe.df$post.date = gsub("\\November", "11", IN.Bribe.df$post.date)
+IN.Bribe.df$post.date = gsub("\\October", "10", IN.Bribe.df$post.date)
+IN.Bribe.df$num.date = strptime(IN.Bribe.df$post.date, "%m %d %Y")
 
 # 3.2) Deleting obsolete variables/columns
-IN.Bribe2.df = subset(IN.Bribe.df, , -c(.id, post.title))
-IN.Bribe3.df = data.frame(lapply(IN.Bribe2.df, as.character), stringsAsFactors=FALSE)
-IN.Bribe3.df$post.date = gsub("\\,", "", IN.Bribe3.df$post.date)
-IN.Bribe3.df$month = word(IN.Bribe3.df$post.date)
-IN.Bribe3.df$day = word(IN.Bribe3.df$post.date, -2)
-IN.Bribe3.df$year = word(IN.Bribe3.df$post.date, -1)
-
+IN.Bribe3.df = data.frame(lapply(IN.Bribe.df, as.character), stringsAsFactors=FALSE)
 IN.Bribe3.df$post.url = NULL
 IN.Bribe3.df$post.location = NULL
-IN.Bribe3.df$post.date = NULL
+IN.Bribe3.df$.id = NULL
+IN.Bribe3.df$post.region = NULL
 
-library("lubridate")
+################################################################# [4] #############################################################
+Ext1.list = read.csv("https://raw.githubusercontent.com/adamingwersen/Data.for.ass2_SDS/master/India.Region.Literacy.csv.csv", sep = ";")
 
-?lubridate
+# Join
+IN.Bribe3.df$region = gsub("^\\s+|\\s+$", "", IN.Bribe3.df$region)  #Trim trailing/leading whitespace
+Ext1.list$region = as.character(Ext1.list$region)
+
+library("dplyr")
+combi.df = right_join(Ext1.list, IN.Bribe3.df, by = "region", copy = TRUE, all.x = TRUE)
+
+################################################################# [5] #############################################################
+#MAP
+india.adm.spdf = readOGR("/Users/Adam/Downloads/IND_adm", "IND_adm2", verbose = TRUE, stringsAsFactors = FALSE)
+library("ggplot2")
+install.packages("maptools")
+library("maptools")
+install.packages("gpclib", type = "source")
+library("gpclib")
+library("rgdal")
+india.adm2.df = fortify(india.adm.spdf, region = "NAME_1")
+?fortify
+?readOG
+?install.packages
+
+?fortify
 
 
-head(IN.Bribe3.df, 5)
 
 write.table(IN.Bribe3.df, "C:/Users/Adam/Desktop/Bribe.csv", sep = "\t")
+
+
 
 ?write.csv
 
