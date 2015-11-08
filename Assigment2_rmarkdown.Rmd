@@ -220,7 +220,7 @@ ep = ep + facet_wrap(~region, scales = "free_y")
 plot(ep)
 ```
 
-Some regions seem to be following the overall trend, however others only post on e.g. saturdays - maybe we should pick out the largest cities.
+Some regions seem to be following the overall trend, however others only post on e.g. saturdays - maybe we should pick out the most populous, as the differences in population between these are rather large.
 ```{r, geom_bar, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 spat2 = subset(india.spatial.df, citiziens > 50000000)
 pl = ggplot(spat2, aes(x = region, y = citiziens/100000000))
