@@ -1,7 +1,7 @@
 ---
 title: "Assignment 2 - Social Data Science"
-author: "Adam Ingwersen"
-date: "3. nov. 2015"
+author: "Group 15"
+date: "November 9, 2015"
 output: html_document
 ---
 
@@ -13,7 +13,7 @@ We are to scrape the website and clean the gathered data primarily using the R-p
 
 The website is constructed in a way such that for each page of recorded bribes contains 10 posts per page. It did not prove useful to use selector-gadget for identifying the underlying html-table. However, any page of 10 posts only has unique URL-element; http://www.ipaidabribe.com/reports/paid?page={**any integer**}. Thus, we took the following approach: create vector of integers from 0:1000 in intervals of 10. Insert 0, 10, 20 etc. into the element in URL that determines page number via loop - here looping with plyr was deemed useful as it is simple to coerce into dataframe and is rather fast. 
 
-```{r create initial links, echo=FALSE, warning = FALSE, include = FALSE}
+```{r create initial links, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 library("knitr")
 knitr::opts_chunk$set(cache=TRUE)
 
@@ -68,7 +68,7 @@ as2.css.selector_7 = "li.views"           #number of views
 
 Defining function and creating loop for iterating trhough all observations in **num.link.li2**. We make use of **rvest** in order to fetch data. 
 
-```{r, function and loop for scrape, echo = FALSE, warning = FALSE, include = FALSE}
+```{r, function and loop for scrape, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 # Function requesting on CSS-selectors for each webpage
 
 scrape_post_bribe = function(num.link.li2){
@@ -108,45 +108,84 @@ for(i in num.link.li2){
 }
 ```
 
+## **Cleaning gathered data, preparation & external data** : Step 3-4
 When the 1.000 posts have been obtained, we coerce from list into a dataframe using *ldply([data], data.frame)*. From here we need to do basic data-cleaning primarily utilizing functions contained in *stringr* in order to have a tidy, interpretable dataframe. 
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 #DATA :
 # Now that the data has been gathered, we need to do a little cleaning - first step is to set up a dataframe and remove duplicate observations
 # ldply(data, data.frame) fixes this for us
 IN.Bribe.df = ldply(post.bribe.df, data.frame)
 ```
 
-We end up with a dataframe with this composition:
-
-```{r import large dataframe, echo = TRUE}
-
-
-```
-
 It's however obvious that this dataframe need further manipulation/cleaning:
 
-```{r, echo=FALSE}
-IN.Bribe.df$post.views = gsub("\\views.*$", "", IN.Bribe.df$post.views)                     # Seperating numeric from views
-IN.Bribe.df$city = word(IN.Bribe.df$post.location, +1)                                      # Seperating region and city into two distinct variables
-IN.Bribe.df$city = gsub("\\,", "", IN.Bribe.df$city)                                        # ...
-IN.Bribe.df$region = word(IN.Bribe.df$post.location, -1)                                    # ...
-IN.Bribe.df$bribe.paid = as.numeric(gsub("[^\\d]+", "", IN.Bribe.df$post.title, perl=TRUE)) # Extracting numeric value of bribe from title using PERL-type regular expression
+```{r, data manipulation, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+# 3.1) Manupulation of IN.Bribe.df - preparation for analysis
+IN.Bribe.df$post.views = gsub("\\views.*$", "", IN.Bribe.df$post.views)                           # Seperating numeric from views
+IN.Bribe.df$region = gsub(".*,", "", IN.Bribe.df$post.location)                                   # Using regex with gsub to seperate words by comma
+IN.Bribe.df$post.city = gsub("\\,.*", "", IN.Bribe.df$post.location)                              # ...
+IN.Bribe.df$bribe.paid.INR = as.numeric(gsub("[^\\d]+", "", IN.Bribe.df$post.title, perl=TRUE))   # Extracting numeric value of bribe from title using PERL-type regular expression
+
+# Dates, using simple as.Date function
+
+IN.Bribe.df$post.date = gsub("\\,", "", IN.Bribe.df$post.date)
+IN.Bribe.df$post.date = gsub("\\November", "11", IN.Bribe.df$post.date)
+IN.Bribe.df$post.date = gsub("\\October", "10", IN.Bribe.df$post.date)
+IN.Bribe.df$num.date = strptime(IN.Bribe.df$post.date, "%m %d %Y")
 
 # 3.2) Deleting obsolete variables/columns
-IN.Bribe2.df = subset(IN.Bribe.df, , -c(.id, post.title))
-IN.Bribe3.df = data.frame(lapply(IN.Bribe2.df, as.character), stringsAsFactors=FALSE)
-IN.Bribe3.df$post.date = gsub("\\,", "", IN.Bribe3.df$post.date)
-IN.Bribe3.df$month = word(IN.Bribe3.df$post.date)
-IN.Bribe3.df$day = word(IN.Bribe3.df$post.date, -2)
-IN.Bribe3.df$year = word(IN.Bribe3.df$post.date, -1)
-
+IN.Bribe3.df = data.frame(lapply(IN.Bribe.df, as.character), stringsAsFactors=FALSE)
 IN.Bribe3.df$post.url = NULL
 IN.Bribe3.df$post.location = NULL
-IN.Bribe3.df$post.date = NULL
-
+IN.Bribe3.df$.id = NULL
+IN.Bribe3.df$post.region = NULL
+IN.Bribe3.df$town = IN.Bribe3.df$post.city
 ```
-```{r, echo=TRUE}
-head(IN.Bribe3.df, 5)
+It may prove insightful to add additional data to the existing dataframe. One factor explaining differences in the amount of posts to the website may be internet accessibility. Users of the website need an access-point, most likely a smartphone or laptop - whether or not an individual is able to properly use such a device may, in turn, depend on literacy. Literacy can also serve as an indirect indicator of earnings-potential; literacy is often thought of as an asset in the labour market. Here, data from wikipedia on literacy in India is used - imported as .csv:
+```{r, import external data, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+# 4)
+Ext1.list = read.csv("https://raw.githubusercontent.com/adamingwersen/Data.for.ass2_SDS/master/India.Region.Literacy.csv.csv", sep = ";")
+# Remove trailing/leading whitespace in existning dataframe for merge/join:
+IN.Bribe3.df$region = gsub("^\\s+|\\s+$", "", IN.Bribe3.df$region)  #Trim trailing/leading whitespace
+Ext1.list$region = as.character(Ext1.list$region)
+
+# Join dataframes by region
+library("dplyr")
+combi.df = right_join(Ext1.list, IN.Bribe3.df, by = "region", copy = TRUE, all.x = TRUE)
+```
+## **Mapping geo-spatial data**: Step 5
+In order to visualize discrepancies in post-views and bribes paid across cities in India, a map seems ideal. The *ggmap*-package allows for visualizations using Googles Maps service for plotting overlays on top. Using the *maps*-package we fetch the geo-coordinates needed.
+```{r, ggmap, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+#MAP DATA
+library("maps")
+data(world.cities)
+
+world.cities$name = gsub("\\'", "", world.cities$name)
+world.cities$town = world.cities$name
+world.cities1 = world.cities[world.cities$country.etc == "India",]
+
+library("dplyr")
+india.spatial.df = inner_join(world.cities1, combi.df, by = "town", all.y = TRUE)
+india.spatial.df$town <- as.character(india.spatial.df$town)
+india.spatial.df$pop = as.numeric(india.spatial.df$pop) 
+india.spatial.df$bribe.paid.INR = as.numeric(india.spatial.df$bribe.paid.INR)
+india.spatial.df$post.views = as.numeric(india.spatial.df$post.views)
+
+# GGMAP-PLOT 
+library("ggmap")
+map <- get_map("India", zoom = 5, maptype = "terrain")
+p <- ggmap(map)
+ggsave(p, file = "map1.png", width = 5, height = 5, type = "cairo-png")
+```
+
+This map illustrates paid bribes and views of posts by city: 
+```{r, map plot, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+ind = ggmap(map) + geom_point(aes(x=long, y=lat), data=india.spatial.df, col="orange", alpha=0.4, size = log(india.spatial.df$bribe.paid.INR)) +  
+  geom_point(aes(x = long, y = lat), data = india.spatial.df, col = "blue", alpha = 0.4, size = log(india.spatial.df$post.views)) + scale_size(name = "Bribes") +
+  labs(x = "Longitude", y = "Latitude") + ggtitle("Population and post views in Indian cities")
+```
+```{r, echo = TRUE, warning = FALSE}
+plot(ind)
 ```
 

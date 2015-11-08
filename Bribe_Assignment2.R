@@ -125,7 +125,7 @@ IN.Bribe.df = ldply(post.bribe.df, data.frame)
 
 # 3.1) Manupulation of IN.Bribe.df - preparation for analysis
 IN.Bribe.df$post.views = gsub("\\views.*$", "", IN.Bribe.df$post.views)                           # Seperating numeric from views
-IN.Bribe.df$region = gsub(".*,", "", IN.Bribe.df$post.location)                              # Using regex with gsub to seperate words by comma
+IN.Bribe.df$region = gsub(".*,", "", IN.Bribe.df$post.location)                                   # Using regex with gsub to seperate words by comma
 IN.Bribe.df$post.city = gsub("\\,.*", "", IN.Bribe.df$post.location)                              # ...
 IN.Bribe.df$bribe.paid.INR = as.numeric(gsub("[^\\d]+", "", IN.Bribe.df$post.title, perl=TRUE))   # Extracting numeric value of bribe from title using PERL-type regular expression
 
@@ -142,6 +142,7 @@ IN.Bribe3.df$post.url = NULL
 IN.Bribe3.df$post.location = NULL
 IN.Bribe3.df$.id = NULL
 IN.Bribe3.df$post.region = NULL
+IN.Bribe3.df$town = IN.Bribe3.df$post.city
 
 ################################################################# [4] #############################################################
 Ext1.list = read.csv("https://raw.githubusercontent.com/adamingwersen/Data.for.ass2_SDS/master/India.Region.Literacy.csv.csv", sep = ";")
@@ -155,31 +156,85 @@ combi.df = right_join(Ext1.list, IN.Bribe3.df, by = "region", copy = TRUE, all.x
 
 ################################################################# [5] #############################################################
 #MAP
-india.adm.spdf = readOGR("/Users/Adam/Downloads/IND_adm", "IND_adm2", verbose = TRUE, stringsAsFactors = FALSE)
+library("maps")
+data(world.cities)
+map("world", "India")
+map.cities(country = "India")
+
+world.cities$name = gsub("\\'", "", world.cities$name)
+world.cities$town = world.cities$name
+world.cities1 = world.cities[world.cities$country.etc == "India",]
+
+library("dplyr")
+india.spatial.df = inner_join(world.cities1, combi.df, by = "town", all.y = TRUE)
+
+india.spatial.df$town <- as.character(india.spatial.df$town)
+india.spatial.df$pop = as.numeric(india.spatial.df$pop) 
+india.spatial.df$bribe.paid.INR = as.numeric(india.spatial.df$bribe.paid.INR)
+india.spatial.df$post.views = as.numeric(india.spatial.df$post.views)
+
+# MEPPPS
+library("ggmap")
+map <- get_map("India", zoom = 5, maptype = "terrain")
+p <- ggmap(map)
+print(p)
+ggsave(p, file = "map1.png", width = 5, height = 5, type = "cairo-png")
+
+
+ind = ggmap(map) + geom_point(aes(x=long, y=lat), data=india.spatial.df, col="orange", alpha=0.4, size = log(india.spatial.df$bribe.paid.INR)) +  
+  geom_point(aes(x = long, y = lat), data = india.spatial.df, col = "blue", alpha = 0.4, size = log(india.spatial.df$post.views)) + scale_size(name = "Bribes") +
+  labs(x = "Longitude", y = "Latitude") + ggtitle("Population and post views in Indian cities")
+plot(ind)
+?circle_scale_amt
+
+# Regs
+
+reg1 = lm(india.spatial.df$post.views~india.spatial.df$citiziens)
+res1 = reg1$residuals
+vcov(reg1)
+install.packages("lmtest")
+library("lmtest")
+bptest(reg1)
+abline(reg1)
+plot(india.spatial.df$post.views~india.spatial.df$citiziens)
+abline(a = reg1$coeff[1], b = reg1$coeff[2])
+
+reg2 = lm(india.spatial.df$citiziens ~ india.spatial.df$literacy)
+plot(india.spatial.df$citiziens ~ india.spatial.df$literacy)
+abline(a = reg2$coeff[1], b = reg2$coeff[2])
+
+plot(res1)
+
+# Dates
+india.spatial.df$POSIXct = as.POSIXct(india.spatial.df$num.date)
+Sys.setlocale("LC_TIME","English")
+india.spatial.df$wday = weekdays(india.spatial.df$POSIXct)
+
+# Plots
 library("ggplot2")
-install.packages("maptools")
-library("maptools")
-install.packages("gpclib", type = "source")
-library("gpclib")
-library("rgdal")
-india.adm2.df = fortify(india.adm.spdf, region = "NAME_1")
-?fortify
-?readOG
-?install.packages
+library("scales")
+wp = ggplot(india.spatial.df, aes(x = wday))
+wp = wp + geom_bar()
+wp = wp + labs(x = "Weekday", y = "Posts", tilte = "Number of posts on different weekdays")
+wp = wp + theme_minimal()
+plot(wp)
 
-?fortify
-
-
-
-write.table(IN.Bribe3.df, "C:/Users/Adam/Desktop/Bribe.csv", sep = "\t")
-
-
-
-?write.csv
-
-library("readr")
-bribe.csv = read.csv("https://raw.githubusercontent.com/adamingwersen/Data.for.ass2_SDS/master/bribe.csv", sep = "\t")
-?read.table
+g = ggplot(india.spatial.df, aes(x = POSIXct, y = post.views)) +
+  facet_wrap( ~ post.dept, drop=TRUE) +
+  geom_line()  +
+  theme_minimal()
+plot(g)
+  
+  
+  
+  ylab(‘% Unemployment’) + xlab(‘Year’)
 
 
 
+
+
+
+
+
+
+  

@@ -4,3 +4,8 @@ xml2
 rvest
 stringr
 knitr
+dplyr
+maps
+ggplot2
+ggmap
+mapproj
