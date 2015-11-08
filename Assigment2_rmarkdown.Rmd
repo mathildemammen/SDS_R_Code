@@ -4,15 +4,13 @@ author: "Group 15"
 date: "November 9, 2015"
 output: html_document
 ---
+## **Scrape & Analysis of www.ipaidabribe.com**
 
-# **Scrape & Analysis of www.ipaidabribe.com**
+We are to scrape the website and clean the gathered data primarily using the R-packages: *stringr*, *plyr*, *dplyr* & *rvest*. Then, we will delve into a very light econometric analysis paired with geo-spatial data-analysis using *ggplot*, *countrycode* etc.
 
-We are to scrape the website and clean the gathered data primarily using the R-packages: *stringr*, *plyr*, *dplyr* & *rvest*. Then, we will delve into an econometric analysis paired with geo-spatial data-analysis using *ggplot*, *countrycode* etc.
-
-## **Scraping the [website](http://ipaidabribe.com/reports) : Steps 1-2**
+### **Scraping the [website](http://ipaidabribe.com/reports)**: Steps 1-2
 
 The website is constructed in a way such that for each page of recorded bribes contains 10 posts per page. It did not prove useful to use selector-gadget for identifying the underlying html-table. However, any page of 10 posts only has unique URL-element; http://www.ipaidabribe.com/reports/paid?page={**any integer**}. Thus, we took the following approach: create vector of integers from 0:1000 in intervals of 10. Insert 0, 10, 20 etc. into the element in URL that determines page number via loop - here looping with plyr was deemed useful as it is simple to coerce into dataframe and is rather fast. 
-
 ```{r create initial links, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 library("knitr")
 knitr::opts_chunk$set(cache=TRUE)
@@ -50,9 +48,7 @@ num.link.li2 = num.link.li$V1
 head(num.link.li2, 5)
 
 ```
-
 We have now obtained 100 pages each containing 10 posts. Directly from these pages, the post-information we are interested in is accessible, given the appropriate CSS-selectors:
-
 ```{r css-selectors, echo = TRUE}
 ## Let's identify the relevant css-selectors
 
@@ -65,9 +61,7 @@ as2.css.selector_6 = "li.transaction > a" #transaction details
 as2.css.selector_7 = "li.views"           #number of views
 
 ```
-
 Defining function and creating loop for iterating trhough all observations in **num.link.li2**. We make use of **rvest** in order to fetch data. 
-
 ```{r, function and loop for scrape, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 # Function requesting on CSS-selectors for each webpage
 
@@ -107,19 +101,15 @@ for(i in num.link.li2){
   cat("done!\n")
 }
 ```
-
-## **Cleaning gathered data, preparation & external data** : Step 3-4
+### **Cleaning gathered data, preparation & external data** : Step 3-4
 When the 1.000 posts have been obtained, we coerce from list into a dataframe using *ldply([data], data.frame)*. From here we need to do basic data-cleaning primarily utilizing functions contained in *stringr* in order to have a tidy, interpretable dataframe. 
-
 ```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 #DATA :
 # Now that the data has been gathered, we need to do a little cleaning - first step is to set up a dataframe and remove duplicate observations
 # ldply(data, data.frame) fixes this for us
 IN.Bribe.df = ldply(post.bribe.df, data.frame)
 ```
-
 It's however obvious that this dataframe need further manipulation/cleaning:
-
 ```{r, data manipulation, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 # 3.1) Manupulation of IN.Bribe.df - preparation for analysis
 IN.Bribe.df$post.views = gsub("\\views.*$", "", IN.Bribe.df$post.views)                           # Seperating numeric from views
@@ -154,7 +144,10 @@ Ext1.list$region = as.character(Ext1.list$region)
 library("dplyr")
 combi.df = right_join(Ext1.list, IN.Bribe3.df, by = "region", copy = TRUE, all.x = TRUE)
 ```
-## **Mapping geo-spatial data**: Step 5
+## **Analysis**
+Exploring geographical and time-dependent relationships within the generated data-frame
+
+### **Mapping geo-spatial data**: Step 5
 In order to visualize discrepancies in post-views and bribes paid across cities in India, a map seems ideal. The *ggmap*-package allows for visualizations using Googles Maps service for plotting overlays on top. Using the *maps*-package we fetch the geo-coordinates needed.
 ```{r, ggmap, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 #MAP DATA
@@ -178,14 +171,69 @@ map <- get_map("India", zoom = 5, maptype = "terrain")
 p <- ggmap(map)
 ggsave(p, file = "map1.png", width = 5, height = 5, type = "cairo-png")
 ```
-
-This map illustrates paid bribes and views of posts by city: 
+This map illustrates population and views of posts by city: 
 ```{r, map plot, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
-ind = ggmap(map) + geom_point(aes(x=long, y=lat), data=india.spatial.df, col="orange", alpha=0.4, size = log(india.spatial.df$bribe.paid.INR)) +  
-  geom_point(aes(x = long, y = lat), data = india.spatial.df, col = "blue", alpha = 0.4, size = log(india.spatial.df$post.views)) + scale_size(name = "Bribes") +
+ind = ggmap(map) + geom_point(aes(x=long, y=lat), data=india.spatial.df, col="orange", alpha=0.4, size = log(india.spatial.df$citiziens)) +  
+  geom_point(aes(x = long, y = lat), data = india.spatial.df, col = "blue", alpha = 0.4, size = log(india.spatial.df$post.views)) + scale_size(name = "Population") +
   labs(x = "Longitude", y = "Latitude") + ggtitle("Population and post views in Indian cities")
 ```
 ```{r, echo = TRUE, warning = FALSE}
 plot(ind)
+```
+
+We clearly see, that a substantial number of cities have a relatively large fraction of post-views compared to population, i.e. the blue dots are non-transparent compared to the orange ones. This could indicate a multitude of things. However, if we assume that individuals reading the posts are primarily interested in their local area's level of corruption and don't view posts based on other criteria, one might argue that the number of users of the website is not evenly distributed amongst indian cities. This indicates that causal analysis using cross-sectional econometric tools may not be a viable approach, as the random sample assumption of most linear regression strategies is likely to be violated. This being said, other approaches for extrapolating insights from the data still exist. 
+
+### **Other data visualizations**: Step 6
+Given the above reasoning, looking at time-dependency in the usage of the website. Extracting weekdays. Setting OS-derived locale to english in order to get english weekdays.
+```{r, weekdays & density plot, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+india.spatial.df$POSIXct = as.POSIXct(india.spatial.df$num.date)
+Sys.setlocale("LC_TIME","English")
+india.spatial.df$wday = weekdays(india.spatial.df$POSIXct)
+# 6.2) Factoring weekdays for order in plot
+india.spatial.df$wday <- factor(india.spatial.df$wday, levels = c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"))
+
+# 6.3) Density plot of posts on a given weekday
+library("ggplot2")
+library("scales")
+wp = ggplot(india.spatial.df, aes(x = wday))
+wp = wp + geom_density(aes(group = wday, colour = wday, fill = wday), alpha = 0.4)
+wp = wp + labs(x = "Weekday", y = "Posts", title = "Density: Posts on weekdays")
+wp = wp + theme_minimal()
+```
+```{r, print dp, echo = TRUE, warning = FALSE, message = FALSE}
+plot(wp)
+```
+
+Apparently mondays are popular. We will investigate, what drives this tendency; geographical or departmental. 
+```{r, facet_wrap, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+ep = ggplot(india.spatial.df, aes(x = wday))
+ep = ep + geom_density(aes(group = wday, colour = wday, fill = wday), alpha = 0.4)
+ep = ep + labs(x = "Weekday", y = "Posts", title = "Density: Posts on weekdays by region")
+ep = ep + theme(panel.grid.major = element_blank(), 
+                                      panel.grid.minor = element_blank(), 
+                                      panel.background = element_blank(), 
+                                      axis.line = element_line(colour = "blue"),
+                                      axis.text.x = element_text(angle = 90))
+ep = ep + facet_wrap(~region, scales = "free_y")
+```
+```{r, print fw, echo = TRUE, warning = FALSE, message=FALSE}
+plot(ep)
+```
+
+Some regions seem to be following the overall trend, however others only post on e.g. saturdays - maybe we should pick out the largest cities.
+```{r, geom_bar, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+spat2 = subset(india.spatial.df, citiziens > 50000000)
+pl = ggplot(spat2, aes(x = region, y = citiziens/100000000))
+pl = pl + geom_bar(stat="identity")
+pl = pl + theme_minimal()
+pl = pl + labs(x = "Region", y = "Inhabitants", title = "Regional population in millions")
+pl = pl + theme(panel.grid.major = element_blank(), 
+                panel.grid.minor = element_blank(), 
+                panel.background = element_blank(), 
+                axis.line = element_line(colour = "blue"),
+                axis.text.x = element_text(angle = 50))
+```
+```{r, plot pl, echo = TRUE, warning = FALSE, message=FALSE}
+plot(pl)
 ```
 
