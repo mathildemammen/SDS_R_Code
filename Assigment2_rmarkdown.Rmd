@@ -220,7 +220,7 @@ ep = ep + facet_wrap(~region, scales = "free_y")
 plot(ep)
 ```
 
-Some regions seem to be following the overall trend, however others only post on e.g. saturdays - maybe we should pick out the most populous, as the differences in population between these are rather large.
+Some regions seem to be following the overall trend, however others only post on e.g. saturdays - maybe we should pick out the most populous, as the differences in population between these are rather large. The larger regions appear to be more representative in terms of this particular tendency.
 ```{r, geom_bar, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 spat2 = subset(india.spatial.df, citiziens > 50000000)
 pl = ggplot(spat2, aes(x = region, y = citiziens/100000000))
@@ -235,5 +235,27 @@ pl = pl + theme(panel.grid.major = element_blank(),
 ```
 ```{r, plot pl, echo = TRUE, warning = FALSE, message=FALSE}
 plot(pl)
+```
+
+Picking out all regions with populaion > 50M. Conducting simple regression with stated model:
+
+```{r, PW ~ LR, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+reg3 = lm(as.numeric(spat2$post.views)~as.numeric(spat2$ratio))
+plot(as.numeric(spat2$post.views)~as.numeric(spat2$ratio), main = "Post Views ~ Literacy Rate", xlab = "Literacy Rate", ylab = "Post Views")
+abline(reg3$coefficients)
+res3 = resid(reg3)
+hist(res3, freq = FALSE)
+```
+
+The relationship seems dubious, however stronger than when not subsetting the dataframe to 50M+ regions.  
+
+```{r,log(B) ~ PW, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
+combi.df$logbribe = log(as.numeric(combi.df$bribe.paid.INR))
+reg4 = lm(as.numeric(combi.df$logbribe)~as.numeric(combi.df$post.views))
+plot(as.numeric(combi.df$logbribe)~as.numeric(combi.df$post.views), main = "log(Bribe) ~ Post Views", xlab = "Post Views", ylab = "log(Bribe)")
+abline(reg4$coefficients)
+res4 = residuals(reg4)
+hist(res4, freq = FALSE)
+curve(dnorm, add = TRUE)
 ```
 
