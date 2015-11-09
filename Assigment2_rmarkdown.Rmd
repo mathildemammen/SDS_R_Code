@@ -181,10 +181,11 @@ ind = ggmap(map) + geom_point(aes(x=long, y=lat), data=india.spatial.df, col="or
 plot(ind)
 ```
 
-We clearly see, that a substantial number of cities have a relatively large fraction of post-views compared to population, i.e. the blue dots are non-transparent compared to the orange ones. This could indicate a multitude of things. However, if we assume that individuals reading the posts are primarily interested in their local area's level of corruption and don't view posts based on other criteria, one might argue that the number of users of the website is not evenly distributed amongst indian cities. This indicates that causal analysis using cross-sectional econometric tools may not be a viable approach, as the random sample assumption of most linear regression strategies is likely to be violated. This being said, other approaches for extrapolating insights from the data still exist. 
+From the graph, it's seen that their seems to be a correlation among large cities, i.e. the less transparent orange dots, and the number of post views for the respective cities, the filled blue dots. Now this can possibly stem from a lot of different sources, for instance that larger cities have more post hence more aggregated post views, that people is more interested in reading about bribes in their own city, which is why larger cities have more post views or some other explanation.
+If there were room and time for some more deep visualization, these mentioned things could definetely be a nice thing to look more into, i.e. plot the average number of views in cities to the population, to the literacy rate for which we have gathered for our dataframe or other suitable plots.
 
 ### **Other data visualizations**: Step 6
-Given the above reasoning, looking at time-dependency in the usage of the website. Extracting weekdays. Setting OS-derived locale to english in order to get english weekdays.
+Another interesting plot could be to look at the days for posted bribes, in other words we want to see if there's any time-dependency in the usage of the website. Extracting weekdays. Setting OS-derived locale to english in order to get english weekdays.
 ```{r, weekdays & density plot, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 india.spatial.df$POSIXct = as.POSIXct(india.spatial.df$num.date)
 Sys.setlocale("LC_TIME","English")
