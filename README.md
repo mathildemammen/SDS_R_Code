@@ -14,6 +14,10 @@ Packages used include:
 
 
 ### Rmarkdown: 
-Work in progress
+Editable
+
+### rmarkdown view : 
+[view](http://rpubs.com/adamil/sds_assignment2)
+
 
 
