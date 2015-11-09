@@ -182,6 +182,17 @@ plot(ind)
 ```
 
 We clearly see, that a substantial number of cities have a relatively large fraction of post-views compared to population, i.e. the blue dots are non-transparent compared to the orange ones. This could indicate a multitude of things. However, if we assume that individuals reading the posts are primarily interested in their local area's level of corruption and don't view posts based on other criteria, one might argue that the number of users of the website is not evenly distributed amongst indian cities. This indicates that causal analysis using cross-sectional econometric tools may not be a viable approach, as the random sample assumption of most linear regression strategies is likely to be violated. This being said, other approaches for extrapolating insights from the data still exist. 
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+top10=india.spatial.df %>% 
+  group_by(town, ratio)  %>% 
+  summarise(bribe.paid=n())
+top10=arrange(top10, desc(bribe.paid))
+head(top10, 10)
+```
+
+One could imagine that more litterate cities would experience less bribes than inlitterates, but as seen by this the former output, there is no clear relationship between litteracy and the number of bribes paid. If we look at the cities with the highest litteracy ratio, i.e. the most litterate cities, there are only a few bribes in each city. If we instead look at the top 10 cities for number of bribes, the picture is not as clear as shown by the output – as one can see, the cities in top 10 of bribes is neither the most or least litterate cities. 
+We therefore have no clear evidence from the collected data that there will be more bribes in a non-litterate city, and since the number of views must be closely related to the degree of litteracy, there is neither a clear connection between views and number of bribes. 
+
 
 ### **Other data visualizations**: Step 6
 Given the above reasoning, looking at time-dependency in the usage of the website. Extracting weekdays. Setting OS-derived locale to english in order to get english weekdays.
