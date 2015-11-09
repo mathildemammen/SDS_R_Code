@@ -155,7 +155,7 @@ library("dplyr")
 combi.df = right_join(Ext1.list, IN.Bribe3.df, by = "region", copy = TRUE, all.x = TRUE)
 
 ################################################################# [5] #############################################################
-#MAP
+#MAP DATA
 library("maps")
 data(world.cities)
 map("world", "India")
@@ -167,13 +167,12 @@ world.cities1 = world.cities[world.cities$country.etc == "India",]
 
 library("dplyr")
 india.spatial.df = inner_join(world.cities1, combi.df, by = "town", all.y = TRUE)
-
 india.spatial.df$town <- as.character(india.spatial.df$town)
 india.spatial.df$pop = as.numeric(india.spatial.df$pop) 
 india.spatial.df$bribe.paid.INR = as.numeric(india.spatial.df$bribe.paid.INR)
 india.spatial.df$post.views = as.numeric(india.spatial.df$post.views)
 
-# MEPPPS
+# GGMAP-PLOT 
 library("ggmap")
 map <- get_map("India", zoom = 5, maptype = "terrain")
 p <- ggmap(map)
@@ -181,11 +180,11 @@ print(p)
 ggsave(p, file = "map1.png", width = 5, height = 5, type = "cairo-png")
 
 
-ind = ggmap(map) + geom_point(aes(x=long, y=lat), data=india.spatial.df, col="orange", alpha=0.4, size = log(india.spatial.df$bribe.paid.INR)) +  
-  geom_point(aes(x = long, y = lat), data = india.spatial.df, col = "blue", alpha = 0.4, size = log(india.spatial.df$post.views)) + scale_size(name = "Bribes") +
+ind = ggmap(map) + geom_point(aes(x=long, y=lat), data=india.spatial.df, col="orange", alpha=0.4, size = log(india.spatial.df$pop)) +  
+  geom_density(aes(x = long, y = lat), data = india.spatial.df, col = "blue", alpha = 0.4, size = india.spatial.df$post.views) + scale_size(name = "Population") +
   labs(x = "Longitude", y = "Latitude") + ggtitle("Population and post views in Indian cities")
 plot(ind)
-?circle_scale_amt
+
 
 # Regs
 
@@ -203,33 +202,103 @@ reg2 = lm(india.spatial.df$citiziens ~ india.spatial.df$literacy)
 plot(india.spatial.df$citiziens ~ india.spatial.df$literacy)
 abline(a = reg2$coeff[1], b = reg2$coeff[2])
 
-plot(res1)
+reg3 = lm(as.numeric(spat2$post.views)~as.numeric(spat2$ratio))
+plot(as.numeric(spat2$post.views)~as.numeric(spat2$ratio), main = "Post Views ~ Literacy Rate", xlab = "Literacy Rate", ylab = "Post Views")
+abline(reg3$coefficients)
+
+combi.df$logbribe = log(as.numeric(combi.df$bribe.paid.INR))
+reg4 = lm(as.numeric(combi.df$logbribe)~as.numeric(combi.df$post.views))
+plot(as.numeric(combi.df$logbribe)~as.numeric(combi.df$post.views), main = "Post Views ~ Bribe amt.", xlab = "Bribe", ylab = "Post Views")
+abline(reg4$coefficients)
+res4 = residuals(reg4)
+hist(res4, freq = FALSE)
+curve(dnorm, add = TRUE)
+
+res3 = resid(reg3)
+plot(as.numeric(spat2$ratio), res3)
 
 # Dates
 india.spatial.df$POSIXct = as.POSIXct(india.spatial.df$num.date)
 Sys.setlocale("LC_TIME","English")
 india.spatial.df$wday = weekdays(india.spatial.df$POSIXct)
+india.spatial.df$wday <- factor(india.spatial.df$wday, levels = c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"))
 
 # Plots
 library("ggplot2")
 library("scales")
 wp = ggplot(india.spatial.df, aes(x = wday))
-wp = wp + geom_bar()
-wp = wp + labs(x = "Weekday", y = "Posts", tilte = "Number of posts on different weekdays")
+wp = wp + geom_density(aes(group = wday, colour = wday, fill = wday), alpha = 0.4)
+wp = wp + labs(x = "Weekday", y = "Posts", title = "Number of posts on weekdays")
 wp = wp + theme_minimal()
 plot(wp)
 
-g = ggplot(india.spatial.df, aes(x = POSIXct, y = post.views)) +
-  facet_wrap( ~ post.dept, drop=TRUE) +
-  geom_line()  +
-  theme_minimal()
+wp = ggplot(india.spatial.df, aes(x = wday))
+wp = wp + geom_density(aes(group = wday, colour = wday, fill = wday), alpha = 0.4)
+wp = wp + labs(x = "Weekday", y = "Posts", title = "Density: Posts on weekdays by region")
+wp = wp + theme(panel.grid.major = element_blank(), 
+                                      panel.grid.minor = element_blank(), 
+                                      panel.background = element_blank(), 
+                                      axis.line = element_line(colour = "blue"),
+                                      axis.text.x = element_text(angle = 90))
+wp = wp + facet_wrap(~region, scales = "free_y")
+plot(wp)
+
+wp = ggplot(india.spatial.df, aes(x = wday))
+wp = wp + geom_density(aes(group = wday, colour = wday, fill = wday), alpha = 0.4)
+wp = wp + labs(x = "Weekday", y = "Posts", title = "Density: Posts on weekdays by region")
+wp = wp + theme(panel.grid.major = element_blank(), 
+                panel.grid.minor = element_blank(), 
+                panel.background = element_blank(), 
+                axis.line = element_line(colour = "blue"),
+                axis.text.x = element_text(angle = 90))
+wp = wp + facet_wrap(~post.dept, scales = "free_y")
+plot(wp)
+
+(india.spatial.df$citiziens)
+
+g = ggplot(india.spatial.df, aes(x = POSIXct, y = log(bribe.paid.INR)))
+g = g +geom_jitter() 
+g = g + facet_wrap(~wday, scales = "free_y")
 plot(g)
-  
-  
-  
-  ylab(‘% Unemployment’) + xlab(‘Year’)
 
+gg = ggplot(combi.df, aes(x = town, y = log(bribe.paid.INR), rm.na = TRUE))
+gg = gg + geom_jitter()
+plot(gg)
 
+install.packages("doBy")
+library("doBy")
+
+summaryBy(citiziens ~ region, data = india.spatial.df,
+            FUN = list(mean, median))
+
+spat2 = subset(india.spatial.df, citiziens > 50000000)
+
+pl = ggplot(spat2, aes(x = region, y = as.factor(citiziens)))
+pl = pl + geom_bar(stat="identity", colour = "#FF9933")
+pl = pl + theme_minimal()
+pl = pl + labs(x = "Region", y = "Inhabitants", title = "Population distribution")
+pl = pl + scale_fill_manual(values = c("#FF9933", "#138808"))
+pl = pl + theme(panel.grid.major = element_blank(), 
+                panel.grid.minor = element_blank(), 
+                panel.background = element_blank(), 
+                axis.line = element_line(colour = "blue"),
+                axis.text.x = element_text(angle = 90))
+plot(pl)
+
+india.spatial.df$nregion = india.spatial.df$region[c("Maharashtra", "Delhi", "Karnataka", "Telangana", "Tamil Nadu", "Gujarat"),]
+india.spatial.df$nregion = india.spatial.df[(india.spatial.df$region = c("Maharashtra", "Delhi", "Karnataka", "Telangana", "Tamil Nadu", "Gujarat")),]
+india.spatial.df$nregion = india.spatial.df[grepl(c("Maharashtra", "Delhi", "Karnataka", "Telangana", "Tamil Nadu", "Gujarat"), india.spatial.df$region),]
+
+pl = ggplot(spat2, aes(x = region, y = citiziens/100000000))
+pl = pl + geom_bar(stat="identity")
+pl = pl + theme_minimal()
+pl = pl + labs(x = "Region", y = "Inhabitants", title = "Population distribution in millions")
+pl = pl + theme(panel.grid.major = element_blank(), 
+                panel.grid.minor = element_blank(), 
+                panel.background = element_blank(), 
+                axis.line = element_line(colour = "blue"),
+                axis.text.x = element_text(angle = 90))
+plot(pl)
 
 
 

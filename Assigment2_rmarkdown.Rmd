@@ -196,7 +196,7 @@ india.spatial.df$wday <- factor(india.spatial.df$wday, levels = c("Monday", "Tue
 library("ggplot2")
 library("scales")
 wp = ggplot(india.spatial.df, aes(x = wday))
-wp = wp + geom_density(aes(group = wday, colour = wday, fill = wday), alpha = 0.4)
+wp = wp + geom_histogram(aes(group = wday, colour = wday, fill = wday), alpha = 0.4)
 wp = wp + labs(x = "Weekday", y = "Posts", title = "Density: Posts on weekdays")
 wp = wp + theme_minimal()
 ```
@@ -207,7 +207,7 @@ plot(wp)
 Apparently mondays are popular. We will investigate, what drives this tendency; geographical or departmental. 
 ```{r, facet_wrap, echo = FALSE, warning = FALSE, message = FALSE, results = "hide"}
 ep = ggplot(india.spatial.df, aes(x = wday))
-ep = ep + geom_density(aes(group = wday, colour = wday, fill = wday), alpha = 0.4)
+ep = ep + geom_histogram(aes(group = wday, colour = wday, fill = wday), alpha = 0.4)
 ep = ep + labs(x = "Weekday", y = "Posts", title = "Density: Posts on weekdays by region")
 ep = ep + theme(panel.grid.major = element_blank(), 
                                       panel.grid.minor = element_blank(), 
