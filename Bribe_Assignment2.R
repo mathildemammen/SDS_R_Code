@@ -185,6 +185,11 @@ ind = ggmap(map) + geom_point(aes(x=long, y=lat), data=india.spatial.df, col="or
   labs(x = "Longitude", y = "Latitude") + ggtitle("Population and post views in Indian cities")
 plot(ind)
 
+top10=india.spatial.df %>% 
+  group_by(town, ratio)  %>% 
+  summarise(bribe.paid=n())
+top10=arrange(top10, desc(bribe.paid))
+head(top10, 10)
 
 # Regs
 
