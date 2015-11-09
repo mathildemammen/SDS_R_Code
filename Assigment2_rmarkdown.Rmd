@@ -184,7 +184,21 @@ plot(ind)
 ```
 
 From the graph, it's seen that their seems to be a correlation among large cities, i.e. the less transparent orange dots, and the number of post views for the respective cities, the filled blue dots. Now this can possibly stem from a lot of different sources, for instance that larger cities have more post hence more aggregated post views, that people is more interested in reading about bribes in their own city, which is why larger cities have more post views or some other explanation.
-If there were room and time for some more deep visualization, these mentioned things could definetely be a nice thing to look more into, i.e. plot the average number of views in cities to the population, to the literacy rate for which we have gathered for our dataframe or other suitable plots.
+If there were room and time for some more deep visualization, these mentioned things could definetely be a nice thing to look more into, i.e. plot the average number of views in cities to the population, to the literacy rate for which we have gathered for our dataframe or other suitable plots.'
+```{r, ggmap, echo = FALSE, warning = FALSE, message = FALSE}
+top10=india.spatial.df %>% 
+  group_by(town, ratio)  %>% 
+  summarise(bribe.paid=n())
+top10=arrange(top10, desc(bribe.paid))
+
+```
+```{r, echo = TRUE, warning = FALSE}
+head(top10, 10)
+```
+
+One could imagine that more litterate cities would experience less bribes than inlitterates, but as seen by this table, there is no clear relationship between litteracy and the number of bribes paid. If we look at the cities with the highest litteracy ratio, i.e. the most litterate cities, there are only a few bribes in each city. If we instead look at the top 10 cities for number of bribes, the picture is not as clear as shown by the former table – as one can see, the cities in top 10 of bribes is neither the most or least litterate cities. 
+We therefore have no clear evidence from the collected data that there will be more bribes in a non-litterate city, and since the number of views must be closely related to the degree of litteracy, there is neither a clear connection between views and number of bribes. 
+
 
 ### **Other data visualizations**: Step 6
 Another interesting plot could be to look at the days for posted bribes, in other words we want to see if there's any time-dependency in the usage of the website. Extracting weekdays. Setting OS-derived locale to english in order to get english weekdays.
